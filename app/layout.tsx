@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://haitham-portfolio-2026.mazen-raslan-7066.chatgpt-team.site"
+  ),
   title: "Haitham Abd El-Azeem Khalifa | Professional Portfolio",
   description:
     "Solutions Delivery Manager, SAP Program Manager, and digital transformation leader specializing in ERP, Smart City, and municipal service delivery.",
