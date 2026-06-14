@@ -4,8 +4,32 @@ interface Fetcher {
   fetch(input: RequestInfo | URL, init?: RequestInit): Promise<Response>;
 }
 
+interface R2ObjectBody {
+  body: ReadableStream;
+  httpMetadata?: {
+    contentType?: string;
+  };
+  writeHttpMetadata(headers: Headers): void;
+}
+
+interface R2Bucket {
+  get(key: string): Promise<R2ObjectBody | null>;
+  put(
+    key: string,
+    value: ArrayBuffer | ArrayBufferView | ReadableStream | string | null,
+    options?: {
+      httpMetadata?: {
+        contentType?: string;
+        cacheControl?: string;
+      };
+    }
+  ): Promise<unknown>;
+  delete(key: string): Promise<void>;
+}
+
 declare module "cloudflare:workers" {
   export const env: {
     DB?: D1Database;
+    MEDIA?: R2Bucket;
   };
 }

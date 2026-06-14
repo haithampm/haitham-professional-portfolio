@@ -29,6 +29,12 @@ body {
     sans-serif;
 }
 
+html[dir="rtl"] body {
+  font-family:
+    "Segoe UI", Tahoma, Arial, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -109,6 +115,10 @@ a {
   font-weight: 800;
   line-height: 1.1;
   text-align: center;
+}
+
+.w-18 {
+  width: 4.5rem;
 }
 
 @keyframes rise-in {

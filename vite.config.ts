@@ -50,5 +50,10 @@ export default defineConfig(async () => {
 
   return {
     plugins,
+    build: {
+      rolldownOptions: {
+        external: ["cloudflare:workers"],
+      },
+    },
   };
 });
