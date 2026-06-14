@@ -2,11 +2,20 @@ import {
   ArrowUpRight,
   Download,
   Mail,
-  MapPin,
   Phone,
-  ShieldCheck,
 } from "lucide-react";
 import Image from "next/image";
+
+const displayName = "Haitham Elmohamady";
+
+type LogoItem = {
+  name: string;
+  subtitle: string;
+  source: string;
+  logo?: string;
+  mark?: string;
+  dark?: boolean;
+};
 
 const achievements = [
   {
@@ -113,23 +122,189 @@ const capabilities = [
   "Cloud and infrastructure across AWS, Google, and DigitalOcean",
 ];
 
-const certifications = [
-  "Project Management Professional (PMP)",
-  "PMI Risk Management Professional (PMI-RMP)",
-  "PMO Certified Professional (PMI-PMOCP)",
-  "PMO-CP",
-  "TOGAF Certified - The Open Group",
-  "SAP Certified Associate - SAP Activate Project Manager",
-  "Oracle Certified Associate (OCA)",
-  "FCNSA / FCNSP - Fortinet Security Professional",
-  "MCSA / MCSE - Microsoft Systems Administration and Engineering",
-  "Generative AI for Project Managers - PMI",
+const certificationLogos: LogoItem[] = [
+  {
+    name: "PMI",
+    subtitle: "PMP, PMI-RMP, PMI-PMOCP, GenAI for Project Managers",
+    source: "https://www.pmi.org/certifications",
+    mark: "PMI",
+  },
+  {
+    name: "PMO Global Alliance",
+    subtitle: "PMO-CP professional credential",
+    source: "https://pmoga.pmi.org/certification",
+    mark: "PMO-CP",
+  },
+  {
+    name: "The Open Group",
+    subtitle: "TOGAF Certified",
+    source: "https://www.opengroup.org/certifications",
+    logo: "/logos/the-open-group.png",
+  },
+  {
+    name: "SAP",
+    subtitle: "SAP Activate Project Manager",
+    source: "https://www.sap.com/",
+    mark: "SAP",
+  },
+  {
+    name: "Oracle",
+    subtitle: "Oracle Certified Associate",
+    source: "https://www.oracle.com/",
+    logo: "/logos/oracle.svg",
+  },
+  {
+    name: "Fortinet",
+    subtitle: "FCNSA / FCNSP security professional",
+    source: "https://www.fortinet.com/",
+    logo: "/logos/fortinet.svg",
+  },
+  {
+    name: "Microsoft",
+    subtitle: "MCSA / MCSE systems administration and engineering",
+    source: "https://www.microsoft.com/",
+    mark: "Microsoft",
+  },
 ];
+
+const companyLogos: LogoItem[] = [
+  {
+    name: "Leader Group",
+    subtitle: "Solutions implementation and delivery leadership",
+    source: "https://leadergroup.com/",
+    logo: "/logos/leader-group.png",
+    dark: true,
+  },
+  {
+    name: "Eastern Province Municipality",
+    subtitle: "Municipal digital transformation programs",
+    source: "https://momah.gov.sa/en/branches/eastern-province-municipality",
+    logo: "/logos/eastern-province-municipality.jpg",
+  },
+  {
+    name: "Edraky",
+    subtitle: "SAP Platinum Partner delivery programs",
+    source: "https://www.edraky.com/",
+    logo: "/logos/edraky.png",
+  },
+  {
+    name: "NTG Clarity",
+    subtitle: "Telecom and enterprise operations foundation",
+    source: "https://ntgclarity.com/",
+    logo: "/logos/ntg-clarity.png",
+  },
+  {
+    name: "Al Kharafi Group",
+    subtitle: "ERP and enterprise delivery experience",
+    source: "https://malkharafi.com/",
+    mark: "Al Kharafi",
+  },
+  {
+    name: "AAST",
+    subtitle: "Applications implementation experience",
+    source: "https://aast.edu/",
+    mark: "AAST",
+  },
+  {
+    name: "PractiQ Consulting",
+    subtitle: "SAP project management experience",
+    source: "https://www.practiq.net/",
+    mark: "PractiQ",
+  },
+  {
+    name: "ACME Group",
+    subtitle: "ERP project management experience",
+    source: "https://acme-group.me/",
+    mark: "ACME",
+  },
+];
+
+const partnerLogos: LogoItem[] = [
+  {
+    name: "SAP",
+    subtitle: "S/4HANA and Activate delivery",
+    source: "https://www.sap.com/",
+    mark: "SAP",
+  },
+  {
+    name: "Oracle",
+    subtitle: "ERP and EPM programs",
+    source: "https://www.oracle.com/",
+    logo: "/logos/oracle.svg",
+  },
+  {
+    name: "Odoo",
+    subtitle: "Open-source ERP implementation",
+    source: "https://www.odoo.com/",
+    logo: "/logos/odoo.png",
+  },
+  {
+    name: "AWS",
+    subtitle: "Cloud and infrastructure delivery",
+    source: "https://aws.amazon.com/",
+    logo: "/logos/aws.png",
+  },
+  {
+    name: "Google Cloud",
+    subtitle: "Cloud and data platform exposure",
+    source: "https://cloud.google.com/",
+    logo: "/logos/google-cloud.svg",
+  },
+  {
+    name: "DigitalOcean",
+    subtitle: "Cloud and infrastructure exposure",
+    source: "https://www.digitalocean.com/",
+    mark: "DigitalOcean",
+  },
+  {
+    name: "Toyota",
+    subtitle: "Automotive ERP program environment",
+    source: "https://global.toyota/",
+    mark: "Toyota",
+  },
+  {
+    name: "ENPPI",
+    subtitle: "Oil and gas ERP program environment",
+    source: "https://www.enppi.com/",
+    mark: "ENPPI",
+  },
+];
+
+function LogoCard({ item }: { item: LogoItem }) {
+  return (
+    <a
+      href={item.source}
+      target="_blank"
+      rel="noreferrer"
+      className="logo-card motion-rise group"
+    >
+      <span className={`logo-stage ${item.dark ? "logo-stage-dark" : ""}`}>
+        {item.logo ? (
+          <Image
+            src={item.logo}
+            alt={`${item.name} logo`}
+            width={170}
+            height={76}
+            className="max-h-12 w-auto object-contain transition duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <span className="brand-word">{item.mark ?? item.name}</span>
+        )}
+      </span>
+      <span className="mt-4 text-sm font-semibold text-[#161817]">
+        {item.name}
+      </span>
+      <span className="mt-1 text-xs leading-5 text-[#5c6862]">
+        {item.subtitle}
+      </span>
+    </a>
+  );
+}
 
 export default function Home() {
   return (
     <main className="bg-[#f7f8f5] text-[#161817]">
-      <section className="relative isolate min-h-[88svh] overflow-hidden">
+      <section className="relative isolate min-h-[84svh] overflow-hidden">
         <Image
           src="/smart-city-delivery-hero.png"
           alt=""
@@ -142,7 +317,7 @@ export default function Home() {
 
         <header className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 text-white sm:px-8">
           <a href="#top" className="text-sm font-semibold tracking-wide">
-            Haitham Abd El-Azeem Khalifa
+            {displayName}
           </a>
           <nav className="hidden items-center gap-6 text-sm text-white/78 md:flex">
             <a className="transition hover:text-white" href="#portfolio">
@@ -154,6 +329,9 @@ export default function Home() {
             <a className="transition hover:text-white" href="#capabilities">
               Capabilities
             </a>
+            <a className="transition hover:text-white" href="#credentials">
+              Credentials
+            </a>
             <a className="transition hover:text-white" href="#contact">
               Contact
             </a>
@@ -162,9 +340,9 @@ export default function Home() {
 
         <div
           id="top"
-          className="mx-auto grid max-w-7xl gap-12 px-5 pb-14 pt-10 text-white sm:px-8 lg:grid-cols-[minmax(0,1.02fr)_minmax(340px,0.58fr)] lg:items-end lg:pb-14 lg:pt-16"
+          className="mx-auto grid max-w-7xl gap-12 px-5 pb-14 pt-10 text-white sm:px-8 lg:grid-cols-[minmax(0,1.02fr)_minmax(340px,0.58fr)] lg:items-center lg:pb-12 lg:pt-10"
         >
-          <div className="max-w-4xl">
+          <div className="max-w-4xl motion-rise">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6ed3bd]">
               Solutions Delivery Manager | SAP Program Manager
             </p>
@@ -204,43 +382,32 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="grid gap-3 rounded-lg border border-white/18 bg-[#111816]/68 p-4 text-white shadow-2xl backdrop-blur-md">
-            <div className="flex items-start gap-3">
-              <MapPin className="mt-1 text-[#6ed3bd]" size={18} />
-              <div>
-                <p className="text-sm font-semibold">Based in Dammam, KSA</p>
-                <p className="text-sm leading-6 text-white/70">
-                  Eastern Province, Saudi Arabia
+          <div className="motion-rise motion-delay-2">
+            <article className="profile-card overflow-hidden rounded-lg border border-white/18 bg-[#111816]/72 text-white shadow-2xl backdrop-blur-md">
+              <div className="relative aspect-square overflow-hidden lg:aspect-[4/3]">
+                <Image
+                  src="/haitham-elmohamady-profile.png"
+                  alt={`${displayName} professional portrait`}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 360px, 90vw"
+                  className="object-cover object-top"
+                />
+              </div>
+              <div className="p-4">
+                <p className="text-lg font-semibold">{displayName}</p>
+                <p className="mt-1 text-sm leading-6 text-white/70">
+                  Solutions Delivery Manager, SAP Program Manager, and digital
+                  transformation leader.
                 </p>
               </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <ShieldCheck className="mt-1 text-[#f4c35f]" size={18} />
-              <div>
-                <p className="text-sm font-semibold">Credentials</p>
-                <p className="text-sm leading-6 text-white/70">
-                  PMP, PMI-RMP, PMI-PMOCP, PMO-CP, MBA, TOGAF, SAP Activate
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <Phone className="mt-1 text-[#6ed3bd]" size={18} />
-              <div>
-                <p className="text-sm font-semibold">Direct contact</p>
-                <a
-                  href="tel:+966536887901"
-                  className="text-sm leading-6 text-white/70 transition hover:text-white"
-                >
-                  +966 536887901
-                </a>
-              </div>
-            </div>
-          </aside>
+            </article>
+          </div>
         </div>
       </section>
 
       <section className="border-b border-[#d8ddd5] bg-white">
-        <div className="mx-auto grid max-w-7xl gap-px px-5 py-4 sm:px-8 md:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl gap-px px-5 py-4 sm:px-8 md:grid-cols-4 motion-grid">
           {achievements.map((item) => (
             <div key={item.metric} className="py-5 md:border-r md:border-[#d8ddd5] md:px-6 last:md:border-r-0">
               <p className="text-4xl font-semibold text-[#0b6d5f]">
@@ -275,7 +442,7 @@ export default function Home() {
             {portfolioHighlights.map((item) => (
               <article
                 key={item.title}
-                className="rounded-lg border border-[#d8ddd5] bg-white p-6 shadow-sm"
+                className="rounded-lg border border-[#d8ddd5] bg-white p-6 shadow-sm motion-rise"
               >
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#9a6a10]">
                   {item.context}
@@ -308,7 +475,7 @@ export default function Home() {
             {experience.map((job) => (
               <article
                 key={`${job.role}-${job.period}`}
-                className="grid gap-6 rounded-lg border border-white/12 bg-white/[0.045] p-6 md:grid-cols-[0.34fr_1fr]"
+                className="grid gap-6 rounded-lg border border-white/12 bg-white/[0.045] p-6 md:grid-cols-[0.34fr_1fr] motion-rise"
               >
                 <div>
                   <p className="text-sm font-semibold text-[#f4c35f]">
@@ -333,6 +500,33 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="border-b border-[#d8ddd5] bg-white px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-6 lg:grid-cols-[0.74fr_1fr] lg:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0b6d5f]">
+                Companies worked with
+              </p>
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+                Delivery experience connected to government, consulting, and
+                enterprise organizations.
+              </h2>
+            </div>
+            <p className="text-base leading-8 text-[#56615c]">
+              A visual map of the organizations and delivery environments
+              represented in the professional timeline, with official-domain
+              logo assets where available.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {companyLogos.map((item) => (
+              <LogoCard key={item.name} item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="capabilities" className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[0.9fr_1fr]">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0b6d5f]">
@@ -351,7 +545,7 @@ export default function Home() {
           {capabilities.map((skill) => (
             <div
               key={skill}
-              className="rounded-lg border border-[#d8ddd5] bg-white p-5 text-sm font-medium leading-7 text-[#2d3431] shadow-sm"
+              className="rounded-lg border border-[#d8ddd5] bg-white p-5 text-sm font-medium leading-7 text-[#2d3431] shadow-sm motion-rise"
             >
               {skill}
             </div>
@@ -359,7 +553,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-[#d8ddd5] bg-white">
+      <section className="bg-[#19211f] px-5 py-20 text-white sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-6 lg:grid-cols-[0.74fr_1fr] lg:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6ed3bd]">
+                Project partners
+              </p>
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+                ERP, cloud, and client platforms behind major transformation
+                programs.
+              </h2>
+            </div>
+            <p className="text-base leading-8 text-white/68">
+              The portfolio spans SAP, Oracle, Odoo, cloud infrastructure, and
+              enterprise client environments across public-sector and private
+              programs.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {partnerLogos.map((item) => (
+              <LogoCard key={item.name} item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="credentials" className="border-y border-[#d8ddd5] bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.75fr_1fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0b6d5f]">
@@ -391,14 +612,9 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9a6a10]">
               Certifications
             </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {certifications.map((certification) => (
-                <span
-                  key={certification}
-                  className="rounded-md border border-[#d8ddd5] bg-[#f7f8f5] px-3 py-2 text-sm font-medium text-[#2d3431]"
-                >
-                  {certification}
-                </span>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {certificationLogos.map((item) => (
+                <LogoCard key={item.name} item={item} />
               ))}
             </div>
           </div>

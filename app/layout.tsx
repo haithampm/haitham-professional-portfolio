@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     "https://haitham-portfolio-2026.mazen-raslan-7066.chatgpt-team.site"
   ),
-  title: "Haitham Abd El-Azeem Khalifa | Professional Portfolio",
+  title: "Haitham Elmohamady | Professional Portfolio",
   description:
     "Solutions Delivery Manager, SAP Program Manager, and digital transformation leader specializing in ERP, Smart City, and municipal service delivery.",
   icons: {
@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "Haitham Abd El-Azeem Khalifa | Professional Portfolio",
+    title: "Haitham Elmohamady | Professional Portfolio",
     description:
       "ERP, SAP S/4HANA, Smart City, and municipal digital transformation leadership across KSA, UAE, and Egypt.",
-    images: ["/smart-city-delivery-hero.png"],
+    images: ["/haitham-elmohamady-profile.png"],
   },
 };
 
