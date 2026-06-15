@@ -1,70 +1,60 @@
-# vinext-starter
+# Haitham Elmohamady Portfolio
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+Bilingual Arabic/English professional portfolio for Haitham Elmohamady,
+focused on SAP program management, ERP delivery, Smart City municipal solutions,
+certifications, company logos, project partners, gallery media, and a simple
+admin panel for content and image management.
 
-## Prerequisites
+## Live Site
 
-- Node.js `>=22.13.0`
+https://haitham-portfolio-2026.mazen-raslan-7066.chatgpt-team.site
 
-## Quick Start
+The hosted site is private to the configured OpenAI workspace user.
+
+## Features
+
+- Arabic and English interface with RTL/LTR switching.
+- Professional profile image, visual hero, logo sections, and motion.
+- Certification, company, and project partner logo areas.
+- Gallery section backed by uploaded media when storage is available.
+- Simple admin panel at `/admin` for editing key portfolio copy and adding
+  images.
+- Cloudflare Sites deployment with D1 metadata storage and R2 media storage.
+
+## Local Setup
+
+Requires Node.js `>=22.13.0`.
 
 ```bash
 npm install
 npm run dev
+```
+
+Build verification:
+
+```bash
+npm run lint
 npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+Production preview:
 
-## Included Shape
-
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+npm run start -- --port 3011
 ```
 
-## Useful Commands
+## Project Structure
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+- `app/`: portfolio pages, admin panel, and API routes.
+- `app/content.ts`: default bilingual copy, gallery entries, and logo data.
+- `db/`: Drizzle schema and D1 helper.
+- `drizzle/`: generated D1 migrations.
+- `public/`: profile image, CV, logos, screenshot, and visual assets.
+- `worker/`: Cloudflare Worker entry point.
+- `.openai/hosting.json`: Sites project and logical D1/R2 bindings.
 
-## Learn More
+## Notes
 
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+Local development does not include real Cloudflare D1/R2 bindings, so API routes
+return safe warnings instead of crashing. The deployed Worker receives those
+bindings from Sites at runtime.
