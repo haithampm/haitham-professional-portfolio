@@ -78,21 +78,77 @@ export function staticWorkerEntrypoint(): Plugin {
         `import rscHandler from "./rsc-entry.js";
 
 const PUBLIC_ASSET_PATH = /\\/[^/?]+\\.[^/]+$/;
+const CONTENT_TYPES = {
+  ".css": "text/css; charset=utf-8",
+  ".js": "text/javascript; charset=utf-8",
+  ".svg": "image/svg+xml",
+  ".png": "image/png",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".webp": "image/webp",
+  ".pdf": "application/pdf",
+};
 
-async function maybeFetchAsset(request, env) {
-  if (!env?.ASSETS?.fetch) {
+function contentTypeFor(pathname) {
+  const extension = pathname.toLowerCase().match(/\\.[a-z0-9]+$/)?.[0];
+  return CONTENT_TYPES[extension] ?? "application/octet-stream";
+}
+
+function cleanAssetPath(pathname) {
+  const decoded = decodeURIComponent(pathname);
+  const normalized = decoded.replace(/^\\/+/, "");
+
+  if (!normalized || normalized.includes("..") || normalized.includes("\\\\")) {
     return null;
   }
 
-  const response = await env.ASSETS.fetch(request);
-  return response.status === 404 ? null : response;
+  return normalized;
+}
+
+async function readLocalAsset(request) {
+  if (typeof process === "undefined" || !process.versions?.node) {
+    return null;
+  }
+
+  const url = new URL(request.url);
+  const cleanPath = cleanAssetPath(url.pathname);
+
+  if (!cleanPath) {
+    return null;
+  }
+
+  const assetPath = cleanPath.startsWith("assets/")
+    ? "../client/" + cleanPath
+    : "../client/" + cleanPath;
+
+  try {
+    const [{ readFile }] = await Promise.all([import("node:fs/promises")]);
+    const bytes = await readFile(new URL(assetPath, import.meta.url));
+    return new Response(bytes, {
+      headers: {
+        "content-type": contentTypeFor(url.pathname),
+        "cache-control": "public, max-age=3600",
+      },
+    });
+  } catch {
+    return null;
+  }
+}
+
+async function maybeFetchAsset(request, env) {
+  if (env?.ASSETS?.fetch) {
+    const response = await env.ASSETS.fetch(request);
+    return response.status === 404 ? null : response;
+  }
+
+  return readLocalAsset(request);
 }
 
 async function handleImageOptimization(request, env) {
   const url = new URL(request.url);
   const source = url.searchParams.get("url");
 
-  if (!source || !env?.ASSETS?.fetch) {
+  if (!source) {
     return null;
   }
 

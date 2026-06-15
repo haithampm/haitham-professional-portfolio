@@ -180,13 +180,13 @@ export default function PortfolioSite() {
           sizes="100vw"
           className="absolute inset-0 -z-20 object-cover"
         />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(10,16,15,0.88)_0%,rgba(10,16,15,0.72)_39%,rgba(10,16,15,0.24)_73%,rgba(10,16,15,0.18)_100%)] rtl:bg-[linear-gradient(270deg,rgba(10,16,15,0.88)_0%,rgba(10,16,15,0.72)_39%,rgba(10,16,15,0.24)_73%,rgba(10,16,15,0.18)_100%)]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(10,16,15,0.94)_0%,rgba(10,16,15,0.82)_39%,rgba(10,16,15,0.38)_73%,rgba(10,16,15,0.26)_100%)] rtl:bg-[linear-gradient(270deg,rgba(10,16,15,0.94)_0%,rgba(10,16,15,0.82)_39%,rgba(10,16,15,0.38)_73%,rgba(10,16,15,0.26)_100%)]" />
 
         <header className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 text-white sm:px-8">
           <a href="#top" className="text-sm font-semibold tracking-wide">
             {publicName}
           </a>
-          <nav className="hidden items-center gap-6 text-sm text-white/78 lg:flex">
+          <nav className="hidden items-center gap-6 text-sm text-white/86 lg:flex">
             <a className="transition hover:text-white" href="#portfolio">
               {pick(copy.nav.portfolio, language)}
             </a>
@@ -234,10 +234,10 @@ export default function PortfolioSite() {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6ed3bd]">
               {hero.label}
             </p>
-            <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] sm:text-6xl xl:text-7xl">
+            <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.04] sm:text-6xl xl:text-7xl">
               {hero.title}
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/82">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/90">
               {hero.summary}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -280,7 +280,7 @@ export default function PortfolioSite() {
               </div>
               <div className="p-4">
                 <p className="text-lg font-semibold">{publicName}</p>
-                <p className="mt-1 text-sm leading-6 text-white/70">
+                <p className="mt-1 text-sm leading-6 text-white/82">
                   {hero.profileSummary}
                 </p>
               </div>
