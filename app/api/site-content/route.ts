@@ -15,7 +15,7 @@ const editableKeys = new Set([
 
 export async function GET() {
   try {
-    const db = await getDb();
+    const db = getDb();
     const rows = await db.select().from(siteSettings);
 
     return Response.json({
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
       return Response.json({ error: "No editable content was provided." }, { status: 400 });
     }
 
-    const db = await getDb();
+    const db = getDb();
     const updatedAt = new Date().toISOString();
 
     for (const [key, value] of entries) {

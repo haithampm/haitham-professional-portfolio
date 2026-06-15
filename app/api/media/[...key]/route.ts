@@ -4,7 +4,7 @@ export async function GET(request: Request) {
   let media: R2Bucket;
 
   try {
-    media = await getMediaBucket();
+    media = getMediaBucket();
   } catch {
     return Response.json(
       { error: "The MEDIA bucket is unavailable." },

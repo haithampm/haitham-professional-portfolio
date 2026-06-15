@@ -17,7 +17,7 @@ function cleanFileName(name: string) {
 
 export async function GET() {
   try {
-    const db = await getDb();
+    const db = getDb();
     const images = await db
       .select()
       .from(galleryImages)
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
       let media: R2Bucket;
 
       try {
-        media = await getMediaBucket();
+        media = getMediaBucket();
       } catch {
         return Response.json(
           { error: "The MEDIA bucket is unavailable for file uploads." },
@@ -82,7 +82,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const db = await getDb();
+    const db = getDb();
     const [image] = await db
       .insert(galleryImages)
       .values({
@@ -118,7 +118,7 @@ export async function DELETE(request: Request) {
       return Response.json({ error: "Image id is required." }, { status: 400 });
     }
 
-    const db = await getDb();
+    const db = getDb();
     const [image] = await db
       .select()
       .from(galleryImages)
@@ -133,7 +133,7 @@ export async function DELETE(request: Request) {
 
     if (image.storageKey) {
       try {
-        const media = await getMediaBucket();
+        const media = getMediaBucket();
         await media.delete(image.storageKey);
       } catch {
         // The database row is already removed; missing media cleanup should not
