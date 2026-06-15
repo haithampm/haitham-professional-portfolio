@@ -48,12 +48,5 @@ export default defineConfig(async () => {
     plugins.push(staticWorkerEntrypoint());
   }
 
-  return {
-    plugins,
-    build: {
-      rolldownOptions: {
-        external: ["cloudflare:workers"],
-      },
-    },
-  };
+  return { plugins };
 });

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 type D1Database = import("@miniflare/d1").D1Database;
 
 interface Fetcher {
@@ -27,9 +29,13 @@ interface R2Bucket {
   delete(key: string): Promise<void>;
 }
 
-declare module "cloudflare:workers" {
-  export const env: {
+declare global {
+  var __SITE_ENV__:
+    | {
     DB?: D1Database;
     MEDIA?: R2Bucket;
-  };
+      }
+    | undefined;
 }
+
+export {};

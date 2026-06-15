@@ -101,6 +101,8 @@ async function handleImageOptimization(request, env) {
 
 export default {
   async fetch(request, env, ctx) {
+    globalThis.__SITE_ENV__ = env;
+
     const url = new URL(request.url);
 
     if (url.pathname === "/_vinext/image") {
