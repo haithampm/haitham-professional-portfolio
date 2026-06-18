@@ -18,3 +18,18 @@ export const galleryImages = sqliteTable("gallery_images", {
   sortOrder: integer("sort_order").notNull().default(0),
   createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
 });
+
+export const logoItems = sqliteTable("logo_items", {
+  id: text("id").primaryKey(),
+  category: text("category").notNull(),
+  name: text("name").notNull().default(""),
+  subtitleEn: text("subtitle_en").notNull().default(""),
+  subtitleAr: text("subtitle_ar").notNull().default(""),
+  source: text("source").notNull().default(""),
+  logo: text("logo"),
+  mark: text("mark"),
+  dark: integer("dark").notNull().default(0),
+  storageKey: text("storage_key"),
+  sortOrder: integer("sort_order").notNull().default(0),
+  createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+});

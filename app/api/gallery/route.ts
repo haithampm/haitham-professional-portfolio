@@ -1,19 +1,13 @@
 import { desc, eq } from "drizzle-orm";
 import { getDb, getMediaBucket } from "@/db";
 import { galleryImages } from "@/db/schema";
-import { isAdminRequest, routeErrorMessage, unauthorized } from "../_utils";
-
-function cleanText(value: FormDataEntryValue | null) {
-  return typeof value === "string" ? value.trim() : "";
-}
-
-function cleanFileName(name: string) {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9._-]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80);
-}
+import {
+  cleanFileName,
+  cleanText,
+  isAdminRequest,
+  routeErrorMessage,
+  unauthorized,
+} from "../_utils";
 
 export async function GET() {
   try {

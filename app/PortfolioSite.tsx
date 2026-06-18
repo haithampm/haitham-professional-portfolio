@@ -21,6 +21,7 @@ import {
   displayNameAr,
   type GalleryImage,
   type Language,
+  type LogoCategory,
   type LogoItem,
   pick,
   partnerLogos,
@@ -28,22 +29,59 @@ import {
 
 type ContentOverrides = Record<string, string>;
 
+type LogoApiItem = {
+  id: string;
+  category: LogoCategory;
+  name: string;
+  subtitleEn: string;
+  subtitleAr: string;
+  source: string;
+  logo: string | null;
+  mark: string | null;
+  dark: boolean;
+  sortOrder: number;
+};
+
+const emptyDynamicLogos: Record<LogoCategory, LogoItem[]> = {
+  companies: [],
+  partners: [],
+  certifications: [],
+};
+
+function normalizeLogo(item: LogoApiItem): LogoItem {
+  return {
+    id: item.id,
+    category: item.category,
+    name: item.name,
+    subtitle: {
+      en: item.subtitleEn,
+      ar: item.subtitleAr || item.subtitleEn,
+    },
+    source: item.source,
+    logo: item.logo ?? undefined,
+    mark: item.mark ?? undefined,
+    dark: item.dark,
+    sortOrder: item.sortOrder,
+  };
+}
+
 function LogoCard({ item, language }: { item: LogoItem; language: Language }) {
+  const linkTarget = item.source || "#";
+
   return (
     <a
-      href={item.source}
-      target="_blank"
-      rel="noreferrer"
+      href={linkTarget}
+      target={item.source ? "_blank" : undefined}
+      rel={item.source ? "noreferrer" : undefined}
       className="logo-card motion-rise group"
     >
       <span className={`logo-stage ${item.dark ? "logo-stage-dark" : ""}`}>
         {item.logo ? (
-          <Image
+          <img
             src={item.logo}
             alt={`${item.name} logo`}
-            width={170}
-            height={76}
-            className="max-h-12 w-auto object-contain transition duration-300 group-hover:scale-105"
+            loading="lazy"
+            className="max-h-12 w-auto max-w-full object-contain transition duration-300 group-hover:scale-105"
           />
         ) : (
           <span className="brand-word">{item.mark ?? item.name}</span>
@@ -91,6 +129,8 @@ export default function PortfolioSite() {
   });
   const [overrides, setOverrides] = useState<ContentOverrides>({});
   const [uploadedGallery, setUploadedGallery] = useState<GalleryImage[]>([]);
+  const [dynamicLogos, setDynamicLogos] =
+    useState<Record<LogoCategory, LogoItem[]>>(emptyDynamicLogos);
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -102,10 +142,12 @@ export default function PortfolioSite() {
     let cancelled = false;
 
     async function loadDynamicContent() {
-      const [contentResponse, galleryResponse] = await Promise.allSettled([
-        fetch("/api/site-content", { cache: "no-store" }),
-        fetch("/api/gallery", { cache: "no-store" }),
-      ]);
+      const [contentResponse, galleryResponse, logoResponse] =
+        await Promise.allSettled([
+          fetch("/api/site-content", { cache: "no-store" }),
+          fetch("/api/gallery", { cache: "no-store" }),
+          fetch("/api/logos", { cache: "no-store" }),
+        ]);
 
       if (cancelled) {
         return;
@@ -123,6 +165,23 @@ export default function PortfolioSite() {
           images?: GalleryImage[];
         };
         setUploadedGallery(payload.images ?? []);
+      }
+
+      if (logoResponse?.status === "fulfilled" && logoResponse.value.ok) {
+        const payload = (await logoResponse.value.json()) as {
+          logos?: LogoApiItem[];
+        };
+        const grouped: Record<LogoCategory, LogoItem[]> = {
+          companies: [],
+          partners: [],
+          certifications: [],
+        };
+
+        for (const item of payload.logos ?? []) {
+          grouped[item.category]?.push(normalizeLogo(item));
+        }
+
+        setDynamicLogos(grouped);
       }
     }
 
@@ -168,6 +227,15 @@ export default function PortfolioSite() {
   const galleryImages = uploadedGallery.length
     ? [...uploadedGallery, ...defaultGalleryImages]
     : defaultGalleryImages;
+  const displayedCompanyLogos = dynamicLogos.companies.length
+    ? [...dynamicLogos.companies, ...companyLogos]
+    : companyLogos;
+  const displayedPartnerLogos = dynamicLogos.partners.length
+    ? [...dynamicLogos.partners, ...partnerLogos]
+    : partnerLogos;
+  const displayedCertificationLogos = dynamicLogos.certifications.length
+    ? [...dynamicLogos.certifications, ...certificationLogos]
+    : certificationLogos;
 
   return (
     <main dir={isArabic ? "rtl" : "ltr"} className="bg-[#f7f8f5] text-[#161817]">
@@ -400,8 +468,8 @@ export default function PortfolioSite() {
           </div>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {companyLogos.map((item) => (
-              <LogoCard key={item.name} item={item} language={language} />
+            {displayedCompanyLogos.map((item) => (
+              <LogoCard key={item.id ?? item.name} item={item} language={language} />
             ))}
           </div>
         </div>
@@ -451,8 +519,8 @@ export default function PortfolioSite() {
           </div>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {partnerLogos.map((item) => (
-              <LogoCard key={item.name} item={item} language={language} />
+            {displayedPartnerLogos.map((item) => (
+              <LogoCard key={item.id ?? item.name} item={item} language={language} />
             ))}
           </div>
         </div>
@@ -486,8 +554,8 @@ export default function PortfolioSite() {
               {pick(copy.certifications.eyebrow, language)}
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              {certificationLogos.map((item) => (
-                <LogoCard key={item.name} item={item} language={language} />
+              {displayedCertificationLogos.map((item) => (
+                <LogoCard key={item.id ?? item.name} item={item} language={language} />
               ))}
             </div>
           </div>

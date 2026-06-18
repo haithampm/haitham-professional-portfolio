@@ -26,6 +26,18 @@ export function unauthorized() {
   );
 }
 
+export function cleanText(value: FormDataEntryValue | null) {
+  return typeof value === "string" ? value.trim() : "";
+}
+
+export function cleanFileName(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
 export function routeErrorMessage(error: unknown) {
   const message = error instanceof Error ? error.message : "Unexpected error";
   const detail =

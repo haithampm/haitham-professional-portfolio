@@ -5,13 +5,18 @@ export type LocalizedText = {
   ar: string;
 };
 
+export type LogoCategory = "companies" | "partners" | "certifications";
+
 export type LogoItem = {
+  id?: string;
+  category?: LogoCategory;
   name: string;
   subtitle: LocalizedText;
   source: string;
   logo?: string;
   mark?: string;
   dark?: boolean;
+  sortOrder?: number;
 };
 
 export type GalleryImage = {
