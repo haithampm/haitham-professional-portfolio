@@ -19,6 +19,8 @@ import {
   defaultGalleryImages,
   displayName,
   displayNameAr,
+  knownAs,
+  knownAsAr,
   type GalleryImage,
   type Language,
   type LogoCategory,
@@ -381,6 +383,9 @@ export default function PortfolioSite() {
               </div>
               <div className="p-4">
                 <p className="text-lg font-semibold">{publicName}</p>
+                <p className="text-sm text-white/62">
+                  {isArabic ? `المعروف بـ ${knownAsAr}` : `Known as ${knownAs}`}
+                </p>
                 <p className="mt-1 text-sm leading-6 text-white/82">
                   {hero.profileSummary}
                 </p>

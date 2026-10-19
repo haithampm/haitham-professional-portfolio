@@ -28,8 +28,12 @@ export type GalleryImage = {
   src: string;
 };
 
-export const displayName = "Haitham Elmohamady";
-export const displayNameAr = "هيثم المحمدي";
+// Full legal name is the primary name (matches CV and job applications);
+// "Haitham Elmohamady" is the name he is widely known by.
+export const displayName = "Haitham Abd El-Azeem Khalifa";
+export const displayNameAr = "هيثم عبد العظيم خليفة";
+export const knownAs = "Haitham Elmohamady";
+export const knownAsAr = "هيثم المحمدي";
 
 export const copy = {
   nav: {
@@ -409,8 +413,8 @@ export const defaultGalleryImages: GalleryImage[] = [
     id: "profile",
     titleEn: "Executive profile portrait",
     titleAr: "الصورة المهنية",
-    altEn: "Haitham Elmohamady professional portrait",
-    altAr: "الصورة المهنية لهيثم المحمدي",
+    altEn: "Haitham Abd El-Azeem Khalifa professional portrait",
+    altAr: "الصورة المهنية لهيثم عبد العظيم خليفة",
     src: "/haitham-elmohamady-profile.png",
   },
   {
