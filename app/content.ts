@@ -59,8 +59,8 @@ export const copy = {
       ar: "قائد برامج يركز على النتائج بخبرة تتجاوز 15 عاماً في تنفيذ برامج ERP والتحول الرقمي في السعودية والإمارات ومصر، مع تخصص في SAP S/4HANA وOracle ERP وOdoo وحلول المدن الذكية المتوافقة مع رؤية 2030.",
     },
     profileSummary: {
-      en: "Solutions Delivery Manager, SAP Program Manager, and digital transformation leader.",
-      ar: "مدير تسليم حلول ومدير برامج SAP وقائد تحول رقمي.",
+      en: "Head of Solutions Implementation & Delivery, SAP Program Manager, and digital transformation leader.",
+      ar: "رئيس تنفيذ وتسليم الحلول، مدير برامج SAP وقائد تحول رقمي.",
     },
     email: { en: "Email Haitham", ar: "راسل هيثم" },
     cv: { en: "Download CV", ar: "تحميل السيرة" },
