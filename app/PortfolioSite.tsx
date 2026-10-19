@@ -26,6 +26,15 @@ import {
   pick,
   partnerLogos,
 } from "./content";
+import {
+  bundledCareer,
+  CAREER_DATA_URL,
+  type CareerData,
+  isCareerData,
+  period,
+  points,
+  roleTitle,
+} from "./career";
 
 type ContentOverrides = Record<string, string>;
 
@@ -113,6 +122,12 @@ function galleryAlt(image: GalleryImage, language: Language) {
   return language === "ar" ? image.altAr || image.altEn : image.altEn;
 }
 
+// Hero label from the published headline: the first two parts ("Title | Title").
+function headlineLabel(career: CareerData, arabic: boolean) {
+  const headline = (arabic ? career.headline_ar : "") || career.headline || "";
+  return headline.split("|").slice(0, 2).map((part) => part.trim()).filter(Boolean).join(" | ");
+}
+
 export default function PortfolioSite() {
   const [language, setLanguage] = useState<Language>(() => {
     if (typeof window === "undefined") {
@@ -128,6 +143,24 @@ export default function PortfolioSite() {
     return navigator.language.toLowerCase().startsWith("ar") ? "ar" : "en";
   });
   const [overrides, setOverrides] = useState<ContentOverrides>({});
+  const [career, setCareer] = useState<CareerData>(bundledCareer);
+  const [showAllRoles, setShowAllRoles] = useState(false);
+
+  // Pick up the latest publish from the job portal without waiting for a rebuild.
+  useEffect(() => {
+    let cancelled = false;
+    fetch(CAREER_DATA_URL, { cache: "no-store" })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data: unknown) => {
+        if (!cancelled && isCareerData(data) && data.experience.length) {
+          setCareer(data);
+        }
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, []);
   const [uploadedGallery, setUploadedGallery] = useState<GalleryImage[]>([]);
   const [dynamicLogos, setDynamicLogos] =
     useState<Record<LogoCategory, LogoItem[]>>(emptyDynamicLogos);
@@ -203,7 +236,7 @@ export default function PortfolioSite() {
       label: overrideText(
         overrides,
         isArabic ? "heroLabelAr" : "heroLabelEn",
-        pick(copy.hero.label, language)
+        headlineLabel(career, isArabic) || pick(copy.hero.label, language)
       ),
       title: overrideText(
         overrides,
@@ -221,7 +254,7 @@ export default function PortfolioSite() {
         pick(copy.hero.profileSummary, language)
       ),
     }),
-    [isArabic, language, overrides]
+    [career, isArabic, language, overrides]
   );
 
   const galleryImages = uploadedGallery.length
@@ -421,33 +454,49 @@ export default function PortfolioSite() {
           </div>
 
           <div className="mt-12 grid gap-4">
-            {copy.experience.roles.map((job) => (
+            {(showAllRoles ? career.experience : career.experience.slice(0, 6)).map((job) => (
               <article
-                key={`${pick(job.role, "en")}-${pick(job.period, "en")}`}
+                key={job.id}
                 className="grid gap-6 rounded-lg border border-white/12 bg-white/[0.045] p-6 md:grid-cols-[0.34fr_1fr] motion-rise"
               >
                 <div>
                   <p className="text-sm font-semibold text-[#f4c35f]">
-                    {pick(job.period, language)}
+                    {period(job, language)}
                   </p>
                   <h3 className="mt-3 text-xl font-semibold">
-                    {pick(job.role, language)}
+                    {roleTitle(job, language)}
                   </h3>
                   <p className="mt-2 text-sm leading-6 text-white/62">
                     {job.company}
+                    {job.location ? ` · ${job.location}` : ""}
                   </p>
                 </div>
                 <ul className="grid gap-3 text-sm leading-7 text-white/76">
-                  {job.points.map((point) => (
-                    <li key={pick(point, "en")} className="flex gap-3">
+                  {points(job, language).map((point) => (
+                    <li key={point} className="flex gap-3">
                       <span className="mt-3 h-1.5 w-1.5 flex-none rounded-full bg-[#6ed3bd]" />
-                      <span>{pick(point, language)}</span>
+                      <span>{point}</span>
                     </li>
                   ))}
                 </ul>
               </article>
             ))}
           </div>
+          {career.experience.length > 6 ? (
+            <button
+              type="button"
+              onClick={() => setShowAllRoles((value) => !value)}
+              className="mt-6 rounded-md border border-white/20 px-4 py-2 text-sm font-semibold text-[#6ed3bd] transition hover:bg-white/10"
+            >
+              {showAllRoles
+                ? isArabic
+                  ? "عرض أقل"
+                  : "Show fewer roles"
+                : isArabic
+                  ? `عرض كل الخبرات (${career.experience.length})`
+                  : `Show all ${career.experience.length} roles`}
+            </button>
+          ) : null}
         </div>
       </section>
 

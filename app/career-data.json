@@ -1,0 +1,258 @@
+{
+  "headline": "Head of Solutions Implementation & Delivery | SAP Program Manager | Digital Transformation | PMP, PMI-RMP, TOGAF",
+  "headline_ar": "رئيس تنفيذ وتسليم الحلول | مدير برامج SAP | التحول الرقمي",
+  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs across Saudi Arabia, the UAE and Egypt. Currently heads solutions implementation and delivery at Leader Investment Group, running municipal Smart City and citizen-service platforms for Saudi municipalities in line with Vision 2030. Combines deep SAP S/4HANA program experience (Toyota, Nissan, ENPPI, TEPCO) with Oracle ERP, NetSuite and EPM delivery for government and private clients. Has delivered 40+ projects across government, oil & gas, automotive, real estate and trading for 20+ named clients.",
+  "summary_ar": "قائد تسليم بخبرة تتجاوز 15 عاماً في إدارة برامج ERP والتحول الرقمي في السعودية والإمارات ومصر. يرأس حالياً تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، ويدير منصات المدن الذكية وخدمات المستفيدين لأمانات سعودية بما يتوافق مع رؤية 2030. يجمع بين خبرة عميقة في برامج SAP S/4HANA (تويوتا ونيسان وإنبي وTEPCO) وتسليم Oracle ERP وNetSuite وEPM لجهات حكومية وخاصة، مع أكثر من 40 مشروعاً لأكثر من 20 جهة.",
+  "experience": [
+    {
+      "id": "e1",
+      "title": "Head of Solutions Implementation & Delivery",
+      "title_ar": "رئيس تنفيذ وتسليم الحلول",
+      "company": "Leader Investment Group (LIG)",
+      "location": "Dammam, Saudi Arabia",
+      "start": "2024-01",
+      "end": "",
+      "description": "Lead the Solutions department, owning delivery of municipal digital platforms from design to go-live and operations.\nRun a multi-program portfolio for municipalities including Eastern Province, Madinah and Hail.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations, Visual Distortion and Citizen Care Center 940 platforms aligned with Vision 2030.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement.",
+      "description_ar": "قيادة إدارة الحلول وامتلاك تسليم المنصات الرقمية البلدية من التصميم حتى الإطلاق والتشغيل.\nإدارة محفظة برامج متعددة لأمانات منها المنطقة الشرقية والمدينة المنورة وحائل.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري ومركز البلاغات 940 بما يتوافق مع رؤية 2030.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين.",
+      "current": true
+    },
+    {
+      "id": "e2",
+      "title": "Senior Program & Delivery Manager",
+      "title_ar": "مدير أول للبرامج والتسليم",
+      "company": "Leader Investment Group (LIG) – deployed to Eastern Province Municipality",
+      "location": "Dammam, Saudi Arabia",
+      "start": "2023-05",
+      "end": "2023-12",
+      "description": "Delivered ERP and e-Government initiatives on-site at the Eastern Province Municipality as LIG's lead.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.\nAligned municipal leadership, contractors and LIG teams on Vision 2030 transformation targets.",
+      "description_ar": "قيادة مبادرات ERP والحكومة الإلكترونية في موقع أمانة المنطقة الشرقية ممثلاً لمجموعة ليدر.\nتطبيق التسليم المرن وأدوات الحوكمة الرقمية لتعزيز الشفافية والالتزام بالمواعيد.\nمواءمة قيادات الأمانة والمقاولين وفرق ليدر حول مستهدفات التحول في رؤية 2030.",
+      "current": false
+    },
+    {
+      "id": "e3",
+      "title": "SAP Program Manager",
+      "title_ar": "مدير برامج SAP",
+      "company": "Edraky – SAP Platinum Partner",
+      "location": "Cairo, Egypt",
+      "start": "2021-06",
+      "end": "2023-05",
+      "description": "Promoted from SAP Senior Project Manager in Aug 2022.\nDirected concurrent SAP S/4HANA programs for Toyota Egypt, Nissan, ENPPI, EIM, Baheya and Abu Dawood Group.\nLed project managers and cross-functional SAP functional and technical teams.\nDelivered SAP Plant Maintenance for Agiba Petroleum and Abu Qir Petroleum.\nRan change management and end-user training to secure adoption after go-live.",
+      "description_ar": "رُقّي من مدير مشاريع أول في أغسطس 2022.\nإدارة برامج SAP S/4HANA متزامنة لتويوتا مصر ونيسان وإنبي وEIM وبهية ومجموعة أبو داود.\nقيادة مديري المشاريع وفرق SAP الوظيفية والتقنية.\nتسليم نظام SAP للصيانة لشركتي عجيبة للبترول وأبو قير للبترول.\nإدارة التغيير وتدريب المستخدمين لضمان التبني بعد الإطلاق.",
+      "current": false
+    },
+    {
+      "id": "e4",
+      "title": "SAP Project Manager",
+      "title_ar": "مدير مشروع SAP",
+      "company": "Practiq Consulting",
+      "location": "Cairo, Egypt",
+      "start": "2021-02",
+      "end": "2021-05",
+      "description": "Managed the SAP S/4HANA, SuccessFactors and CX implementation for TEPCO Egypt through handover to support.",
+      "description_ar": "إدارة تطبيق SAP S/4HANA وSuccessFactors وCX لشركة TEPCO مصر حتى التسليم لفريق الدعم.",
+      "current": false
+    },
+    {
+      "id": "e5",
+      "title": "Oracle Project Manager",
+      "title_ar": "مدير مشاريع Oracle",
+      "company": "Azdan Business Analysis",
+      "location": "Cairo, Egypt",
+      "start": "2019-11",
+      "end": "2021-01",
+      "description": "Delivered Oracle EPM (Hyperion, FCCS), NetSuite and Jedox projects for GPSSA Abu Dhabi, Reload Logistics, Reportage Properties, UNA Trading (Mantrac), DMG and DME.\nOwned scope, budget and change control across six parallel client projects.",
+      "description_ar": "تسليم مشاريع Oracle EPM (Hyperion وFCCS) وNetSuite وJedox لهيئة المعاشات GPSSA في أبوظبي وReload Logistics وReportage وUNA Trading (منتراك) وDMG وDME.\nامتلاك النطاق والميزانية وضبط التغيير لستة مشاريع متوازية.",
+      "current": false
+    },
+    {
+      "id": "e6",
+      "title": "ERP Project Manager",
+      "title_ar": "مدير مشاريع ERP",
+      "company": "Al Kharafi Group (BDRS)",
+      "location": "Cairo, Egypt",
+      "start": "2019-06",
+      "end": "2019-10",
+      "description": "Managed internal ERP implementation and group software projects.",
+      "description_ar": "إدارة تطبيق ERP الداخلي ومشاريع البرمجيات للمجموعة.",
+      "current": false
+    },
+    {
+      "id": "e7",
+      "title": "ERP Project Manager",
+      "title_ar": "مدير مشاريع ERP",
+      "company": "ACME Group",
+      "location": "Cairo, Egypt",
+      "start": "2017-04",
+      "end": "2019-05",
+      "description": "Ran multiple concurrent full-cycle ERP implementations, including Odoo for Ariika and mall-management integration for Marakez (Mall of Arabia).",
+      "description_ar": "إدارة عدة تطبيقات ERP متكاملة ومتزامنة، منها Odoo لشركة أريكا وتكامل إدارة المراكز التجارية لشركة مراكز (مول العرب).",
+      "current": false
+    },
+    {
+      "id": "e8",
+      "title": "IT Manager",
+      "title_ar": "مدير تقنية المعلومات",
+      "company": "TechOrg",
+      "location": "Cairo, Egypt",
+      "start": "2014-08",
+      "end": "2017-04",
+      "description": "Led ERP rollout, IT budget and cloud infrastructure.",
+      "description_ar": "قيادة تطبيق ERP وميزانية تقنية المعلومات والبنية السحابية.",
+      "current": false
+    },
+    {
+      "id": "e9",
+      "title": "IT Assistant Manager / System & Network Engineer",
+      "title_ar": "مساعد مدير تقنية المعلومات / مهندس أنظمة وشبكات",
+      "company": "MATA Group",
+      "location": "Cairo, Egypt",
+      "start": "2013-04",
+      "end": "2014-08",
+      "description": "Planned and managed IT infrastructure projects, network security and virtualization.",
+      "description_ar": "تخطيط وإدارة مشاريع البنية التحتية وأمن الشبكات والحوسبة الافتراضية.",
+      "current": false
+    },
+    {
+      "id": "e10",
+      "title": "System Support Engineer",
+      "title_ar": "مهندس دعم أنظمة",
+      "company": "ECCO Outsourcing",
+      "location": "Cairo, Egypt",
+      "start": "2011-08",
+      "end": "2013-04",
+      "description": "Supported 800+ users across multiple sites.",
+      "description_ar": "دعم أكثر من 800 مستخدم في مواقع متعددة.",
+      "current": false
+    },
+    {
+      "id": "e11",
+      "title": "Applications Implementer",
+      "title_ar": "منفّذ تطبيقات",
+      "company": "Arab Academy for Science, Technology & Maritime Transport",
+      "location": "Alexandria, Egypt",
+      "start": "2011-01",
+      "end": "2011-03",
+      "description": "Tested and implemented applications including OpenERP.",
+      "description_ar": "اختبار وتطبيق أنظمة منها OpenERP.",
+      "current": false
+    },
+    {
+      "id": "e12",
+      "title": "Telecommunications Analyst Engineer",
+      "title_ar": "مهندس تحليل اتصالات",
+      "company": "NTG Clarity",
+      "location": "Cairo, Egypt",
+      "start": "2010-05",
+      "end": "2010-10",
+      "description": "Transmission data migration for STC (Saudi Telecom).",
+      "description_ar": "ترحيل بيانات شبكات النقل لشركة الاتصالات السعودية STC.",
+      "current": false
+    }
+  ],
+  "education": [
+    {
+      "id": "d1",
+      "school": "Arab Academy for Science, Technology & Maritime Transport (AASTMT)",
+      "degree": "Master of Business Administration (MBA)",
+      "field": "Business Administration",
+      "start": "2021",
+      "end": "2023"
+    },
+    {
+      "id": "d2",
+      "school": "6 October University – Culture and Science City",
+      "degree": "Bachelor of Science (B.Sc.)",
+      "field": "Computer Science & Information Systems",
+      "start": "2005",
+      "end": "2009"
+    }
+  ],
+  "certifications": [
+    "Project Management Professional (PMP) – PMI",
+    "PMI Risk Management Professional (PMI-RMP) – PMI",
+    "PMO Certified Professional (PMI-PMOCP) – PMI",
+    "PMO-CP – PMO Global Alliance",
+    "TOGAF 9 Foundation – The Open Group",
+    "SAP Certified Associate – SAP Activate Project Manager – SAP",
+    "Generative AI for Project Managers – PMI",
+    "Practical Application of Gen AI for Project Managers – PMI",
+    "Oracle Certified Associate (OCA) – Oracle"
+  ],
+  "skills": [
+    "Program Management",
+    "Project Delivery",
+    "PMO",
+    "Digital Transformation",
+    "SAP S/4HANA",
+    "SAP Activate",
+    "Oracle ERP",
+    "Oracle EPM",
+    "NetSuite",
+    "Odoo",
+    "Smart City",
+    "IT Governance",
+    "Risk Management",
+    "Change Management",
+    "Stakeholder Management",
+    "Vendor Management",
+    "TOGAF",
+    "Agile"
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "name_ar": "العربية",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "name_ar": "الإنجليزية",
+      "level": "Professional working proficiency"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "Citizen Care Center 940",
+      "client": "Saudi municipalities",
+      "year": "2024",
+      "description": "Unified citizen complaints and requests platform: intake, routing and tracking."
+    },
+    {
+      "id": "p2",
+      "name": "Smart City municipal platforms",
+      "client": "Eastern Province, Madinah and Hail municipalities",
+      "year": "2024",
+      "description": "Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms aligned with Vision 2030."
+    },
+    {
+      "id": "p3",
+      "name": "SAP S/4HANA implementation",
+      "client": "Toyota Egypt / Nissan",
+      "year": "2022",
+      "description": "End-to-end SAP S/4HANA delivery for automotive distribution."
+    },
+    {
+      "id": "p4",
+      "name": "SAP S/4HANA implementation",
+      "client": "ENPPI",
+      "year": "2022",
+      "description": "SAP S/4HANA program for oil & gas engineering."
+    },
+    {
+      "id": "p5",
+      "name": "SAP Plant Maintenance",
+      "client": "Agiba Petroleum / Abu Qir Petroleum",
+      "year": "2022",
+      "description": "SAP PM implementation for oil & gas asset maintenance."
+    },
+    {
+      "id": "p6",
+      "name": "Jedox EPM planning & budgeting",
+      "client": "GPSSA Abu Dhabi",
+      "year": "2020",
+      "description": "Enterprise planning and budgeting solution for a UAE government entity."
+    }
+  ],
+  "updated_at": "2026-10-19T19:14:06.321Z"
+}
