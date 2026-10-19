@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    "https://haitham-portfolio-2026.mazen-raslan-7066.chatgpt-team.site"
+    "https://haithampm.github.io/haitham-professional-portfolio/"
   ),
   title: "Haitham Abd El-Azeem Khalifa (Haitham Elmohamady) | Professional Portfolio | هيثم عبد العظيم خليفة",
   description:

@@ -130,6 +130,10 @@ function headlineLabel(career: CareerData, arabic: boolean) {
   return headline.split("|").slice(0, 2).map((part) => part.trim()).filter(Boolean).join(" | ");
 }
 
+// True in the static GitHub Pages build (see static/flag.ts): no admin, no server APIs.
+const isStaticSite = () =>
+  (globalThis as { __STATIC_SITE__?: boolean }).__STATIC_SITE__ === true;
+
 export default function PortfolioSite() {
   const [language, setLanguage] = useState<Language>(() => {
     if (typeof window === "undefined") {
@@ -177,6 +181,9 @@ export default function PortfolioSite() {
     let cancelled = false;
 
     async function loadDynamicContent() {
+      if (isStaticSite()) {
+        return;
+      }
       const [contentResponse, galleryResponse, logoResponse] =
         await Promise.allSettled([
           fetch("/api/site-content", { cache: "no-store" }),
@@ -318,6 +325,7 @@ export default function PortfolioSite() {
               <Languages aria-hidden="true" size={17} />
               {isArabic ? "English" : "العربية"}
             </button>
+            {isStaticSite() ? null : (
             <a
               href="/admin"
               className="inline-flex min-h-10 items-center gap-2 rounded-md border border-white/18 px-3 text-sm font-semibold text-white transition hover:bg-white/12"
@@ -326,6 +334,7 @@ export default function PortfolioSite() {
               <Settings aria-hidden="true" size={17} />
               <span className="hidden sm:inline">{pick(copy.nav.admin, language)}</span>
             </a>
+            )}
           </div>
         </header>
 
@@ -352,7 +361,7 @@ export default function PortfolioSite() {
                 {pick(copy.hero.email, language)}
               </a>
               <a
-                href="/Haitham_Mohamed_CV_2026.pdf"
+                href="/Haitham_Abd_El-Azeem_Khalifa_CV_2026.pdf"
                 download
                 className="inline-flex min-h-12 items-center gap-2 rounded-md border border-white/30 bg-white/10 px-5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/18"
               >
