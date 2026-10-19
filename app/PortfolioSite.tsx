@@ -98,10 +98,10 @@ function LogoCard({ item, language }: { item: LogoItem; language: Language }) {
           <span className="brand-word">{item.mark ?? item.name}</span>
         )}
       </span>
-      <span className="mt-4 text-sm font-semibold text-[#12112a]">
+      <span className="mt-4 text-sm font-semibold text-[#1c2430]">
         {item.name}
       </span>
-      <span className="mt-1 text-xs leading-5 text-[#5f6382]">
+      <span className="mt-1 text-xs leading-5 text-[#5f6b7a]">
         {pick(item.subtitle, language)}
       </span>
     </a>
@@ -280,8 +280,8 @@ export default function PortfolioSite() {
     : certificationLogos;
 
   return (
-    <main dir={isArabic ? "rtl" : "ltr"} className="bg-[#f7f7fd] text-[#12112a]">
-      <section className="hero-aurora relative isolate min-h-[84svh] overflow-hidden">
+    <main dir={isArabic ? "rtl" : "ltr"} className="bg-[#f6f7f9] text-[#1c2430]">
+      <section className="relative isolate min-h-[84svh] overflow-hidden">
         <Image
           src="/smart-city-delivery-hero.png"
           alt=""
@@ -290,7 +290,7 @@ export default function PortfolioSite() {
           sizes="100vw"
           className="absolute inset-0 -z-20 object-cover"
         />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(10,8,36,0.94)_0%,rgba(10,8,36,0.82)_39%,rgba(10,8,36,0.38)_73%,rgba(10,8,36,0.26)_100%)] rtl:bg-[linear-gradient(270deg,rgba(10,8,36,0.94)_0%,rgba(10,8,36,0.82)_39%,rgba(10,8,36,0.38)_73%,rgba(10,8,36,0.26)_100%)]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(11,25,41,0.94)_0%,rgba(11,25,41,0.82)_39%,rgba(11,25,41,0.38)_73%,rgba(11,25,41,0.26)_100%)] rtl:bg-[linear-gradient(270deg,rgba(11,25,41,0.94)_0%,rgba(11,25,41,0.82)_39%,rgba(11,25,41,0.38)_73%,rgba(11,25,41,0.26)_100%)]" />
 
         <header className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 text-white sm:px-8">
           <a href="#top" className="text-sm font-semibold tracking-wide">
@@ -343,7 +343,7 @@ export default function PortfolioSite() {
           className="mx-auto grid max-w-7xl gap-12 px-5 pb-14 pt-10 text-white sm:px-8 lg:grid-cols-[minmax(0,1.02fr)_minmax(340px,0.58fr)] lg:items-center lg:pb-12 lg:pt-10"
         >
           <div className="max-w-4xl motion-rise">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9db4ff]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9fc0e0]">
               {hero.label}
             </p>
             <h1 className="text-gradient mt-5 max-w-4xl text-4xl font-semibold leading-[1.08] sm:text-6xl xl:text-7xl">
@@ -379,7 +379,7 @@ export default function PortfolioSite() {
           </div>
 
           <div className="motion-rise motion-delay-2">
-            <article className="profile-card overflow-hidden rounded-lg border border-white/18 bg-[#0a0824]/72 text-white shadow-2xl backdrop-blur-md">
+            <article className="profile-card overflow-hidden rounded-lg border border-white/18 bg-[#0b1f33]/72 text-white shadow-2xl backdrop-blur-md">
               <div className="relative aspect-square overflow-hidden lg:aspect-[4/3]">
                 <Image
                   src="/haitham-elmohamady-profile.png"
@@ -404,17 +404,17 @@ export default function PortfolioSite() {
         </div>
       </section>
 
-      <section className="border-b border-[#e3e2f5] bg-white">
+      <section className="border-b border-[#e2e6eb] bg-white">
         <div className="mx-auto grid max-w-7xl gap-px px-5 py-4 sm:px-8 md:grid-cols-4 motion-grid">
           {copy.achievements.map((item) => (
             <div
               key={item.metric}
-              className="py-5 md:border-e md:border-[#e3e2f5] md:px-6 last:md:border-e-0"
+              className="py-5 md:border-e md:border-[#e2e6eb] md:px-6 last:md:border-e-0"
             >
-              <p className="text-4xl font-semibold text-[#5b4cf0]">
+              <p className="text-4xl font-semibold text-[#1f4e79]">
                 {item.metric}
               </p>
-              <p className="mt-2 max-w-xs text-sm leading-6 text-[#4e5270]">
+              <p className="mt-2 max-w-xs text-sm leading-6 text-[#4a5563]">
                 {pick(item.label, language)}
               </p>
             </div>
@@ -425,13 +425,13 @@ export default function PortfolioSite() {
       <section id="portfolio" className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1fr] lg:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#5b4cf0]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1f4e79]">
               {pick(copy.portfolio.eyebrow, language)}
             </p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               {pick(copy.portfolio.title, language)}
             </h2>
-            <p className="mt-5 text-base leading-8 text-[#5b5f7a]">
+            <p className="mt-5 text-base leading-8 text-[#5f6b7a]">
               {pick(copy.portfolio.intro, language)}
             </p>
           </div>
@@ -439,15 +439,15 @@ export default function PortfolioSite() {
             {copy.portfolio.highlights.map((item) => (
               <article
                 key={pick(item.title, "en")}
-                className="card-lift rounded-2xl border border-[#e3e2f5] bg-white p-6 shadow-sm motion-rise"
+                className="card-lift rounded-2xl border border-[#e2e6eb] bg-white p-6 shadow-sm motion-rise"
               >
-                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#6d3ae0]">
+                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#8a6a1f]">
                   {pick(item.context, language)}
                 </p>
-                <h3 className="mt-3 text-2xl font-semibold text-[#12112a]">
+                <h3 className="mt-3 text-2xl font-semibold text-[#1c2430]">
                   {pick(item.title, language)}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-[#5b5f7a]">
+                <p className="mt-3 text-sm leading-7 text-[#5f6b7a]">
                   {pick(item.details, language)}
                 </p>
               </article>
@@ -456,10 +456,10 @@ export default function PortfolioSite() {
         </div>
       </section>
 
-      <section id="experience" className="section-deep bg-[#0e0b2e] px-5 py-20 text-white sm:px-8">
+      <section id="experience" className="section-deep bg-[#102a43] px-5 py-20 text-white sm:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9db4ff]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9fc0e0]">
               {pick(copy.experience.eyebrow, language)}
             </p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -474,7 +474,7 @@ export default function PortfolioSite() {
                 className="role-card grid gap-6 rounded-2xl border border-white/12 bg-white/[0.045] p-6 md:grid-cols-[0.34fr_1fr] motion-rise"
               >
                 <div>
-                  <p className="text-sm font-semibold text-[#c4a5ff]">
+                  <p className="text-sm font-semibold text-[#d4b26a]">
                     {period(job, language)}
                   </p>
                   <h3 className="mt-3 text-xl font-semibold">
@@ -488,7 +488,7 @@ export default function PortfolioSite() {
                 <ul className="grid gap-3 text-sm leading-7 text-white/76">
                   {points(job, language).map((point) => (
                     <li key={point} className="flex gap-3">
-                      <span className="mt-3 h-1.5 w-1.5 flex-none rounded-full bg-[#9db4ff]" />
+                      <span className="mt-3 h-1.5 w-1.5 flex-none rounded-full bg-[#9fc0e0]" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -500,7 +500,7 @@ export default function PortfolioSite() {
             <button
               type="button"
               onClick={() => setShowAllRoles((value) => !value)}
-              className="mt-6 rounded-md border border-white/20 px-4 py-2 text-sm font-semibold text-[#9db4ff] transition hover:bg-white/10"
+              className="mt-6 rounded-md border border-white/20 px-4 py-2 text-sm font-semibold text-[#9fc0e0] transition hover:bg-white/10"
             >
               {showAllRoles
                 ? isArabic
@@ -514,18 +514,18 @@ export default function PortfolioSite() {
         </div>
       </section>
 
-      <section className="border-b border-[#e3e2f5] bg-white px-5 py-20 sm:px-8">
+      <section className="border-b border-[#e2e6eb] bg-white px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-6 lg:grid-cols-[0.74fr_1fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#5b4cf0]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1f4e79]">
                 {pick(copy.companies.eyebrow, language)}
               </p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
                 {pick(copy.companies.title, language)}
               </h2>
             </div>
-            <p className="text-base leading-8 text-[#5b5f7a]">
+            <p className="text-base leading-8 text-[#5f6b7a]">
               {pick(copy.companies.intro, language)}
             </p>
           </div>
@@ -543,13 +543,13 @@ export default function PortfolioSite() {
         className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[0.9fr_1fr]"
       >
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#5b4cf0]">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1f4e79]">
             {pick(copy.capabilities.eyebrow, language)}
           </p>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
             {pick(copy.capabilities.title, language)}
           </h2>
-          <p className="mt-5 text-base leading-8 text-[#5b5f7a]">
+          <p className="mt-5 text-base leading-8 text-[#5f6b7a]">
             {pick(copy.capabilities.intro, language)}
           </p>
         </div>
@@ -557,7 +557,7 @@ export default function PortfolioSite() {
           {copy.capabilities.items.map((skill) => (
             <div
               key={pick(skill, "en")}
-              className="rounded-lg border border-[#e3e2f5] bg-white p-5 text-sm font-medium leading-7 text-[#2b2a4a] shadow-sm motion-rise"
+              className="rounded-lg border border-[#e2e6eb] bg-white p-5 text-sm font-medium leading-7 text-[#2b3440] shadow-sm motion-rise"
             >
               {pick(skill, language)}
             </div>
@@ -565,11 +565,11 @@ export default function PortfolioSite() {
         </div>
       </section>
 
-      <section className="section-deep bg-[#0e0b2e] px-5 py-20 text-white sm:px-8">
+      <section className="section-deep bg-[#102a43] px-5 py-20 text-white sm:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-6 lg:grid-cols-[0.74fr_1fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9db4ff]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9fc0e0]">
                 {pick(copy.partners.eyebrow, language)}
               </p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -589,22 +589,22 @@ export default function PortfolioSite() {
         </div>
       </section>
 
-      <section id="credentials" className="border-y border-[#e3e2f5] bg-white">
+      <section id="credentials" className="border-y border-[#e2e6eb] bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.75fr_1fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#5b4cf0]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1f4e79]">
               {pick(copy.education.eyebrow, language)}
             </p>
             <div className="mt-6 grid gap-4">
               {copy.education.items.map((item) => (
                 <article
                   key={pick(item.title, "en")}
-                  className="rounded-lg border border-[#e3e2f5] p-5"
+                  className="rounded-lg border border-[#e2e6eb] p-5"
                 >
                   <p className="text-lg font-semibold">
                     {pick(item.title, language)}
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-[#5b5f7a]">
+                  <p className="mt-2 text-sm leading-6 text-[#5f6b7a]">
                     {pick(item.detail, language)}
                   </p>
                 </article>
@@ -613,7 +613,7 @@ export default function PortfolioSite() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#6d3ae0]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8a6a1f]">
               {pick(copy.certifications.eyebrow, language)}
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -628,14 +628,14 @@ export default function PortfolioSite() {
       <section id="gallery" className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
         <div className="grid gap-6 lg:grid-cols-[0.74fr_1fr] lg:items-end">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#5b4cf0]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1f4e79]">
               {pick(copy.gallery.eyebrow, language)}
             </p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               {pick(copy.gallery.title, language)}
             </h2>
           </div>
-          <p className="text-base leading-8 text-[#5b5f7a]">
+          <p className="text-base leading-8 text-[#5f6b7a]">
             {pick(copy.gallery.intro, language)}
           </p>
         </div>
@@ -644,9 +644,9 @@ export default function PortfolioSite() {
           {galleryImages.map((image) => (
             <article
               key={image.id}
-              className="card-lift motion-rise overflow-hidden rounded-2xl border border-[#e3e2f5] bg-white shadow-sm"
+              className="card-lift motion-rise overflow-hidden rounded-2xl border border-[#e2e6eb] bg-white shadow-sm"
             >
-              <div className="aspect-[4/3] overflow-hidden bg-[#eeedfa]">
+              <div className="aspect-[4/3] overflow-hidden bg-[#eef1f4]">
                 <img
                   src={image.src}
                   alt={galleryAlt(image, language)}
@@ -655,7 +655,7 @@ export default function PortfolioSite() {
                 />
               </div>
               <div className="p-4">
-                <p className="text-sm font-semibold text-[#12112a]">
+                <p className="text-sm font-semibold text-[#1c2430]">
                   {galleryTitle(image, language)}
                 </p>
               </div>
@@ -665,9 +665,9 @@ export default function PortfolioSite() {
       </section>
 
       <section id="contact" className="px-5 py-20 sm:px-8">
-        <div className="mx-auto grid max-w-7xl gap-8 rounded-lg bg-[#0a0824] p-6 text-white sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="mx-auto grid max-w-7xl gap-8 rounded-lg bg-[#0b1f33] p-6 text-white sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9db4ff]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9fc0e0]">
               {pick(copy.contact.eyebrow, language)}
             </p>
             <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight">
