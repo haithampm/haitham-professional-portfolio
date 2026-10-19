@@ -28,8 +28,12 @@ export type GalleryImage = {
   src: string;
 };
 
-export const displayName = "Haitham Elmohamady";
-export const displayNameAr = "هيثم المحمدي";
+// Full legal name is the primary name (matches CV and job applications);
+// "Haitham Elmohamady" is the name he is widely known by.
+export const displayName = "Haitham Abd El-Azeem Khalifa";
+export const displayNameAr = "هيثم عبد العظيم خليفة";
+export const knownAs = "Haitham Elmohamady";
+export const knownAsAr = "هيثم المحمدي";
 
 export const copy = {
   nav: {
@@ -55,8 +59,8 @@ export const copy = {
       ar: "قائد برامج يركز على النتائج بخبرة تتجاوز 15 عاماً في تنفيذ برامج ERP والتحول الرقمي في السعودية والإمارات ومصر، مع تخصص في SAP S/4HANA وOracle ERP وOdoo وحلول المدن الذكية المتوافقة مع رؤية 2030.",
     },
     profileSummary: {
-      en: "Solutions Delivery Manager, SAP Program Manager, and digital transformation leader.",
-      ar: "مدير تسليم حلول ومدير برامج SAP وقائد تحول رقمي.",
+      en: "Head of Solutions Implementation & Delivery, SAP Program Manager, and digital transformation leader.",
+      ar: "رئيس تنفيذ وتسليم الحلول، مدير برامج SAP وقائد تحول رقمي.",
     },
     email: { en: "Email Haitham", ar: "راسل هيثم" },
     cv: { en: "Download CV", ar: "تحميل السيرة" },
@@ -409,8 +413,8 @@ export const defaultGalleryImages: GalleryImage[] = [
     id: "profile",
     titleEn: "Executive profile portrait",
     titleAr: "الصورة المهنية",
-    altEn: "Haitham Elmohamady professional portrait",
-    altAr: "الصورة المهنية لهيثم المحمدي",
+    altEn: "Haitham Abd El-Azeem Khalifa professional portrait",
+    altAr: "الصورة المهنية لهيثم عبد العظيم خليفة",
     src: "/haitham-elmohamady-profile.png",
   },
   {

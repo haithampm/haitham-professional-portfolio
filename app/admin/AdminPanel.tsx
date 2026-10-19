@@ -157,14 +157,14 @@ function cleanValue(value: string | undefined, fallback: string) {
 
 function statusClasses(tone: Status["tone"]) {
   if (tone === "success") {
-    return "border-[#b7dacd] bg-[#eef8f4] text-[#0b6d5f]";
+    return "border-[#b7dacd] bg-[#eef8f4] text-[#5b4cf0]";
   }
 
   if (tone === "error") {
     return "border-[#efc0b7] bg-[#fff4f1] text-[#9a311f]";
   }
 
-  return "border-[#d8ddd5] bg-white text-[#56615c]";
+  return "border-[#e3e2f5] bg-white text-[#5b5f7a]";
 }
 
 export default function AdminPanel() {
@@ -522,11 +522,11 @@ export default function AdminPanel() {
   }
 
   return (
-    <main className="min-h-screen bg-[#eef2ed] text-[#161817]">
-      <header className="border-b border-[#d8ddd5] bg-white">
+    <main className="min-h-screen bg-[#eef2ed] text-[#12112a]">
+      <header className="border-b border-[#e3e2f5] bg-white">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-5 sm:px-8">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0b6d5f]">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#5b4cf0]">
               Portfolio Admin
             </p>
             <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -535,7 +535,7 @@ export default function AdminPanel() {
           </div>
           <Link
             href="/"
-            className="inline-flex min-h-11 items-center gap-2 rounded-md border border-[#d8ddd5] bg-white px-4 text-sm font-semibold transition hover:bg-[#eef2ed]"
+            className="inline-flex min-h-11 items-center gap-2 rounded-md border border-[#e3e2f5] bg-white px-4 text-sm font-semibold transition hover:bg-[#eef2ed]"
           >
             <ArrowLeft aria-hidden="true" size={18} />
             Back to site
@@ -547,7 +547,7 @@ export default function AdminPanel() {
         <section className="grid gap-6">
           <nav
             aria-label="Admin sections"
-            className="grid grid-cols-2 rounded-lg border border-[#d8ddd5] bg-white p-1 shadow-sm sm:grid-cols-4"
+            className="grid grid-cols-2 rounded-lg border border-[#e3e2f5] bg-white p-1 shadow-sm sm:grid-cols-4"
           >
             {panels.map((panel) => {
               const Icon = panel.icon;
@@ -560,8 +560,8 @@ export default function AdminPanel() {
                   onClick={() => setActivePanel(panel.id)}
                   className={`inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md px-3 text-sm font-semibold transition ${
                     selected
-                      ? "bg-[#0f1513] text-white"
-                      : "text-[#4f5954] hover:bg-[#eef2ed]"
+                      ? "bg-[#0a0824] text-white"
+                      : "text-[#4e5270] hover:bg-[#eef2ed]"
                   }`}
                 >
                   <Icon aria-hidden="true" size={18} />
@@ -574,11 +574,11 @@ export default function AdminPanel() {
           {activePanel === "content" ? (
             <form
               onSubmit={saveContent}
-              className="rounded-lg border border-[#d8ddd5] bg-white p-5 shadow-sm sm:p-6"
+              className="rounded-lg border border-[#e3e2f5] bg-white p-5 shadow-sm sm:p-6"
             >
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0b6d5f]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5b4cf0]">
                     Main content
                   </p>
                   <h2 className="mt-2 text-2xl font-semibold">Hero text</h2>
@@ -586,7 +586,7 @@ export default function AdminPanel() {
                 <button
                   type="submit"
                   disabled={!canEdit || saving}
-                  className="inline-flex min-h-11 items-center gap-2 rounded-md bg-[#0b6d5f] px-4 text-sm font-semibold text-white transition hover:bg-[#09594e] disabled:cursor-not-allowed disabled:opacity-50"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-md bg-[#5b4cf0] px-4 text-sm font-semibold text-white transition hover:bg-[#09594e] disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {saving ? (
                     <Loader2 aria-hidden="true" className="animate-spin" size={18} />
@@ -617,7 +617,7 @@ export default function AdminPanel() {
                           }))
                         }
                         rows={4}
-                        className="min-h-28 rounded-md border border-[#cfd6cc] bg-white px-3 py-2 text-sm leading-6 outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                        className="min-h-28 rounded-md border border-[#cfd6cc] bg-white px-3 py-2 text-sm leading-6 outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                       />
                     ) : (
                       <input
@@ -629,7 +629,7 @@ export default function AdminPanel() {
                             [field.key]: event.target.value,
                           }))
                         }
-                        className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                        className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                       />
                     )}
                   </label>
@@ -641,11 +641,11 @@ export default function AdminPanel() {
           {activePanel === "gallery" ? (
             <form
               onSubmit={uploadImage}
-              className="rounded-lg border border-[#d8ddd5] bg-white p-5 shadow-sm sm:p-6"
+              className="rounded-lg border border-[#e3e2f5] bg-white p-5 shadow-sm sm:p-6"
             >
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6a10]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#6d3ae0]">
                     Gallery
                   </p>
                   <h2 className="mt-2 text-2xl font-semibold">Add image</h2>
@@ -653,7 +653,7 @@ export default function AdminPanel() {
                 <button
                   type="submit"
                   disabled={!canEdit || uploading}
-                  className="inline-flex min-h-11 items-center gap-2 rounded-md bg-[#f4c35f] px-4 text-sm font-semibold text-[#161817] transition hover:bg-[#ffd77b] disabled:cursor-not-allowed disabled:opacity-50"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-md bg-[#c4a5ff] px-4 text-sm font-semibold text-[#12112a] transition hover:bg-[#e2d4ff] disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {uploading ? (
                     <Loader2 aria-hidden="true" className="animate-spin" size={18} />
@@ -670,11 +670,11 @@ export default function AdminPanel() {
                   <div className="flex min-h-11 min-w-0 items-center gap-3 rounded-md border border-[#cfd6cc] bg-white px-3">
                     <label
                       htmlFor="gallery-file-upload"
-                      className="inline-flex min-h-8 flex-none cursor-pointer items-center rounded-md bg-[#eef2ed] px-3 text-xs font-semibold text-[#2d3431] transition hover:bg-[#e0e7df]"
+                      className="inline-flex min-h-8 flex-none cursor-pointer items-center rounded-md bg-[#eef2ed] px-3 text-xs font-semibold text-[#2b2a4a] transition hover:bg-[#e0e7df]"
                     >
                       Choose
                     </label>
-                    <span className="min-w-0 truncate text-sm text-[#56615c]">
+                    <span className="min-w-0 truncate text-sm text-[#5b5f7a]">
                       {file?.name ?? "No file selected"}
                     </span>
                   </div>
@@ -694,7 +694,7 @@ export default function AdminPanel() {
                     value={imageUrl}
                     onChange={(event) => setImageUrl(event.target.value)}
                     placeholder="https://..."
-                    className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                    className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                   />
                 </label>
                 {[
@@ -720,7 +720,7 @@ export default function AdminPanel() {
                           [key]: event.target.value,
                         }))
                       }
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                 ))}
@@ -732,11 +732,11 @@ export default function AdminPanel() {
             <section className="grid gap-5">
               <form
                 onSubmit={uploadLogo}
-                className="rounded-lg border border-[#d8ddd5] bg-white p-5 shadow-sm sm:p-6"
+                className="rounded-lg border border-[#e3e2f5] bg-white p-5 shadow-sm sm:p-6"
               >
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0b6d5f]">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5b4cf0]">
                       Logos
                     </p>
                     <h2 className="mt-2 text-2xl font-semibold">
@@ -746,7 +746,7 @@ export default function AdminPanel() {
                   <button
                     type="submit"
                     disabled={!canEdit || logoUploading}
-                    className="inline-flex min-h-11 items-center gap-2 rounded-md bg-[#0b6d5f] px-4 text-sm font-semibold text-white transition hover:bg-[#09594e] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="inline-flex min-h-11 items-center gap-2 rounded-md bg-[#5b4cf0] px-4 text-sm font-semibold text-white transition hover:bg-[#09594e] disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     {logoUploading ? (
                       <Loader2 aria-hidden="true" className="animate-spin" size={18} />
@@ -768,7 +768,7 @@ export default function AdminPanel() {
                           category: event.target.value as LogoCategory,
                         }))
                       }
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     >
                       <option value="companies">Companies worked with</option>
                       <option value="partners">Project partners</option>
@@ -786,7 +786,7 @@ export default function AdminPanel() {
                         }))
                       }
                       placeholder="SAP, PMI, Oracle..."
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                   <div className="grid gap-2">
@@ -794,11 +794,11 @@ export default function AdminPanel() {
                     <div className="flex min-h-11 min-w-0 items-center gap-3 rounded-md border border-[#cfd6cc] bg-white px-3">
                       <label
                         htmlFor="logo-file-upload"
-                        className="inline-flex min-h-8 flex-none cursor-pointer items-center rounded-md bg-[#eef2ed] px-3 text-xs font-semibold text-[#2d3431] transition hover:bg-[#e0e7df]"
+                        className="inline-flex min-h-8 flex-none cursor-pointer items-center rounded-md bg-[#eef2ed] px-3 text-xs font-semibold text-[#2b2a4a] transition hover:bg-[#e0e7df]"
                       >
                         Choose
                       </label>
-                      <span className="min-w-0 truncate text-sm text-[#56615c]">
+                      <span className="min-w-0 truncate text-sm text-[#5b5f7a]">
                         {logoFile?.name ?? "No file selected"}
                       </span>
                     </div>
@@ -818,7 +818,7 @@ export default function AdminPanel() {
                       value={logoUrl}
                       onChange={(event) => setLogoUrl(event.target.value)}
                       placeholder="https://..."
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                   <label className="grid gap-2">
@@ -832,7 +832,7 @@ export default function AdminPanel() {
                         }))
                       }
                       placeholder="Official certification, SAP delivery..."
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                   <label className="grid gap-2">
@@ -846,7 +846,7 @@ export default function AdminPanel() {
                           subtitleAr: event.target.value,
                         }))
                       }
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                   <label className="grid gap-2">
@@ -860,7 +860,7 @@ export default function AdminPanel() {
                         }))
                       }
                       placeholder="https://..."
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                   <label className="grid gap-2">
@@ -874,7 +874,7 @@ export default function AdminPanel() {
                         }))
                       }
                       placeholder="PMI, SAP, Microsoft..."
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                   <label className="grid gap-2">
@@ -887,7 +887,7 @@ export default function AdminPanel() {
                           sortOrder: event.target.value,
                         }))
                       }
-                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#0b6d5f] focus:ring-2 focus:ring-[#0b6d5f]/15"
+                      className="min-h-11 rounded-md border border-[#cfd6cc] bg-white px-3 text-sm outline-none transition focus:border-[#5b4cf0] focus:ring-2 focus:ring-[#5b4cf0]/15"
                     />
                   </label>
                   <label className="flex min-h-11 items-center gap-3 rounded-md border border-[#cfd6cc] px-3 text-sm font-semibold">
@@ -900,16 +900,16 @@ export default function AdminPanel() {
                           dark: event.target.checked,
                         }))
                       }
-                      className="h-4 w-4 accent-[#0b6d5f]"
+                      className="h-4 w-4 accent-[#5b4cf0]"
                     />
                     Dark logo background
                   </label>
                 </div>
 
-                <div className="mt-5 grid gap-3 rounded-lg border border-[#d8ddd5] bg-[#f7f8f5] p-4 sm:grid-cols-[160px_1fr] sm:items-center">
+                <div className="mt-5 grid gap-3 rounded-lg border border-[#e3e2f5] bg-[#f7f7fd] p-4 sm:grid-cols-[160px_1fr] sm:items-center">
                   <div
-                    className={`flex min-h-28 items-center justify-center rounded-md border border-[#d8ddd5] p-4 ${
-                      logoMeta.dark ? "bg-[#111816]" : "bg-white"
+                    className={`flex min-h-28 items-center justify-center rounded-md border border-[#e3e2f5] p-4 ${
+                      logoMeta.dark ? "bg-[#0a0824]" : "bg-white"
                     }`}
                   >
                     {pendingLogoPreviewSrc ? (
@@ -928,22 +928,22 @@ export default function AdminPanel() {
                     <p className="text-sm font-semibold">
                       {logoMeta.name || "Logo preview"}
                     </p>
-                    <p className="mt-1 text-sm leading-6 text-[#56615c]">
+                    <p className="mt-1 text-sm leading-6 text-[#5b5f7a]">
                       {logoMeta.subtitleEn ||
                         "Add an official logo, source link, and bilingual label."}
                     </p>
-                    <p className="mt-1 text-sm leading-6 text-[#56615c]" dir="rtl">
+                    <p className="mt-1 text-sm leading-6 text-[#5b5f7a]" dir="rtl">
                       {logoMeta.subtitleAr || "أضف الوصف العربي للشعار."}
                     </p>
                   </div>
                 </div>
               </form>
 
-              <section className="rounded-lg border border-[#d8ddd5] bg-white p-5 shadow-sm sm:p-6">
+              <section className="rounded-lg border border-[#e3e2f5] bg-white p-5 shadow-sm sm:p-6">
                 <div className="flex items-center gap-3">
-                  <Building2 aria-hidden="true" className="text-[#0b6d5f]" size={22} />
+                  <Building2 aria-hidden="true" className="text-[#5b4cf0]" size={22} />
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0b6d5f]">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5b4cf0]">
                       Managed logos
                     </p>
                     <h2 className="mt-1 text-2xl font-semibold">
@@ -964,11 +964,11 @@ export default function AdminPanel() {
                             {logos[category].map((logo) => (
                               <article
                                 key={logo.id}
-                                className="grid grid-cols-[72px_1fr_auto] items-center gap-3 rounded-md border border-[#d8ddd5] p-2"
+                                className="grid grid-cols-[72px_1fr_auto] items-center gap-3 rounded-md border border-[#e3e2f5] p-2"
                               >
                                 <div
-                                  className={`flex h-14 w-18 items-center justify-center rounded border border-[#e7ebe4] p-2 ${
-                                    logo.dark ? "bg-[#111816]" : "bg-[#f7f8f5]"
+                                  className={`flex h-14 w-18 items-center justify-center rounded border border-[#eeedfa] p-2 ${
+                                    logo.dark ? "bg-[#0a0824]" : "bg-[#f7f7fd]"
                                   }`}
                                 >
                                   {logo.logo ? (
@@ -978,7 +978,7 @@ export default function AdminPanel() {
                                       className="max-h-full max-w-full object-contain"
                                     />
                                   ) : (
-                                    <span className="text-center text-xs font-bold text-[#0b6d5f]">
+                                    <span className="text-center text-xs font-bold text-[#5b4cf0]">
                                       {logo.mark || logo.name}
                                     </span>
                                   )}
@@ -987,7 +987,7 @@ export default function AdminPanel() {
                                   <p className="truncate text-sm font-semibold">
                                     {logo.name}
                                   </p>
-                                  <p className="truncate text-xs text-[#56615c]">
+                                  <p className="truncate text-xs text-[#5b5f7a]">
                                     {logo.subtitleEn || logo.subtitleAr || "No subtitle"}
                                   </p>
                                 </div>
@@ -995,7 +995,7 @@ export default function AdminPanel() {
                                   type="button"
                                   disabled={!canEdit}
                                   onClick={() => deleteLogo(logo.id)}
-                                  className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#d8ddd5] text-[#9a311f] transition hover:bg-[#fff4f1] disabled:cursor-not-allowed disabled:opacity-50"
+                                  className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#e3e2f5] text-[#9a311f] transition hover:bg-[#fff4f1] disabled:cursor-not-allowed disabled:opacity-50"
                                   aria-label="Delete logo"
                                 >
                                   <Trash2 aria-hidden="true" size={17} />
@@ -1004,7 +1004,7 @@ export default function AdminPanel() {
                             ))}
                           </div>
                         ) : (
-                          <p className="rounded-md border border-dashed border-[#cfd6cc] p-4 text-sm leading-6 text-[#56615c]">
+                          <p className="rounded-md border border-dashed border-[#cfd6cc] p-4 text-sm leading-6 text-[#5b5f7a]">
                             No uploaded logos in this section yet. The site still
                             shows the built-in logos until you add replacements or
                             additions here.
@@ -1019,17 +1019,17 @@ export default function AdminPanel() {
           ) : null}
 
           {activePanel === "preview" ? (
-            <section className="grid gap-5 rounded-lg border border-[#d8ddd5] bg-white p-5 shadow-sm sm:p-6">
+            <section className="grid gap-5 rounded-lg border border-[#e3e2f5] bg-white p-5 shadow-sm sm:p-6">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0b6d5f]">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5b4cf0]">
                   Preview
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">Hero and gallery</h2>
               </div>
 
-              <div className="grid overflow-hidden rounded-lg border border-[#d8ddd5] lg:grid-cols-[1fr_260px]">
+              <div className="grid overflow-hidden rounded-lg border border-[#e3e2f5] lg:grid-cols-[1fr_260px]">
                 <div className="bg-[#101614] p-5 text-white">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6ed3bd]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9db4ff]">
                     {heroPreview.labelEn}
                   </p>
                   <h3 className="mt-4 text-3xl font-semibold leading-tight">
@@ -1039,7 +1039,7 @@ export default function AdminPanel() {
                     {heroPreview.summaryEn}
                   </p>
                   <div className="mt-6 border-t border-white/12 pt-5" dir="rtl">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6ed3bd]">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9db4ff]">
                       {heroPreview.labelAr}
                     </p>
                     <h3 className="mt-4 text-2xl font-semibold leading-tight">
@@ -1050,24 +1050,24 @@ export default function AdminPanel() {
                     </p>
                   </div>
                 </div>
-                <div className="bg-[#f7f8f5] p-4">
+                <div className="bg-[#f7f7fd] p-4">
                   <img
                     src="/haitham-elmohamady-profile.png"
                     alt={`${displayName} portrait`}
                     className="aspect-square w-full rounded-md object-cover object-top"
                   />
                   <p className="mt-4 text-base font-semibold">{displayName}</p>
-                  <p className="text-sm font-semibold text-[#0b6d5f]">
+                  <p className="text-sm font-semibold text-[#5b4cf0]">
                     {displayNameAr}
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-[#56615c]">
+                  <p className="mt-2 text-sm leading-6 text-[#5b5f7a]">
                     {heroPreview.profileEn}
                   </p>
                 </div>
               </div>
 
               {pendingPreviewSrc ? (
-                <div className="overflow-hidden rounded-lg border border-[#d8ddd5] bg-[#f7f8f5]">
+                <div className="overflow-hidden rounded-lg border border-[#e3e2f5] bg-[#f7f7fd]">
                   <img
                     src={pendingPreviewSrc}
                     alt={imageMeta.altEn || imageMeta.titleEn || "Pending image"}
@@ -1077,7 +1077,7 @@ export default function AdminPanel() {
                     <p className="font-semibold">
                       {imageMeta.titleEn || "Pending gallery image"}
                     </p>
-                    <p className="mt-1 text-sm text-[#56615c]" dir="rtl">
+                    <p className="mt-1 text-sm text-[#5b5f7a]" dir="rtl">
                       {imageMeta.titleAr || "صورة جديدة"}
                     </p>
                   </div>
@@ -1088,16 +1088,16 @@ export default function AdminPanel() {
         </section>
 
         <aside className="grid content-start gap-5">
-          <section className="rounded-lg border border-[#d8ddd5] bg-white p-5 shadow-sm">
+          <section className="rounded-lg border border-[#e3e2f5] bg-white p-5 shadow-sm">
             <div className="flex items-start gap-3">
               {storageReady ? (
-                <ShieldCheck className="mt-1 text-[#0b6d5f]" size={20} />
+                <ShieldCheck className="mt-1 text-[#5b4cf0]" size={20} />
               ) : (
-                <AlertCircle className="mt-1 text-[#9a6a10]" size={20} />
+                <AlertCircle className="mt-1 text-[#6d3ae0]" size={20} />
               )}
               <div>
                 <p className="text-sm font-semibold">Access</p>
-                <p className="mt-1 text-sm leading-6 text-[#56615c]">
+                <p className="mt-1 text-sm leading-6 text-[#5b5f7a]">
                   {adminStatus
                     ? adminStatus.isAdmin
                       ? adminStatus.email
@@ -1116,7 +1116,7 @@ export default function AdminPanel() {
           </section>
 
           {!canEdit ? (
-            <section className="rounded-lg border border-[#d8ddd5] bg-white p-5 text-sm leading-6 text-[#56615c] shadow-sm">
+            <section className="rounded-lg border border-[#e3e2f5] bg-white p-5 text-sm leading-6 text-[#5b5f7a] shadow-sm">
               <div className="flex gap-3">
                 <Lock className="mt-1 flex-none text-[#7c8781]" size={18} />
                 <p>
@@ -1133,15 +1133,15 @@ export default function AdminPanel() {
             </section>
           ) : null}
 
-          <section className="rounded-lg border border-[#d8ddd5] bg-white p-5 shadow-sm">
+          <section className="rounded-lg border border-[#e3e2f5] bg-white p-5 shadow-sm">
             <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0b6d5f]">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5b4cf0]">
                   Uploaded
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">Images</h2>
               </div>
-              <ImagePlus aria-hidden="true" className="text-[#9a6a10]" size={24} />
+              <ImagePlus aria-hidden="true" className="text-[#6d3ae0]" size={24} />
             </div>
 
             <div className="mt-5 grid gap-3">
@@ -1149,7 +1149,7 @@ export default function AdminPanel() {
                 images.map((image) => (
                   <article
                     key={image.id}
-                    className="grid grid-cols-[72px_1fr_auto] items-center gap-3 rounded-md border border-[#d8ddd5] p-2"
+                    className="grid grid-cols-[72px_1fr_auto] items-center gap-3 rounded-md border border-[#e3e2f5] p-2"
                   >
                     <img
                       src={image.src}
@@ -1160,7 +1160,7 @@ export default function AdminPanel() {
                       <p className="truncate text-sm font-semibold">
                         {image.titleEn || "Untitled image"}
                       </p>
-                      <p className="truncate text-xs text-[#56615c]">
+                      <p className="truncate text-xs text-[#5b5f7a]">
                         {image.titleAr || "بدون عنوان عربي"}
                       </p>
                     </div>
@@ -1168,7 +1168,7 @@ export default function AdminPanel() {
                       type="button"
                       disabled={!canEdit}
                       onClick={() => deleteImage(image.id)}
-                      className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#d8ddd5] text-[#9a311f] transition hover:bg-[#fff4f1] disabled:cursor-not-allowed disabled:opacity-50"
+                      className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#e3e2f5] text-[#9a311f] transition hover:bg-[#fff4f1] disabled:cursor-not-allowed disabled:opacity-50"
                       aria-label="Delete image"
                     >
                       <Trash2 aria-hidden="true" size={17} />
@@ -1176,7 +1176,7 @@ export default function AdminPanel() {
                   </article>
                 ))
               ) : (
-                <p className="rounded-md border border-dashed border-[#cfd6cc] p-4 text-sm leading-6 text-[#56615c]">
+                <p className="rounded-md border border-dashed border-[#cfd6cc] p-4 text-sm leading-6 text-[#5b5f7a]">
                   No uploaded images yet.
                 </p>
               )}
