@@ -43,8 +43,8 @@ export const copy = {
   },
   hero: {
     label: {
-      en: "Solutions Delivery Manager | SAP Program Manager",
-      ar: "مدير تسليم الحلول | مدير برامج SAP",
+      en: "Head of Solutions Implementation & Delivery | SAP Program Manager",
+      ar: "رئيس تنفيذ وتسليم الحلول | مدير برامج SAP",
     },
     title: {
       en: "Digital transformation leader for ERP, Smart City, and municipal service delivery.",
@@ -143,106 +143,7 @@ export const copy = {
       en: "Delivery leadership across government and enterprise transformation.",
       ar: "قيادة التسليم في التحول الحكومي وتحول المؤسسات.",
     },
-    roles: [
-      {
-        role: { en: "Head of Solutions Implementation & Delivery", ar: "رئيس تنفيذ وتسليم الحلول" },
-        company: "Leader Investment Group (LIG), KSA",
-        period: { en: "Jan 2024 - Present", ar: "يناير 2024 - حتى الآن" },
-        points: [
-          {
-            en: "Lead municipal digital transformation programs from solution design through go-live and operational excellence.",
-            ar: "قيادة برامج التحول الرقمي البلدي من تصميم الحلول حتى التشغيل والتميز التشغيلي.",
-          },
-          {
-            en: "Deploy smart municipal platforms that improve field operations, contractor performance, and citizen experience.",
-            ar: "تطبيق منصات بلدية ذكية تحسن العمليات الميدانية وأداء المقاولين وتجربة المستفيد.",
-          },
-          {
-            en: "Align R&D, technical delivery, and government stakeholders around scalable, data-driven services.",
-            ar: "مواءمة البحث والتطوير والتسليم التقني والجهات الحكومية حول خدمات قابلة للتوسع ومدفوعة بالبيانات.",
-          },
-        ],
-      },
-      {
-        role: { en: "Senior Program & Delivery Manager", ar: "مدير أول للبرامج والتسليم" },
-        company: "Leader Investment Group (LIG), KSA",
-        period: { en: "May 2023 - Dec 2023", ar: "مايو 2023 - ديسمبر 2023" },
-        points: [
-          {
-            en: "Directed ERP and municipal service delivery across government entities.",
-            ar: "إدارة تسليم ERP والخدمات البلدية عبر جهات حكومية.",
-          },
-          {
-            en: "Led cross-functional teams to deliver ERP and e-government initiatives on time and within budget.",
-            ar: "قيادة فرق متعددة التخصصات لتسليم مبادرات ERP والحكومة الإلكترونية في الوقت والميزانية المحددين.",
-          },
-          {
-            en: "Connected solution outcomes to Saudi Vision 2030 and national digital transformation objectives.",
-            ar: "ربط مخرجات الحلول برؤية السعودية 2030 وأهداف التحول الرقمي الوطني.",
-          },
-        ],
-      },
-      {
-        role: { en: "Senior Project Manager", ar: "مدير مشاريع أول" },
-        company: "Eastern Province Municipality, Dammam, KSA",
-        period: { en: "May 2023 - Dec 2023", ar: "مايو 2023 - ديسمبر 2023" },
-        points: [
-          {
-            en: "Managed end-to-end ERP and municipal digital transformation projects.",
-            ar: "إدارة مشاريع ERP والتحول الرقمي البلدي من البداية للنهاية.",
-          },
-          {
-            en: "Implemented agile delivery practices and digital governance tools for transparency and timely delivery.",
-            ar: "تطبيق ممارسات تسليم مرنة وأدوات حوكمة رقمية لتعزيز الشفافية والتسليم في الوقت المناسب.",
-          },
-          {
-            en: "Coordinated technical solutions with strategic municipal objectives.",
-            ar: "مواءمة الحلول التقنية مع الأهداف الاستراتيجية للبلديات.",
-          },
-        ],
-      },
-      {
-        role: { en: "SAP Program Manager", ar: "مدير برامج SAP" },
-        company: "Edraky - SAP Platinum Partner",
-        period: { en: "Jun 2021 - May 2023", ar: "يونيو 2021 - مايو 2023" },
-        points: [
-          {
-            en: "Led SAP S/4HANA delivery programs across diverse sectors.",
-            ar: "قيادة برامج تسليم SAP S/4HANA عبر قطاعات متعددة.",
-          },
-          {
-            en: "Managed multiple simultaneous implementations with full accountability for scope, schedule, and stakeholders.",
-            ar: "إدارة عدة تطبيقات متزامنة بمسؤولية كاملة عن النطاق والجدول وأصحاب المصلحة.",
-          },
-          {
-            en: "Drove change management, training, and user adoption for sustainable post-go-live operations.",
-            ar: "قيادة إدارة التغيير والتدريب وتبني المستخدمين لضمان الاستدامة بعد الإطلاق.",
-          },
-        ],
-      },
-      {
-        role: {
-          en: "Earlier ERP, IT, infrastructure, and telecom roles",
-          ar: "أدوار سابقة في ERP وتقنية المعلومات والبنية التحتية والاتصالات",
-        },
-        company: "ACME Group, Al Kharafi Group, Practiq Consulting, TechOrg, MATA Group, ECCO, AAST, NTG Clarity Egypt",
-        period: { en: "2010 - 2017", ar: "2010 - 2017" },
-        points: [
-          {
-            en: "Delivered SAP, Oracle, Odoo, and custom ERP implementations across trading, contracting, and industrial sectors.",
-            ar: "تنفيذ تطبيقات SAP وOracle وOdoo وحلول ERP مخصصة في قطاعات التجارة والمقاولات والصناعة.",
-          },
-          {
-            en: "Led infrastructure modernization, network administration, enterprise support, and telecom operations analysis.",
-            ar: "قيادة تحديث البنية التحتية وإدارة الشبكات ودعم المؤسسات وتحليل عمليات الاتصالات.",
-          },
-          {
-            en: "Built a technical foundation that now strengthens executive delivery leadership.",
-            ar: "بناء أساس تقني قوي يعزز اليوم قيادة التسليم التنفيذي.",
-          },
-        ],
-      },
-    ],
+    // Roles come from app/career-data.json, published by the job portal (see app/career.ts).
   },
   companies: {
     eyebrow: { en: "Companies worked with", ar: "جهات وشركات عمل معها" },
