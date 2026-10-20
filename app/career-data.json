@@ -1,7 +1,7 @@
 {
   "headline": "Head of Solutions Implementation & Delivery | SAP & Digital Transformation | Smart City & e-Government | PMP, PMI-RMP, TOGAF",
   "headline_ar": "رئيس تنفيذ وتسليم الحلول | مدير برامج SAP | التحول الرقمي",
-  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs in Saudi Arabia, the UAE and Egypt. I head solutions implementation and delivery at Leader Investment Group, running an average of 18 concurrent government projects of about SAR 25M each with a team of around 25, for clients including the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\n\nBefore that I led SAP S/4HANA programs at an SAP Platinum Partner (Toyota Egypt, Nissan, ENPPI, EIM) and delivered Oracle EPM, NetSuite and Odoo projects in the UAE and Egypt. PMP, PMI-RMP, PMI-PMOCP, PMO-CP, TOGAF and SAP Activate certified, with an MBA.",
+  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs in Saudi Arabia, the UAE and Egypt. I head solutions implementation and delivery at Leader Investment Group: about 18 concurrent government projects of roughly SAR 25M each, with a team of around 25, for the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\n\nBefore that I led SAP S/4HANA, Plant Maintenance and BCM programs for eight enterprise clients at an SAP Platinum Partner, and delivered Oracle EPM, NetSuite and Jedox projects in the UAE, including a financial consolidation across 12 countries. PMP, PMI-RMP, PMI-PMOCP, PMO-CP, TOGAF and SAP Activate certified, with an MBA.",
   "summary_ar": "قائد تسليم بخبرة تتجاوز 15 عاماً في إدارة برامج ERP والتحول الرقمي في السعودية والإمارات ومصر. أرأس حالياً تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، وأدير في المتوسط 18 مشروعاً حكومياً متزامناً بقيمة 25 مليون ريال تقريباً للمشروع، مع فريق من نحو 25 شخصاً، لجهات منها وزارة الدفاع ونزاهة وأمانات المنطقة الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن. وقبل ذلك قدت برامج SAP S/4HANA لدى شريك SAP بلاتيني، ونفذت مشاريع Oracle EPM وNetSuite وOdoo في الإمارات ومصر.",
   "experience": [
     {
@@ -24,7 +24,7 @@
       "location": "Dammam, Saudi Arabia",
       "start": "2023-05",
       "end": "2023-12",
-      "description": "Led ERP and e-Government initiatives on-site at the Eastern Province Municipality as LIG's delivery lead.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.",
+      "description": "Led ERP and e-Government initiatives on-site with municipal leadership, defining program roadmaps.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.",
       "description_ar": "قيادة مبادرات ERP والحكومة الإلكترونية في موقع أمانة المنطقة الشرقية ممثلاً لمجموعة ليدر.\nتطبيق التسليم المرن وأدوات الحوكمة الرقمية لتعزيز الشفافية والالتزام بالمواعيد.\nمواءمة قيادات الأمانة والمقاولين وفرق ليدر حول مستهدفات التحول في رؤية 2030.",
       "current": false
     },
@@ -36,7 +36,7 @@
       "location": "Cairo, Egypt",
       "start": "2021-06",
       "end": "2023-05",
-      "description": "Promoted from SAP Senior Project Manager in Aug 2022.\nDirected concurrent SAP S/4HANA programs for Toyota Egypt, Nissan, ENPPI, EIM, Baheya and Abu Dawood Group.\nLed project managers and cross-functional SAP functional and technical teams.\nDelivered SAP Plant Maintenance for Agiba Petroleum and Abu Qir Petroleum.\nRan change management and end-user training to secure adoption after go-live.",
+      "description": "Directed concurrent SAP programs and their project managers under SAP Activate, owning scope and estimates, resourcing, risk, budget-to-actual and client sign-off.\nSAP S/4HANA for Toyota Egypt (SD, MM, FICO, HCM, CX, VSS, SAC), ENPPI (SD, MM, FICO, HCM, PS), Egyptian International Motors and Baheya Foundation (S/4HANA and CX).\nSAP Plant Maintenance for Nissan Egypt, Agiba Petroleum and Abu Qir Petroleum; SAP Bank Communication Management for Abu Dawood Group (KSA).\nRan change management and end-user training to secure adoption after go-live.",
       "description_ar": "رُقّي من مدير مشاريع أول في أغسطس 2022.\nإدارة برامج SAP S/4HANA متزامنة لتويوتا مصر ونيسان وإنبي وEIM وبهية ومجموعة أبو داود.\nقيادة مديري المشاريع وفرق SAP الوظيفية والتقنية.\nتسليم نظام SAP للصيانة لشركتي عجيبة للبترول وأبو قير للبترول.\nإدارة التغيير وتدريب المستخدمين لضمان التبني بعد الإطلاق.",
       "current": false
     },
@@ -48,7 +48,7 @@
       "location": "Cairo, Egypt",
       "start": "2021-02",
       "end": "2021-05",
-      "description": "Strategy and organization consultant in the firm's advisory team.\nClient-side project manager for TEPCO's SAP S/4HANA, SuccessFactors and CX implementation: owned the plan, supervised the SAP partner's delivery and acceptance, and improved the client's processes.",
+      "description": "Strategy and organization consultant in the firm's advisory team.\nClient-side project manager for TEPCO's SAP S/4HANA, SuccessFactors and CX implementation: owned the plan and budget, supervised the SAP partner's delivery and acceptance, improved the client's processes and handed over to support.",
       "description_ar": "استشاري ضمن فريق الاستشارات الاستراتيجية والتنظيمية في الشركة.\nمدير مشروع من جانب العميل لتطبيق SAP S/4HANA وSuccessFactors وCX لدى TEPCO: إعداد الخطة، والإشراف على تنفيذ شريك SAP واستلامه، وتحسين عمليات العميل.",
       "current": false
     },
@@ -60,7 +60,7 @@
       "location": "Cairo, Egypt",
       "start": "2019-11",
       "end": "2021-01",
-      "description": "Delivered Oracle EPM (Hyperion, FCCS), NetSuite and Jedox projects for GPSSA Abu Dhabi, Reload Logistics, Reportage Properties, UNA Trading (Mantrac), DMG and DME.\nOwned scope, budget and change control across six parallel client projects.",
+      "description": "Delivered Oracle FCCS financial consolidation for Reload Logistics across 12 countries, Jedox performance-based budgeting for GPSSA Abu Dhabi, Jedox planning for UNA Trading (Mantrac), NetSuite ERP for Reportage Properties, and Oracle Hyperion planning for DMG and Dar Al Mimar.\nOwned scope, budget and change control across six parallel projects, and supported YAS Holding, Umniah and Replacement International (KSA).",
       "description_ar": "تسليم مشاريع Oracle EPM (Hyperion وFCCS) وNetSuite وJedox لهيئة المعاشات GPSSA في أبوظبي وReload Logistics وReportage وUNA Trading (منتراك) وDMG وDME.\nامتلاك النطاق والميزانية وضبط التغيير لستة مشاريع متوازية.",
       "current": false
     },
@@ -84,7 +84,7 @@
       "location": "Cairo, Egypt",
       "start": "2017-04",
       "end": "2019-05",
-      "description": "Ran multiple concurrent full-cycle ERP implementations, including Odoo for Ariika and mall-management integration for Marakez (Mall of Arabia).",
+      "description": "Reporting to the General Manager, ran concurrent full-cycle ERP implementations for mall development, manufacturing, retail, food, trading and e-commerce clients.\nDelivered Odoo for Ariika and mall-management integration for Marakez (Mall of Arabia); prepared estimates and RFP responses.",
       "description_ar": "إدارة عدة تطبيقات ERP متكاملة ومتزامنة، منها Odoo لشركة أريكا وتكامل إدارة المراكز التجارية لشركة مراكز (مول العرب).",
       "current": false
     },
@@ -96,7 +96,7 @@
       "location": "Cairo, Egypt",
       "start": "2014-08",
       "end": "2017-04",
-      "description": "Led ERP rollout, IT budget and cloud infrastructure.",
+      "description": "Built the IT department (network, systems, VoIP and support teams) and owned the IT budget, ERP rollout and cloud infrastructure (AWS, SoftLayer, DigitalOcean).\nAdvised the holding group's 13 branches in Saudi Arabia and Bahrain.",
       "description_ar": "قيادة تطبيق ERP وميزانية تقنية المعلومات والبنية السحابية.",
       "current": false
     },
@@ -108,7 +108,7 @@
       "location": "Cairo, Egypt",
       "start": "2013-04",
       "end": "2014-08",
-      "description": "Planned and managed IT infrastructure projects, network security and virtualization.",
+      "description": "Windows Server, Active Directory, FortiGate security and VMware vSphere virtualization; planned and managed IT infrastructure projects.",
       "description_ar": "تخطيط وإدارة مشاريع البنية التحتية وأمن الشبكات والحوسبة الافتراضية.",
       "current": false
     },
@@ -120,7 +120,7 @@
       "location": "Cairo, Egypt",
       "start": "2011-08",
       "end": "2013-04",
-      "description": "Supported 800+ users across multiple sites.",
+      "description": "Supported 800+ users on multinational contact-center programs (Vodafone, Etisalat and others).",
       "description_ar": "دعم أكثر من 800 مستخدم في مواقع متعددة.",
       "current": false
     },
@@ -176,7 +176,9 @@
     "SAP Certified Associate – SAP Activate Project Manager – SAP",
     "Generative AI for Project Managers – PMI",
     "Practical Application of Gen AI for Project Managers – PMI",
-    "Oracle Certified Associate (OCA) – Oracle"
+    "Oracle Certified Associate (OCA) – Oracle",
+    "Microsoft Certified Systems Engineer (MCSE) – Microsoft",
+    "Fortinet Certified Network Security Professional (FCNSP) – Fortinet"
   ],
   "skills": [
     "Program Management",
@@ -268,5 +270,5 @@
       "description": "Property management system and supporting contact center."
     }
   ],
-  "updated_at": "2026-10-20T08:14:41.758Z"
+  "updated_at": "2026-10-20T08:20:24.605Z"
 }
