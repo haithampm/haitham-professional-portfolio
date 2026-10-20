@@ -12,20 +12,20 @@
       "location": "Dammam, Saudi Arabia",
       "start": "2024-01",
       "end": "",
-      "description": "Lead the solutions, implementation and deployment teams, translating each sector's or entity's vision into detailed solutions and delivering them from design through go-live and operations.\nRun 18 concurrent projects on average for the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms and IoT solutions; 940 (Madinah and Eastern Province) and Nazaha 980 contact center and incident management solutions; and the Ministry of Defense property management and contact-center solution.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement, aligned with Vision 2030.",
-      "description_ar": "قيادة فرق الحلول والتنفيذ والنشر، وتحويل رؤية كل قطاع أو جهة إلى حلول تفصيلية وتسليمها من التصميم حتى الإطلاق والتشغيل.\nإدارة 18 مشروعاً متزامناً في المتوسط لوزارة الدفاع ونزاهة وأمانات الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري وحلول إنترنت الأشياء، وحلول مركز الاتصال وإدارة البلاغات 940 (المدينة المنورة والشرقية) و980 لنزاهة، وحل إدارة الأملاك ومركز الاتصال لوزارة الدفاع.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين بما يتوافق مع رؤية 2030.",
+      "description": "Lead the Solutions department's implementers and consultants, delivering the company's solutions and helping government entities automate and digitize their operations, from design through go-live and operations.\nRun 18 concurrent projects on average for the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms and IoT solutions; 940 (Madinah and Eastern Province) and Nazaha 980 contact center and incident management solutions; and the Ministry of Defense property management and contact-center solution.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement, aligned with Vision 2030.",
+      "description_ar": "قيادة فريق المنفذين والاستشاريين في إدارة الحلول، لتنفيذ حلول الشركة ومساعدة الجهات الحكومية في أتمتة عملياتها وتحويلها رقمياً، من التصميم حتى الإطلاق والتشغيل.\nإدارة 18 مشروعاً متزامناً في المتوسط لوزارة الدفاع ونزاهة وأمانات الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري وحلول إنترنت الأشياء، وحلول مركز الاتصال وإدارة البلاغات 940 (المدينة المنورة والشرقية) و980 لنزاهة، وحل إدارة الأملاك ومركز الاتصال لوزارة الدفاع.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين بما يتوافق مع رؤية 2030.",
       "current": true
     },
     {
       "id": "e2",
       "title": "Senior Program & Delivery Manager",
       "title_ar": "مدير أول للبرامج والتسليم",
-      "company": "Leader Investment Group (LIG) – deployed to Eastern Province Municipality",
+      "company": "Leader Investment Group (LIG)",
       "location": "Dammam, Saudi Arabia",
       "start": "2023-05",
       "end": "2023-12",
-      "description": "Led ERP and e-Government initiatives on-site with municipal leadership, defining program roadmaps.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.",
-      "description_ar": "قيادة مبادرات ERP والحكومة الإلكترونية في موقع أمانة المنطقة الشرقية ممثلاً لمجموعة ليدر.\nتطبيق التسليم المرن وأدوات الحوكمة الرقمية لتعزيز الشفافية والالتزام بالمواعيد.\nمواءمة قيادات الأمانة والمقاولين وفرق ليدر حول مستهدفات التحول في رؤية 2030.",
+      "description": "Managed LIG's ERP projects for the Eastern Province Municipality, then took on the wider project portfolio as program manager ahead of promotion to Head of Solutions.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.",
+      "description_ar": "إدارة مشاريع ERP لدى أمانة المنطقة الشرقية، ثم تولي محفظة المشاريع الأوسع كمدير برامج قبل الترقية إلى رئيس إدارة الحلول.\nتطبيق التسليم المرن وأدوات الحوكمة الرقمية لتعزيز الشفافية والالتزام بالمواعيد.",
       "current": false
     },
     {
@@ -270,5 +270,5 @@
       "description": "Property management system and supporting contact center."
     }
   ],
-  "updated_at": "2026-10-20T19:01:18.126Z"
+  "updated_at": "2026-10-20T19:16:28.883Z"
 }
