@@ -1,8 +1,8 @@
 {
   "headline": "Head of Solutions Implementation & Delivery | SAP & Digital Transformation | Smart City & e-Government | PMP, PMI-RMP, TOGAF",
   "headline_ar": "رئيس تنفيذ وتسليم الحلول | مدير برامج SAP | التحول الرقمي",
-  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs in Saudi Arabia, the UAE and Egypt. I head solutions implementation and delivery at Leader Investment Group: about 18 concurrent government projects of roughly SAR 25M each, for the Ministry of Defense, Nazaha and the Eastern Province, Hail, Jazan and Hafr Al-Batin municipalities.\n\nBefore that I led end-to-end SAP S/4HANA and Plant Maintenance programs at an SAP Platinum Partner, and delivered Oracle EPM, NetSuite and Jedox projects in the UAE. PMP, PMI-RMP, PMI-PMOCP, PMO-CP, TOGAF and SAP Activate certified, with an MBA.",
-  "summary_ar": "قائد تسليم بخبرة تتجاوز 15 عاماً في إدارة برامج ERP والتحول الرقمي في السعودية والإمارات ومصر. أرأس حالياً تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، وأدير في المتوسط 18 مشروعاً حكومياً متزامناً بقيمة 25 مليون ريال تقريباً للمشروع، لجهات منها وزارة الدفاع ونزاهة وأمانات المنطقة الشرقية وحائل وجازان وحفر الباطن. وقبل ذلك قدت برامج SAP S/4HANA لدى شريك SAP بلاتيني، ونفذت مشاريع Oracle EPM وNetSuite وOdoo في الإمارات ومصر.",
+  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs in Saudi Arabia, the UAE and Egypt. I head solutions implementation and delivery at Leader Investment Group: about 18 concurrent government projects of roughly SAR 25M each, for the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\n\nBefore that I led end-to-end SAP S/4HANA implementations, including the SAP Plant Maintenance (PM) module, at an SAP Platinum Partner, and delivered Oracle EPM, NetSuite and Jedox projects in the UAE. PMP, PMI-RMP, PMI-PMOCP, PMO-CP, TOGAF and SAP Activate certified, with an MBA.",
+  "summary_ar": "قائد تسليم بخبرة تتجاوز 15 عاماً في إدارة برامج ERP والتحول الرقمي في السعودية والإمارات ومصر. أرأس حالياً تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، وأدير في المتوسط 18 مشروعاً حكومياً متزامناً بقيمة 25 مليون ريال تقريباً للمشروع، لجهات منها وزارة الدفاع ونزاهة وأمانات المنطقة الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن. وقبل ذلك قدت برامج SAP S/4HANA لدى شريك SAP بلاتيني، ونفذت مشاريع Oracle EPM وNetSuite وOdoo في الإمارات ومصر.",
   "experience": [
     {
       "id": "e1",
@@ -12,8 +12,8 @@
       "location": "Dammam, Saudi Arabia",
       "start": "2024-01",
       "end": "",
-      "description": "Lead the Solutions department, owning delivery from solution design through go-live and operations.\nRun 18 concurrent projects on average (about SAR 25M each), some 30 in total, for the Ministry of Defense, Nazaha and the Eastern Province, Hail, Jazan and Hafr Al-Batin municipalities.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms, the 940 and Nazaha 980 incident management systems and Ministry of Defense property management and contact-center solutions.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement, aligned with Vision 2030.",
-      "description_ar": "قيادة إدارة الحلول ومسؤولية التسليم من تصميم الحل حتى الإطلاق والتشغيل.\nإدارة 18 مشروعاً متزامناً في المتوسط (نحو 25 مليون ريال للمشروع)، ونحو 30 مشروعاً إجمالاً، لوزارة الدفاع ونزاهة وأمانات الشرقية وحائل وجازان وحفر الباطن.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري، ونظامي إدارة البلاغات 940 ونزاهة 980، وحلول إدارة الأملاك ومركز الاتصال لوزارة الدفاع.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين بما يتوافق مع رؤية 2030.",
+      "description": "Lead the solutions, implementation and deployment teams, translating each sector's or entity's vision into detailed solutions and delivering them from design through go-live and operations.\nRun 18 concurrent projects on average for the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms and IoT solutions; 940 (Madinah and Eastern Province) and Nazaha 980 contact center and incident management solutions; and the Ministry of Defense property management and contact-center solution.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement, aligned with Vision 2030.",
+      "description_ar": "قيادة فرق الحلول والتنفيذ والنشر، وتحويل رؤية كل قطاع أو جهة إلى حلول تفصيلية وتسليمها من التصميم حتى الإطلاق والتشغيل.\nإدارة 18 مشروعاً متزامناً في المتوسط لوزارة الدفاع ونزاهة وأمانات الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري وحلول إنترنت الأشياء، وحلول مركز الاتصال وإدارة البلاغات 940 (المدينة المنورة والشرقية) و980 لنزاهة، وحل إدارة الأملاك ومركز الاتصال لوزارة الدفاع.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين بما يتوافق مع رؤية 2030.",
       "current": true
     },
     {
@@ -36,7 +36,7 @@
       "location": "Cairo, Egypt",
       "start": "2021-06",
       "end": "2023-05",
-      "description": "Directed concurrent SAP programs and their project managers under SAP Activate, owning scope, estimates, resourcing, risk and client sign-off.\nSAP S/4HANA for Toyota Egypt (SD, MM, FICO, HCM, CX, VSS, SAC), ENPPI (SD, MM, FICO, HCM, PS), Egyptian International Motors and Baheya Foundation (S/4HANA and CX).\nSAP Plant Maintenance for Nissan Egypt, Agiba Petroleum and Abu Qir Petroleum, and an SAP Bank Communication Management project for Abu Dawood Group (KSA).\nRan change management and end-user training to secure adoption after go-live.",
+      "description": "Directed concurrent SAP programs and their project managers under SAP Activate, owning scope, estimates, resourcing, risk and client sign-off.\nSAP S/4HANA for Toyota Egypt (SD, MM, FICO, HCM, CX, VSS, SAC), ENPPI (SD, MM, FICO, HCM, PS), Egyptian International Motors and Baheya Foundation (S/4HANA and CX).\nSAP Plant Maintenance (PM) module for Nissan Egypt, Agiba Petroleum and Abu Qir Petroleum, and an SAP Bank Communication Management project for Abu Dawood Group (KSA).\nRan change management and end-user training to secure adoption after go-live.",
       "description_ar": "رُقّي من مدير مشاريع أول في أغسطس 2022.\nإدارة برامج SAP S/4HANA متزامنة لتويوتا مصر ونيسان وإنبي وEIM وبهية ومجموعة أبو داود.\nقيادة مديري المشاريع وفرق SAP الوظيفية والتقنية.\nتسليم نظام SAP للصيانة لشركتي عجيبة للبترول وأبو قير للبترول.\nإدارة التغيير وتدريب المستخدمين لضمان التبني بعد الإطلاق.",
       "current": false
     },
@@ -215,14 +215,14 @@
   "projects": [
     {
       "id": "p1",
-      "name": "940 incident management system",
-      "client": "Saudi municipalities",
+      "name": "940 contact center and incident management solution",
+      "client": "Madinah and Eastern Province municipalities",
       "year": "2024",
       "description": "Unified intake, routing and tracking of citizen reports."
     },
     {
       "id": "p2",
-      "name": "Smart City municipal platforms",
+      "name": "Smart City and IoT platforms",
       "client": "Eastern Province and Hail municipalities",
       "year": "2024",
       "description": "Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms aligned with Vision 2030."
@@ -257,7 +257,7 @@
     },
     {
       "id": "p7",
-      "name": "980 incident management system",
+      "name": "980 contact center and incident management solution",
       "client": "Nazaha",
       "year": "2024",
       "description": "Receiving and tracking Nazaha reports (980)."
@@ -270,5 +270,5 @@
       "description": "Property management system and supporting contact center."
     }
   ],
-  "updated_at": "2026-10-20T11:02:13.570Z"
+  "updated_at": "2026-10-20T19:01:18.126Z"
 }
