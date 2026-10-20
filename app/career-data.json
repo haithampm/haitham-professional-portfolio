@@ -96,7 +96,7 @@
       "location": "Cairo, Egypt",
       "start": "2014-08",
       "end": "2017-04",
-      "description": "Built the IT department (network, systems, VoIP and support teams) and owned the IT budget, ERP rollout and cloud infrastructure (AWS, SoftLayer, DigitalOcean).\nAdvised the holding group's 13 branches in Saudi Arabia and Bahrain.",
+      "description": "Managed IT operations and the IT budget, the ERP rollout and cloud infrastructure (AWS, SoftLayer, DigitalOcean).\nSupported the holding group's 13 branches in Saudi Arabia and Bahrain.",
       "description_ar": "قيادة تطبيق ERP وميزانية تقنية المعلومات والبنية السحابية.",
       "current": false
     },
@@ -120,8 +120,8 @@
       "location": "Cairo, Egypt",
       "start": "2011-08",
       "end": "2013-04",
-      "description": "Supported 800+ users on multinational contact-center programs (Vodafone, Etisalat and others).",
-      "description_ar": "دعم أكثر من 800 مستخدم في مواقع متعددة.",
+      "description": "Supported 200+ users on multinational contact-center programs (Vodafone, Etisalat and others).",
+      "description_ar": "دعم أكثر من 200 مستخدم في مواقع متعددة.",
       "current": false
     },
     {
@@ -270,5 +270,5 @@
       "description": "Property management system and supporting contact center."
     }
   ],
-  "updated_at": "2026-10-20T10:47:08.182Z"
+  "updated_at": "2026-10-20T11:02:13.570Z"
 }
