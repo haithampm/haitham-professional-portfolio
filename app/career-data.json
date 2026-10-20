@@ -1,8 +1,8 @@
 {
-  "headline": "Head of Solutions Implementation & Delivery | SAP Program Manager | Digital Transformation | PMP, PMI-RMP, TOGAF",
+  "headline": "Head of Solutions Implementation & Delivery | SAP & Digital Transformation | Smart City & e-Government | PMP, PMI-RMP, TOGAF",
   "headline_ar": "رئيس تنفيذ وتسليم الحلول | مدير برامج SAP | التحول الرقمي",
-  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs across Saudi Arabia, the UAE and Egypt. Currently heads solutions implementation and delivery at Leader Investment Group, running municipal Smart City and citizen-service platforms for Saudi municipalities in line with Vision 2030. Combines deep SAP S/4HANA program experience (Toyota, Nissan, ENPPI, TEPCO) with Oracle ERP, NetSuite and EPM delivery for government and private clients. Has delivered 40+ projects across government, oil & gas, automotive, real estate and trading for 20+ named clients.",
-  "summary_ar": "قائد تسليم بخبرة تتجاوز 15 عاماً في إدارة برامج ERP والتحول الرقمي في السعودية والإمارات ومصر. يرأس حالياً تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، ويدير منصات المدن الذكية وخدمات المستفيدين لأمانات سعودية بما يتوافق مع رؤية 2030. يجمع بين خبرة عميقة في برامج SAP S/4HANA (تويوتا ونيسان وإنبي وTEPCO) وتسليم Oracle ERP وNetSuite وEPM لجهات حكومية وخاصة، مع أكثر من 40 مشروعاً لأكثر من 20 جهة.",
+  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs in Saudi Arabia, the UAE and Egypt. I head solutions implementation and delivery at Leader Investment Group, running an average of 18 concurrent government projects of about SAR 25M each with a team of around 25, for clients including the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\n\nBefore that I led SAP S/4HANA programs at an SAP Platinum Partner (Toyota Egypt, Nissan, ENPPI, EIM) and delivered Oracle EPM, NetSuite and Odoo projects in the UAE and Egypt. PMP, PMI-RMP, PMI-PMOCP, PMO-CP, TOGAF and SAP Activate certified, with an MBA.",
+  "summary_ar": "قائد تسليم بخبرة تتجاوز 15 عاماً في إدارة برامج ERP والتحول الرقمي في السعودية والإمارات ومصر. أرأس حالياً تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، وأدير في المتوسط 18 مشروعاً حكومياً متزامناً بقيمة 25 مليون ريال تقريباً للمشروع، مع فريق من نحو 25 شخصاً، لجهات منها وزارة الدفاع ونزاهة وأمانات المنطقة الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن. وقبل ذلك قدت برامج SAP S/4HANA لدى شريك SAP بلاتيني، ونفذت مشاريع Oracle EPM وNetSuite وOdoo في الإمارات ومصر.",
   "experience": [
     {
       "id": "e1",
@@ -12,8 +12,8 @@
       "location": "Dammam, Saudi Arabia",
       "start": "2024-01",
       "end": "",
-      "description": "Lead the Solutions department, owning delivery of municipal digital platforms from design to go-live and operations.\nRun a multi-program portfolio for municipalities including Eastern Province, Madinah and Hail.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations, Visual Distortion and Citizen Care Center 940 platforms aligned with Vision 2030.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement.",
-      "description_ar": "قيادة إدارة الحلول وامتلاك تسليم المنصات الرقمية البلدية من التصميم حتى الإطلاق والتشغيل.\nإدارة محفظة برامج متعددة لأمانات منها المنطقة الشرقية والمدينة المنورة وحائل.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري ومركز البلاغات 940 بما يتوافق مع رؤية 2030.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين.",
+      "description": "Lead the Solutions department and a team of around 25, owning delivery from solution design through go-live and operations.\nRun 18 concurrent projects on average (about SAR 25M each), some 30 in total, for the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms, the 940 Citizen Care Center, Nazaha's 980 reporting contact center and Ministry of Defense property management and contact-center solutions.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement, aligned with Vision 2030.",
+      "description_ar": "قيادة إدارة الحلول وفريق من نحو 25 شخصاً، ومسؤولية التسليم من تصميم الحل حتى الإطلاق والتشغيل.\nإدارة 18 مشروعاً متزامناً في المتوسط (نحو 25 مليون ريال للمشروع)، ونحو 30 مشروعاً إجمالاً، لوزارة الدفاع ونزاهة وأمانات الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري، ومركز خدمة المستفيدين 940، ومركز بلاغات نزاهة 980، وحلول إدارة الأملاك ومركز الاتصال لوزارة الدفاع.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين بما يتوافق مع رؤية 2030.",
       "current": true
     },
     {
@@ -24,7 +24,7 @@
       "location": "Dammam, Saudi Arabia",
       "start": "2023-05",
       "end": "2023-12",
-      "description": "Delivered ERP and e-Government initiatives on-site at the Eastern Province Municipality as LIG's lead.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.\nAligned municipal leadership, contractors and LIG teams on Vision 2030 transformation targets.",
+      "description": "Led ERP and e-Government initiatives on-site at the Eastern Province Municipality as LIG's delivery lead.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.",
       "description_ar": "قيادة مبادرات ERP والحكومة الإلكترونية في موقع أمانة المنطقة الشرقية ممثلاً لمجموعة ليدر.\nتطبيق التسليم المرن وأدوات الحوكمة الرقمية لتعزيز الشفافية والالتزام بالمواعيد.\nمواءمة قيادات الأمانة والمقاولين وفرق ليدر حول مستهدفات التحول في رؤية 2030.",
       "current": false
     },
@@ -42,14 +42,14 @@
     },
     {
       "id": "e4",
-      "title": "SAP Project Manager",
+      "title": "SAP Project Manager (Consultant)",
       "title_ar": "مدير مشروع SAP",
       "company": "Practiq Consulting",
       "location": "Cairo, Egypt",
       "start": "2021-02",
       "end": "2021-05",
-      "description": "Managed the SAP S/4HANA, SuccessFactors and CX implementation for TEPCO Egypt through handover to support.",
-      "description_ar": "إدارة تطبيق SAP S/4HANA وSuccessFactors وCX لشركة TEPCO مصر حتى التسليم لفريق الدعم.",
+      "description": "Strategy and organization consultant in the firm's advisory team.\nClient-side project manager for TEPCO's SAP S/4HANA, SuccessFactors and CX implementation: owned the plan, supervised the SAP partner's delivery and acceptance, and improved the client's processes.",
+      "description_ar": "استشاري ضمن فريق الاستشارات الاستراتيجية والتنظيمية في الشركة.\nمدير مشروع من جانب العميل لتطبيق SAP S/4HANA وSuccessFactors وCX لدى TEPCO: إعداد الخطة، والإشراف على تنفيذ شريك SAP واستلامه، وتحسين عمليات العميل.",
       "current": false
     },
     {
@@ -72,8 +72,8 @@
       "location": "Cairo, Egypt",
       "start": "2019-06",
       "end": "2019-10",
-      "description": "Managed internal ERP implementation and group software projects.",
-      "description_ar": "إدارة تطبيق ERP الداخلي ومشاريع البرمجيات للمجموعة.",
+      "description": "Led the internal team of the group's technology-solutions company, implementing Odoo ERP for group companies.",
+      "description_ar": "قيادة الفريق الداخلي لشركة الحلول التقنية التابعة للمجموعة في تطبيق نظام Odoo ERP لشركات المجموعة.",
       "current": false
     },
     {
@@ -252,7 +252,21 @@
       "client": "GPSSA Abu Dhabi",
       "year": "2020",
       "description": "Enterprise planning and budgeting solution for a UAE government entity."
+    },
+    {
+      "id": "p7",
+      "name": "980 reporting contact center",
+      "client": "Nazaha",
+      "year": "2024",
+      "description": "Contact center for receiving and tracking Nazaha reports (980)."
+    },
+    {
+      "id": "p8",
+      "name": "Property management and contact-center solutions",
+      "client": "Ministry of Defense",
+      "year": "2024",
+      "description": "Property management system and supporting contact center."
     }
   ],
-  "updated_at": "2026-10-19T19:14:06.321Z"
+  "updated_at": "2026-10-20T08:14:41.758Z"
 }
