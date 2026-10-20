@@ -61,7 +61,7 @@
       "start": "2019-11",
       "end": "2021-01",
       "description": "Delivered Oracle FCCS financial consolidation for Reload Logistics, Jedox performance-based budgeting for GPSSA Abu Dhabi, Jedox planning for UNA Trading (Mantrac), NetSuite ERP for Reportage Properties, and Oracle Hyperion planning for DMG and Dar Al Mimar.\nManaged scope and change control across six parallel projects, and supported YAS Holding, Umniah and Replacement International (KSA).",
-      "description_ar": "تسليم مشاريع Oracle EPM (Hyperion وFCCS) وNetSuite وJedox لهيئة المعاشات GPSSA في أبوظبي وReload Logistics وReportage وUNA Trading (منتراك) وDMG وDME.\nامتلاك النطاق والميزانية وضبط التغيير لستة مشاريع متوازية.",
+      "description_ar": "تسليم مشاريع Oracle EPM (Hyperion وFCCS) وNetSuite وJedox لهيئة المعاشات GPSSA في أبوظبي وReload Logistics وReportage وUNA Trading (منتراك) وDMG وDME.\nإدارة النطاق وضبط التغيير لستة مشاريع متوازية.",
       "current": false
     },
     {
@@ -96,8 +96,8 @@
       "location": "Cairo, Egypt",
       "start": "2014-08",
       "end": "2017-04",
-      "description": "Managed IT operations and the IT budget, the ERP rollout and cloud infrastructure (AWS, SoftLayer, DigitalOcean).\nSupported the holding group's 13 branches in Saudi Arabia and Bahrain.",
-      "description_ar": "قيادة تطبيق ERP وميزانية تقنية المعلومات والبنية السحابية.",
+      "description": "Managed IT operations, the ERP rollout and cloud infrastructure (AWS, SoftLayer, DigitalOcean).\nSupported the holding group's branches in Saudi Arabia and Bahrain.",
+      "description_ar": "إدارة عمليات تقنية المعلومات وتطبيق ERP والبنية السحابية.\nدعم فروع المجموعة القابضة في السعودية والبحرين.",
       "current": false
     },
     {
