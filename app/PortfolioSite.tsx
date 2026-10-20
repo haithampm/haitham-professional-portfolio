@@ -150,7 +150,7 @@ export default function PortfolioSite() {
   });
   const [overrides, setOverrides] = useState<ContentOverrides>({});
   const [career, setCareer] = useState<CareerData>(bundledCareer);
-  const [showAllRoles, setShowAllRoles] = useState(false);
+  const [showAllRoles, setShowAllRoles] = useState(() => typeof window === "undefined");
 
   // Pick up the latest publish from the job portal without waiting for a rebuild.
   useEffect(() => {
