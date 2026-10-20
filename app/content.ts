@@ -83,8 +83,8 @@ export const copy = {
     {
       metric: "940",
       label: {
-        en: "Citizen Care Center solution delivered for municipal service quality",
-        ar: "حل مركز البلاغات 940 لتحسين جودة الخدمات البلدية",
+        en: "incident management system delivered for municipal services",
+        ar: "نظام إدارة البلاغات 940 للخدمات البلدية",
       },
     },
     {
@@ -109,12 +109,12 @@ export const copy = {
       {
         title: { en: "Smart City and municipal platforms", ar: "منصات المدن الذكية والبلديات" },
         context: {
-          en: "Led delivery across Eastern Province, Madinah, and Hail municipalities.",
-          ar: "قيادة التسليم في أمانات المنطقة الشرقية والمدينة المنورة وحائل.",
+          en: "Led delivery for the Eastern Province and Hail municipalities.",
+          ar: "قيادة التسليم لأمانتي المنطقة الشرقية وحائل.",
         },
         details: {
-          en: "Smart lighting, smart irrigation, cleaning operations, visual distortion, and Citizen Care Center 940 programs aligned with Saudi Vision 2030.",
-          ar: "برامج الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري ومركز البلاغات 940 بما يتوافق مع رؤية السعودية 2030.",
+          en: "Smart lighting, smart irrigation, cleaning operations, visual distortion and the 940 incident management system, aligned with Saudi Vision 2030.",
+          ar: "برامج الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري ونظام إدارة البلاغات 940 بما يتوافق مع رؤية السعودية 2030.",
         },
       },
       {
