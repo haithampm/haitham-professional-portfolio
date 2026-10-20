@@ -55,8 +55,8 @@ export const copy = {
       ar: "قائد تحول رقمي في أنظمة ERP والمدن الذكية وخدمات البلديات.",
     },
     summary: {
-      en: "Results-driven program leader with 15+ years delivering complex ERP and digital transformation programs across Saudi Arabia, UAE, and Egypt, specializing in SAP S/4HANA, Oracle ERP, Odoo, and Vision 2030-aligned Smart City solutions.",
-      ar: "قائد برامج يركز على النتائج بخبرة تتجاوز 15 عاماً في تنفيذ برامج ERP والتحول الرقمي في السعودية والإمارات ومصر، مع تخصص في SAP S/4HANA وOracle ERP وOdoo وحلول المدن الذكية المتوافقة مع رؤية 2030.",
+      en: "Results-driven program leader with 16+ years delivering complex ERP and digital transformation programs across Saudi Arabia, UAE, and Egypt, specializing in SAP S/4HANA, Oracle ERP, Odoo, and Vision 2030-aligned Smart City solutions.",
+      ar: "قائد برامج يركز على النتائج بخبرة تتجاوز 16 عاماً في تنفيذ برامج ERP والتحول الرقمي في السعودية والإمارات ومصر، مع تخصص في SAP S/4HANA وOracle ERP وOdoo وحلول المدن الذكية المتوافقة مع رؤية 2030.",
     },
     profileSummary: {
       en: "Head of Solutions Implementation & Delivery, SAP Program Manager, and digital transformation leader.",
@@ -67,7 +67,7 @@ export const copy = {
   },
   achievements: [
     {
-      metric: "15+",
+      metric: "16+",
       label: {
         en: "years leading ERP and digital transformation programs",
         ar: "عاماً في قيادة برامج ERP والتحول الرقمي",
