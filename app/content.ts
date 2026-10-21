@@ -113,8 +113,8 @@ export const copy = {
           ar: "قيادة التسليم لأمانتي المنطقة الشرقية وحائل.",
         },
         details: {
-          en: "Smart lighting, smart irrigation, cleaning operations, visual distortion and IoT solutions, and the 940 contact center and incident management solution, aligned with Saudi Vision 2030.",
-          ar: "برامج الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري وحلول إنترنت الأشياء، وحل مركز الاتصال وإدارة البلاغات 940 بما يتوافق مع رؤية السعودية 2030.",
+          en: "Smart lighting, smart gardening, cleaning operations, visual distortion and IoT solutions, and the 940 contact center and incident management solution, aligned with Saudi Vision 2030.",
+          ar: "برامج الإنارة الذكية والحدائق الذكية وعمليات النظافة والتشوه البصري وحلول إنترنت الأشياء، وحل مركز الاتصال وإدارة البلاغات 940 بما يتوافق مع رؤية السعودية 2030.",
         },
       },
       {
