@@ -1,8 +1,8 @@
 {
-  "headline": "Head of Solutions Implementation & Delivery | SAP Program Manager | Digital Transformation | PMP, PMI-RMP, TOGAF",
-  "headline_ar": "رئيس تنفيذ وتسليم الحلول | مدير برامج SAP | التحول الرقمي",
-  "summary": "Delivery leader with 15+ years running ERP and digital transformation programs across Saudi Arabia, the UAE and Egypt. Currently heads solutions implementation and delivery at Leader Investment Group, running municipal Smart City and citizen-service platforms for Saudi municipalities in line with Vision 2030. Combines deep SAP S/4HANA program experience (Toyota, Nissan, ENPPI, TEPCO) with Oracle ERP, NetSuite and EPM delivery for government and private clients. Has delivered 40+ projects across government, oil & gas, automotive, real estate and trading for 20+ named clients.",
-  "summary_ar": "قائد تسليم بخبرة تتجاوز 15 عاماً في إدارة برامج ERP والتحول الرقمي في السعودية والإمارات ومصر. يرأس حالياً تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، ويدير منصات المدن الذكية وخدمات المستفيدين لأمانات سعودية بما يتوافق مع رؤية 2030. يجمع بين خبرة عميقة في برامج SAP S/4HANA (تويوتا ونيسان وإنبي وTEPCO) وتسليم Oracle ERP وNetSuite وEPM لجهات حكومية وخاصة، مع أكثر من 40 مشروعاً لأكثر من 20 جهة.",
+  "headline": "Head of Solutions Implementation & Delivery | SAP & Digital Transformation | Smart City, IoT & AI Solutions | PMP, PMI-RMP, TOGAF",
+  "headline_ar": "رئيس تنفيذ وتسليم الحلول | SAP والتحول الرقمي | حلول المدن الذكية وإنترنت الأشياء والذكاء الاصطناعي",
+  "summary": "Solutions and program delivery leader with 16+ years managing enterprise technology implementations, ERP programs and digital transformation initiatives in Saudi Arabia, the UAE and Egypt.\n\nI head solutions implementation and delivery at Leader Investment Group, leading a team of about 25 implementers and consultants across about 18 concurrent government projects, with contract values averaging about SAR 25M, for the Ministry of Defense, Nazaha and the Eastern Province, Madinah, Hail, Jazan and Hafr Al-Batin municipalities. Recent work includes an AI-based Visual Distortion solution using computer vision, IoT-based Smart Lighting, the 940 citizen reports solution integrated with the Ministry of Municipalities and Housing, and live KPIs for Smart City command-and-control centers.\n\nBefore that I led end-to-end SAP S/4HANA implementations across multiple modules at an SAP Platinum Partner, and delivered Oracle EPM, NetSuite and Jedox projects in the UAE. PMP, PMI-RMP, PMI-PMOCP, PMO-CP, TOGAF and SAP Activate certified, with an MBA.",
+  "summary_ar": "قائد تسليم حلول وبرامج بخبرة تتجاوز 16 عاماً في إدارة تطبيقات التقنية المؤسسية وبرامج ERP ومبادرات التحول الرقمي في السعودية والإمارات ومصر.\n\nأرأس تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار، وأقود فريقاً من نحو 25 منفذاً واستشارياً في نحو 18 مشروعاً حكومياً متزامناً بمتوسط قيمة عقد يقارب 25 مليون ريال، لوزارة الدفاع ونزاهة وأمانات المنطقة الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن. ومن أحدث أعمالنا: حل التشوه البصري بالذكاء الاصطناعي والرؤية الحاسوبية، والإنارة الذكية بإنترنت الأشياء، وحل بلاغات 940 المرتبط بوزارة البلديات والإسكان، ومؤشرات لحظية لمراكز القيادة والتحكم في المدن الذكية.\n\nوقبل ذلك قدت تطبيقات SAP S/4HANA متكاملة لعدة وحدات لدى شريك SAP بلاتيني، ونفذت مشاريع Oracle EPM وNetSuite وJedox في الإمارات.",
   "experience": [
     {
       "id": "e1",
@@ -12,20 +12,20 @@
       "location": "Dammam, Saudi Arabia",
       "start": "2024-01",
       "end": "",
-      "description": "Lead the Solutions department, owning delivery of municipal digital platforms from design to go-live and operations.\nRun a multi-program portfolio for municipalities including Eastern Province, Madinah and Hail.\nLaunched Smart Lighting, Smart Irrigation, Cleaning Operations, Visual Distortion and Citizen Care Center 940 platforms aligned with Vision 2030.\nSet governance, risk control and KPIs for service quality, contractor performance and citizen engagement.",
-      "description_ar": "قيادة إدارة الحلول وامتلاك تسليم المنصات الرقمية البلدية من التصميم حتى الإطلاق والتشغيل.\nإدارة محفظة برامج متعددة لأمانات منها المنطقة الشرقية والمدينة المنورة وحائل.\nإطلاق منصات الإنارة الذكية والري الذكي وعمليات النظافة والتشوه البصري ومركز البلاغات 940 بما يتوافق مع رؤية 2030.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء لجودة الخدمة وأداء المقاولين وتفاعل المستفيدين.",
+      "description": "Lead the Solutions department's team of about 25 implementers and consultants, working with the development team to deliver solutions that help government entities automate and digitize, from design and go-live through support to contract end.\nRun 18 concurrent projects on average for the Ministry of Defense, Nazaha and five municipalities (Eastern Province, Madinah, Hail, Jazan, Hafr Al-Batin), mostly multi-year O&M and development contracts, including HR and Finance ERP.\nDelivered an AI-based Visual Distortion solution for the Eastern Province (computer vision and machine learning) that flags distortion for proactive treatment, reducing citizen reports and complaints and improving the urban landscape.\nRolled out IoT-based Smart Lighting that controls street lighting remotely, reducing energy consumption and tracking maintenance.\nImplemented the 940 solution for the Madinah and Eastern Province municipalities (incident management system, call center, mobile app and chatbot), integrated with the Ministry of Municipalities and Housing's reporting channels and the command-and-control center for faster follow-up.\nProvided solutions that improved and extended the Eastern Province Municipality's Investment Agency platform for planning and offering investment opportunities, inventorying municipal assets and tracking investment contracts.\nAlso delivered Nazaha 980, the Ministry of Defense property management and contact-center solution, cleaning-contractor monitoring and fleet tracking (Eastern Province, Hail and Hafr Al-Batin; now in its third phase), Smart Gardening, and the Eastern Province e-portal and e-services.\nBuilt strategy and decision-support KPI dashboards for Jazan and Hafr Al-Batin, and the Eastern Province quality-management system for the King Abdulaziz Quality Award.\nSet governance, risk control and KPIs across the portfolio, with KPI dashboards in most platforms, aligned with Vision 2030.",
+      "description_ar": "قيادة فريق من نحو 25 منفذاً واستشارياً في إدارة الحلول، بالتنسيق مع فريق التطوير، لتنفيذ حلول الشركة التي تساعد الجهات الحكومية في أتمتة عملياتها وتحويلها رقمياً، من التصميم والإطلاق حتى الدعم إلى نهاية التعاقد.\nإدارة 18 مشروعاً متزامناً في المتوسط لوزارة الدفاع ونزاهة وأمانات الشرقية والمدينة المنورة وحائل وجازان وحفر الباطن، أغلبها عقود تشغيل وصيانة وتطوير متعددة السنوات تُجدد أو تُمدد، منها أنظمة ERP للموارد البشرية والمالية لأمانتي الشرقية وحائل.\nتنفيذ حل التشوه البصري لأمانة المنطقة الشرقية بالذكاء الاصطناعي (الرؤية الحاسوبية وتعلم الآلة) لرصد عناصر التشوه وإحالتها لمتخذي القرار للمعالجة الاستباقية، مما يقلل بلاغات المواطنين ويحسّن المشهد الحضري؛ يعمل حالياً مع استمرار التطوير.\nتنفيذ الإنارة الذكية بإنترنت الأشياء للتحكم في إنارة الشوارع عن بُعد وترشيد الاستهلاك ومتابعة الصيانة.\nتنفيذ حل 940 لأمانتي المدينة المنورة والشرقية (نظام البلاغات ومركز الاتصال وتطبيق الجوال وروبوت المحادثة)، وربطه بقنوات بلاغات وزارة البلديات والإسكان ومركز القيادة والتحكم لمتابعة المعالجات بشكل أسرع.\nتقديم حلول لتحسين وتطوير منصة وكالة الاستثمار بأمانة المنطقة الشرقية لتخطيط وطرح الفرص الاستثمارية وحصر الأصول البلدية ومتابعة العقود الاستثمارية.\nوتنفيذ حل 980 لنزاهة، وحل إدارة الأملاك ومركز الاتصال لوزارة الدفاع، والرقابة الميدانية وتتبع أسطول مقاولي النظافة (الشرقية وحائل وحفر الباطن؛ في مرحلته الثالثة)، والحدائق الذكية، والبوابة الإلكترونية لأمانة الشرقية وخدماتها.\nتنفيذ لوحات مؤشرات الإدارة الاستراتيجية ودعم القرار لأمانتي جازان وحفر الباطن، ونظام ولوحات مؤشرات لإدارة الجودة بأمانة المنطقة الشرقية لجمع البيانات وحساب مؤشرات أداء الإدارات وتوثيق الأدلة للتقدم لجائزة الملك عبدالعزيز للجودة.\nوضع الحوكمة وضبط المخاطر ومؤشرات الأداء على مستوى المحفظة، مع لوحات مؤشرات في أغلب المنصات، وتغذية شاشات مراكز القيادة والتحكم بالحالة اللحظية للبلاغات وأداء المقاولين وخدمات المدينة الذكية، بما يتوافق مع رؤية 2030.",
       "current": true
     },
     {
       "id": "e2",
       "title": "Senior Program & Delivery Manager",
       "title_ar": "مدير أول للبرامج والتسليم",
-      "company": "Leader Investment Group (LIG) – deployed to Eastern Province Municipality",
+      "company": "Leader Investment Group (LIG)",
       "location": "Dammam, Saudi Arabia",
       "start": "2023-05",
       "end": "2023-12",
-      "description": "Delivered ERP and e-Government initiatives on-site at the Eastern Province Municipality as LIG's lead.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.\nAligned municipal leadership, contractors and LIG teams on Vision 2030 transformation targets.",
-      "description_ar": "قيادة مبادرات ERP والحكومة الإلكترونية في موقع أمانة المنطقة الشرقية ممثلاً لمجموعة ليدر.\nتطبيق التسليم المرن وأدوات الحوكمة الرقمية لتعزيز الشفافية والالتزام بالمواعيد.\nمواءمة قيادات الأمانة والمقاولين وفرق ليدر حول مستهدفات التحول في رؤية 2030.",
+      "description": "Managed LIG's ERP projects for the Eastern Province Municipality, then took on the wider project portfolio as program manager ahead of promotion to Head of Solutions.\nIntroduced agile delivery and digital governance tools for transparency and on-time delivery.",
+      "description_ar": "إدارة مشاريع ERP لدى أمانة المنطقة الشرقية، ثم تولي محفظة المشاريع الأوسع كمدير برامج قبل الترقية إلى رئيس إدارة الحلول.\nتطبيق التسليم المرن وأدوات الحوكمة الرقمية لتعزيز الشفافية والالتزام بالمواعيد.",
       "current": false
     },
     {
@@ -36,20 +36,20 @@
       "location": "Cairo, Egypt",
       "start": "2021-06",
       "end": "2023-05",
-      "description": "Promoted from SAP Senior Project Manager in Aug 2022.\nDirected concurrent SAP S/4HANA programs for Toyota Egypt, Nissan, ENPPI, EIM, Baheya and Abu Dawood Group.\nLed project managers and cross-functional SAP functional and technical teams.\nDelivered SAP Plant Maintenance for Agiba Petroleum and Abu Qir Petroleum.\nRan change management and end-user training to secure adoption after go-live.",
-      "description_ar": "رُقّي من مدير مشاريع أول في أغسطس 2022.\nإدارة برامج SAP S/4HANA متزامنة لتويوتا مصر ونيسان وإنبي وEIM وبهية ومجموعة أبو داود.\nقيادة مديري المشاريع وفرق SAP الوظيفية والتقنية.\nتسليم نظام SAP للصيانة لشركتي عجيبة للبترول وأبو قير للبترول.\nإدارة التغيير وتدريب المستخدمين لضمان التبني بعد الإطلاق.",
+      "description": "Directed concurrent SAP programs under SAP Activate, leading matrix teams of 4 project managers and about 30 functional and technical consultants shared across projects; owned scope, estimates, resourcing, risk, data migration, testing (including UAT), cutover and client sign-off.\nSAP S/4HANA for Toyota Egypt (SD, MM, FICO, HCM, CX, VSS, SAC), ENPPI (SD, MM, FICO, HCM, PS), Egyptian International Motors and Baheya Foundation (S/4HANA and CX).\nSAP Plant Maintenance (PM) module for Nissan Egypt, Agiba Petroleum and Abu Qir Petroleum, and an SAP Bank Communication Management project for Abu Dawood Group (KSA).\nRan change management and end-user training to secure adoption after go-live.",
+      "description_ar": "رُقّي من مدير مشاريع أول في أغسطس 2022.\nإدارة برامج SAP S/4HANA متزامنة لتويوتا مصر ونيسان وإنبي وEIM وبهية ومجموعة أبو داود.\nقيادة فرق مصفوفية من 4 مديري مشاريع ونحو 30 استشاري SAP وظيفي وتقني مشتركين بين أكثر من مشروع، مع مسؤولية نقل البيانات والاختبارات (بما فيها UAT) والانتقال للتشغيل.\nتسليم نظام SAP للصيانة لشركتي عجيبة للبترول وأبو قير للبترول.\nإدارة التغيير وتدريب المستخدمين لضمان التبني بعد الإطلاق.",
       "current": false
     },
     {
       "id": "e4",
-      "title": "SAP Project Manager",
+      "title": "SAP Project Manager (Consultant)",
       "title_ar": "مدير مشروع SAP",
       "company": "Practiq Consulting",
       "location": "Cairo, Egypt",
       "start": "2021-02",
       "end": "2021-05",
-      "description": "Managed the SAP S/4HANA, SuccessFactors and CX implementation for TEPCO Egypt through handover to support.",
-      "description_ar": "إدارة تطبيق SAP S/4HANA وSuccessFactors وCX لشركة TEPCO مصر حتى التسليم لفريق الدعم.",
+      "description": "Strategy and organization consultant in the firm's advisory team.\nClient-side project manager for TEPCO's SAP S/4HANA, SuccessFactors and CX implementation: owned the plan, supervised the SAP partner's delivery and acceptance, improved the client's processes and handed over to support.",
+      "description_ar": "استشاري ضمن فريق الاستشارات الاستراتيجية والتنظيمية في الشركة.\nمدير مشروع من جانب العميل لتطبيق SAP S/4HANA وSuccessFactors وCX لدى TEPCO: إعداد الخطة، والإشراف على تنفيذ شريك SAP واستلامه، وتحسين عمليات العميل.",
       "current": false
     },
     {
@@ -60,8 +60,8 @@
       "location": "Cairo, Egypt",
       "start": "2019-11",
       "end": "2021-01",
-      "description": "Delivered Oracle EPM (Hyperion, FCCS), NetSuite and Jedox projects for GPSSA Abu Dhabi, Reload Logistics, Reportage Properties, UNA Trading (Mantrac), DMG and DME.\nOwned scope, budget and change control across six parallel client projects.",
-      "description_ar": "تسليم مشاريع Oracle EPM (Hyperion وFCCS) وNetSuite وJedox لهيئة المعاشات GPSSA في أبوظبي وReload Logistics وReportage وUNA Trading (منتراك) وDMG وDME.\nامتلاك النطاق والميزانية وضبط التغيير لستة مشاريع متوازية.",
+      "description": "Delivered Oracle FCCS financial consolidation for Reload Logistics, Jedox performance-based budgeting for GPSSA Abu Dhabi, Jedox planning for UNA Trading (Mantrac), NetSuite ERP for Reportage Properties, and Oracle Hyperion planning for DMG and Dar Al Mimar.\nManaged scope and change control across six parallel projects, and supported YAS Holding, Umniah and Replacement International (KSA).",
+      "description_ar": "تسليم مشاريع Oracle EPM (Hyperion وFCCS) وNetSuite وJedox لهيئة المعاشات GPSSA في أبوظبي وReload Logistics وReportage وUNA Trading (منتراك) وDMG وDME.\nإدارة النطاق وضبط التغيير لستة مشاريع متوازية.",
       "current": false
     },
     {
@@ -72,8 +72,8 @@
       "location": "Cairo, Egypt",
       "start": "2019-06",
       "end": "2019-10",
-      "description": "Managed internal ERP implementation and group software projects.",
-      "description_ar": "إدارة تطبيق ERP الداخلي ومشاريع البرمجيات للمجموعة.",
+      "description": "Led the internal team of the group's technology-solutions company, implementing Odoo ERP for group companies.",
+      "description_ar": "قيادة الفريق الداخلي لشركة الحلول التقنية التابعة للمجموعة في تطبيق نظام Odoo ERP لشركات المجموعة.",
       "current": false
     },
     {
@@ -84,7 +84,7 @@
       "location": "Cairo, Egypt",
       "start": "2017-04",
       "end": "2019-05",
-      "description": "Ran multiple concurrent full-cycle ERP implementations, including Odoo for Ariika and mall-management integration for Marakez (Mall of Arabia).",
+      "description": "Reporting to the General Manager, ran concurrent full-cycle ERP implementations for mall development, manufacturing, retail, food, trading and e-commerce clients.\nDelivered Odoo for Ariika and mall-management integration for Marakez (Mall of Arabia); prepared estimates and RFP responses.",
       "description_ar": "إدارة عدة تطبيقات ERP متكاملة ومتزامنة، منها Odoo لشركة أريكا وتكامل إدارة المراكز التجارية لشركة مراكز (مول العرب).",
       "current": false
     },
@@ -96,8 +96,8 @@
       "location": "Cairo, Egypt",
       "start": "2014-08",
       "end": "2017-04",
-      "description": "Led ERP rollout, IT budget and cloud infrastructure.",
-      "description_ar": "قيادة تطبيق ERP وميزانية تقنية المعلومات والبنية السحابية.",
+      "description": "Managed IT operations, the ERP rollout and cloud infrastructure (AWS, SoftLayer, DigitalOcean).\nSupported the holding group's branches in Saudi Arabia and Bahrain.",
+      "description_ar": "إدارة عمليات تقنية المعلومات وتطبيق ERP والبنية السحابية.\nدعم فروع المجموعة القابضة في السعودية والبحرين.",
       "current": false
     },
     {
@@ -108,7 +108,7 @@
       "location": "Cairo, Egypt",
       "start": "2013-04",
       "end": "2014-08",
-      "description": "Planned and managed IT infrastructure projects, network security and virtualization.",
+      "description": "Windows Server, Active Directory, FortiGate security and VMware vSphere virtualization; planned and managed IT infrastructure projects.",
       "description_ar": "تخطيط وإدارة مشاريع البنية التحتية وأمن الشبكات والحوسبة الافتراضية.",
       "current": false
     },
@@ -120,8 +120,8 @@
       "location": "Cairo, Egypt",
       "start": "2011-08",
       "end": "2013-04",
-      "description": "Supported 800+ users across multiple sites.",
-      "description_ar": "دعم أكثر من 800 مستخدم في مواقع متعددة.",
+      "description": "Supported 200+ users on multinational contact-center programs (Vodafone, Etisalat and others).",
+      "description_ar": "دعم أكثر من 200 مستخدم في مواقع متعددة.",
       "current": false
     },
     {
@@ -176,9 +176,12 @@
     "SAP Certified Associate – SAP Activate Project Manager – SAP",
     "Generative AI for Project Managers – PMI",
     "Practical Application of Gen AI for Project Managers – PMI",
-    "Oracle Certified Associate (OCA) – Oracle"
+    "Oracle Certified Associate (OCA) – Oracle",
+    "Microsoft Certified Systems Engineer (MCSE) – Microsoft",
+    "Fortinet Certified Network Security Professional (FCNSP) – Fortinet"
   ],
   "skills": [
+    "Project Planning & Scheduling",
     "Program Management",
     "Project Delivery",
     "PMO",
@@ -196,7 +199,10 @@
     "Stakeholder Management",
     "Vendor Management",
     "TOGAF",
-    "Agile"
+    "Agile",
+    "KPI Dashboards",
+    "Command & Control Centers",
+    "IoT & AI-enabled Municipal Solutions"
   ],
   "languages": [
     {
@@ -213,17 +219,17 @@
   "projects": [
     {
       "id": "p1",
-      "name": "Citizen Care Center 940",
-      "client": "Saudi municipalities",
+      "name": "940 contact center and incident management solution",
+      "client": "Madinah and Eastern Province municipalities",
       "year": "2024",
-      "description": "Unified citizen complaints and requests platform: intake, routing and tracking."
+      "description": "Incident management system, call center, mobile app and chatbot for citizen reports, integrated with the Ministry of Municipalities and Housing's reporting channels; implemented and supported to contract end."
     },
     {
       "id": "p2",
-      "name": "Smart City municipal platforms",
-      "client": "Eastern Province, Madinah and Hail municipalities",
+      "name": "Smart City and IoT platforms",
+      "client": "Eastern Province and Hail municipalities",
       "year": "2024",
-      "description": "Smart Lighting, Smart Irrigation, Cleaning Operations and Visual Distortion platforms aligned with Vision 2030."
+      "description": "Cleaning-contractor field monitoring and fleet tracking (Eastern Province, Hail and Hafr Al-Batin; third phase), Smart Lighting (second phase), Smart Gardening and Visual Distortion platforms aligned with Vision 2030."
     },
     {
       "id": "p3",
@@ -252,7 +258,62 @@
       "client": "GPSSA Abu Dhabi",
       "year": "2020",
       "description": "Enterprise planning and budgeting solution for a UAE government entity."
+    },
+    {
+      "id": "p7",
+      "name": "980 contact center and incident management solution",
+      "client": "Nazaha",
+      "year": "2024",
+      "description": "Receiving and tracking Nazaha reports (980)."
+    },
+    {
+      "id": "p8",
+      "name": "Property management and contact-center solutions",
+      "client": "Ministry of Defense",
+      "year": "2024",
+      "description": "Property management system and supporting contact center."
+    },
+    {
+      "id": "p9",
+      "name": "E-portal and e-services",
+      "client": "Eastern Province Municipality",
+      "year": "2024",
+      "description": "Municipality website and e-services platform, live."
+    },
+    {
+      "id": "p10",
+      "name": "Smart Gardening (parks works field monitoring)",
+      "client": "Hail Municipality",
+      "year": "2024",
+      "description": "Field monitoring of parks maintenance contractors."
+    },
+    {
+      "id": "p11",
+      "name": "Command-and-control operations center integration",
+      "client": "Saudi municipalities",
+      "year": "2024",
+      "description": "Live KPIs from 940, Nazaha 980, cleaning, Smart City, Smart Lighting and Visual Distortion solutions on operations-center screens."
+    },
+    {
+      "id": "p12",
+      "name": "Strategy and decision-support KPI dashboards",
+      "client": "Jazan and Hafr Al-Batin municipalities",
+      "year": "2024",
+      "description": "KPI dashboards for the municipalities' strategy and decision-support offices."
+    },
+    {
+      "id": "p13",
+      "name": "AI-based Visual Distortion detection",
+      "client": "Eastern Province Municipality",
+      "year": "2024",
+      "description": "Computer vision and machine learning flag visual distortion for proactive treatment, reducing citizen reports and improving the urban landscape; live, under continued enhancement."
+    },
+    {
+      "id": "p14",
+      "name": "Investment Agency platform improvements",
+      "client": "Eastern Province Municipality",
+      "year": "2024",
+      "description": "Solutions that improved and extended the platform for planning and offering investment opportunities, inventorying municipal assets and tracking investment contracts."
     }
-  ],
-  "updated_at": "2026-10-19T19:14:06.321Z"
+  ]
 }
