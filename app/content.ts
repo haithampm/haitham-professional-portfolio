@@ -47,53 +47,29 @@ export const copy = {
   },
   hero: {
     label: {
-      en: "Head of Solutions Implementation & Delivery | SAP Program Manager",
-      ar: "رئيس تنفيذ وتسليم الحلول | مدير برامج SAP",
+      en: "Head of Solutions Implementation & Delivery | SAP & Digital Transformation",
+      ar: "رئيس تنفيذ وتسليم الحلول | SAP والتحول الرقمي",
     },
     title: {
-      en: "Digital transformation leader for ERP, Smart City, and municipal service delivery.",
-      ar: "قائد تحول رقمي في أنظمة ERP والمدن الذكية وخدمات البلديات.",
+      en: "Delivering Smart City, AI and ERP solutions that government and enterprise teams actually use.",
+      ar: "تسليم حلول المدن الذكية والذكاء الاصطناعي وERP التي تستخدمها الجهات الحكومية والمؤسسات فعلاً.",
     },
     summary: {
-      en: "Results-driven program leader with 16+ years delivering complex ERP and digital transformation programs across Saudi Arabia, UAE, and Egypt, specializing in SAP S/4HANA, Oracle ERP, Odoo, and Vision 2030-aligned Smart City solutions.",
-      ar: "قائد برامج يركز على النتائج بخبرة تتجاوز 16 عاماً في تنفيذ برامج ERP والتحول الرقمي في السعودية والإمارات ومصر، مع تخصص في SAP S/4HANA وOracle ERP وOdoo وحلول المدن الذكية المتوافقة مع رؤية 2030.",
+      en: "Solutions and program delivery leader with 16+ years in Saudi Arabia, the UAE and Egypt. Heads solutions delivery at Leader Investment Group: about 18 concurrent government projects for the Ministry of Defense, Nazaha and five municipalities, including AI-based Visual Distortion detection, IoT Smart Lighting and the 940 citizen reports solution. Previously led end-to-end SAP S/4HANA implementations at an SAP Platinum Partner.",
+      ar: "قائد تسليم حلول وبرامج بخبرة تتجاوز 16 عاماً في السعودية والإمارات ومصر. يرأس تنفيذ وتسليم الحلول في مجموعة ليدر للاستثمار: نحو 18 مشروعاً حكومياً متزامناً لوزارة الدفاع ونزاهة وخمس أمانات، منها رصد التشوه البصري بالذكاء الاصطناعي والإنارة الذكية بإنترنت الأشياء وحل بلاغات 940. وقبل ذلك قاد تطبيقات SAP S/4HANA متكاملة لدى شريك SAP بلاتيني.",
     },
     profileSummary: {
-      en: "Head of Solutions Implementation & Delivery, SAP Program Manager, and digital transformation leader.",
-      ar: "رئيس تنفيذ وتسليم الحلول، مدير برامج SAP وقائد تحول رقمي.",
+      en: "Head of Solutions Implementation & Delivery, Smart City and SAP delivery leader.",
+      ar: "رئيس تنفيذ وتسليم الحلول، وقائد تسليم حلول المدن الذكية وSAP.",
     },
     email: { en: "Email Haitham", ar: "راسل هيثم" },
     cv: { en: "Download CV", ar: "تحميل السيرة" },
   },
   achievements: [
-    {
-      metric: "16+",
-      label: {
-        en: "years leading ERP and digital transformation programs",
-        ar: "عاماً في قيادة برامج ERP والتحول الرقمي",
-      },
-    },
-    {
-      metric: "40+",
-      label: {
-        en: "projects delivered across KSA, UAE, and Egypt",
-        ar: "مشروعاً تم تسليمها في السعودية والإمارات ومصر",
-      },
-    },
-    {
-      metric: "940",
-      label: {
-        en: "contact center and incident management solution for municipal services",
-        ar: "حل مركز الاتصال وإدارة البلاغات 940 للخدمات البلدية",
-      },
-    },
-    {
-      metric: "3",
-      label: {
-        en: "core markets: government, oil and gas, and enterprise operations",
-        ar: "أسواق رئيسية: الحكومة، النفط والغاز، وعمليات الشركات",
-      },
-    },
+    { metric: "16+", label: { en: "years leading ERP and digital transformation delivery", ar: "عاماً في قيادة تسليم ERP والتحول الرقمي" } },
+    { metric: "18", label: { en: "concurrent government projects on average, contract values around SAR 25M", ar: "مشروعاً حكومياً متزامناً في المتوسط، بمتوسط قيمة عقد نحو 25 مليون ريال" } },
+    { metric: "~25", label: { en: "implementers and consultants in the Solutions team", ar: "منفذاً واستشارياً في فريق الحلول" } },
+    { metric: "3rd", label: { en: "contract phase for IoT cleaning-contractor monitoring: clients keep renewing", ar: "مرحلة تعاقدية لحلول رقابة النظافة بإنترنت الأشياء: العملاء يجددون" } },
   ],
   portfolio: {
     eyebrow: { en: "Professional portfolio", ar: "الملف المهني" },
@@ -107,36 +83,27 @@ export const copy = {
     },
     highlights: [
       {
-        title: { en: "Smart City and municipal platforms", ar: "منصات المدن الذكية والبلديات" },
-        context: {
-          en: "Led delivery for the Eastern Province and Hail municipalities.",
-          ar: "قيادة التسليم لأمانتي المنطقة الشرقية وحائل.",
-        },
+        title: { en: "AI and IoT for municipal services", ar: "الذكاء الاصطناعي وإنترنت الأشياء للخدمات البلدية" },
+        context: { en: "Eastern Province, Hail and Hafr Al-Batin municipalities.", ar: "أمانات المنطقة الشرقية وحائل وحفر الباطن." },
         details: {
-          en: "Smart lighting, smart gardening, cleaning operations, visual distortion and IoT solutions, and the 940 contact center and incident management solution, aligned with Saudi Vision 2030.",
-          ar: "برامج الإنارة الذكية والحدائق الذكية وعمليات النظافة والتشوه البصري وحلول إنترنت الأشياء، وحل مركز الاتصال وإدارة البلاغات 940 بما يتوافق مع رؤية السعودية 2030.",
+          en: "AI-based Visual Distortion detection (computer vision and machine learning) that flags issues for proactive treatment; IoT Smart Lighting with remote street-lighting control and lower energy use; cleaning-contractor field monitoring and fleet tracking, now in its third contract phase; live KPIs on Smart City command-and-control screens.",
+          ar: "رصد التشوه البصري بالذكاء الاصطناعي (الرؤية الحاسوبية وتعلم الآلة) للمعالجة الاستباقية؛ والإنارة الذكية بإنترنت الأشياء للتحكم عن بُعد وترشيد الاستهلاك؛ والرقابة الميدانية وتتبع أسطول مقاولي النظافة في مرحلتها التعاقدية الثالثة؛ ومؤشرات لحظية على شاشات مراكز القيادة والتحكم.",
         },
       },
       {
-        title: { en: "Enterprise ERP transformations", ar: "تحولات ERP للمؤسسات" },
-        context: {
-          en: "Managed SAP, Oracle, Odoo, and custom ERP implementations for major organizations.",
-          ar: "إدارة تطبيقات SAP وOracle وOdoo وحلول ERP مخصصة لجهات كبرى.",
-        },
+        title: { en: "Citizen services and government platforms", ar: "خدمات المواطنين والمنصات الحكومية" },
+        context: { en: "Ministry of Defense, Nazaha and the Eastern Province and Madinah municipalities.", ar: "وزارة الدفاع ونزاهة وأمانتا المنطقة الشرقية والمدينة المنورة." },
         details: {
-          en: "Programs included ENPPI, Toyota, Egyptian International Motors, TEPCO, and Abu Dawood Group, with focus on process integration and operational efficiency.",
-          ar: "شملت البرامج ENPPI وToyota وEgyptian International Motors وTEPCO وAbu Dawood Group مع تركيز على تكامل العمليات ورفع الكفاءة التشغيلية.",
+          en: "The 940 citizen reports solution (incident management system, call center, mobile app and chatbot) integrated with the Ministry of Municipalities and Housing; Nazaha 980; Ministry of Defense property management; Investment Agency platform improvements; and the Eastern Province e-portal and e-services.",
+          ar: "حل بلاغات 940 (نظام البلاغات ومركز الاتصال وتطبيق الجوال وروبوت المحادثة) المرتبط بوزارة البلديات والإسكان؛ و980 لنزاهة؛ وإدارة الأملاك لوزارة الدفاع؛ وتطوير منصة وكالة الاستثمار؛ والبوابة الإلكترونية لأمانة الشرقية وخدماتها.",
         },
       },
       {
-        title: { en: "Delivery governance and adoption", ar: "حوكمة التسليم والتبني" },
-        context: {
-          en: "Directed cross-functional functional, technical, R&D, and government stakeholder teams.",
-          ar: "إدارة فرق وظيفية وتقنية وبحث وتطوير وأصحاب مصلحة حكوميين.",
-        },
+        title: { en: "SAP and enterprise ERP", ar: "SAP وأنظمة ERP للمؤسسات" },
+        context: { en: "Led 4 project managers and about 30 consultants at an SAP Platinum Partner.", ar: "قيادة 4 مديري مشاريع ونحو 30 استشارياً لدى شريك SAP بلاتيني." },
         details: {
-          en: "Built delivery cadence around scope, schedule, risk control, KPIs, change management, training, and post-go-live sustainability.",
-          ar: "بناء إيقاع تسليم حول النطاق والجدول والمخاطر ومؤشرات الأداء وإدارة التغيير والتدريب والاستدامة بعد التشغيل.",
+          en: "SAP S/4HANA for Toyota Egypt, ENPPI and Baheya; SAP Plant Maintenance for Nissan, Agiba and Abu Qir Petroleum; data migration, UAT and cutover under SAP Activate; Oracle EPM, NetSuite and Jedox in the UAE.",
+          ar: "SAP S/4HANA لتويوتا مصر وإنبي وبهية؛ ووحدة الصيانة SAP PM لنيسان وعجيبة وأبو قير للبترول؛ ونقل البيانات واختبارات القبول والانتقال للتشغيل وفق SAP Activate؛ وOracle EPM وNetSuite وJedox في الإمارات.",
         },
       },
     ],
@@ -181,16 +148,20 @@ export const copy = {
         ar: "التخطيط الاستراتيجي وإدارة التغيير وإشراك أصحاب المصلحة",
       },
       {
-        en: "Budgeting, cost control, resource allocation, and risk management",
-        ar: "إدارة الميزانيات والتكاليف وتوزيع الموارد وإدارة المخاطر",
+        en: "Portfolio governance, risk and change control, resource planning and KPIs",
+        ar: "حوكمة المحفظة وضبط المخاطر والتغيير وتخطيط الموارد ومؤشرات الأداء",
+      },
+      {
+        en: "AI and IoT solution delivery: computer vision, smart lighting, field monitoring",
+        ar: "تسليم حلول الذكاء الاصطناعي وإنترنت الأشياء: الرؤية الحاسوبية والإنارة الذكية والرقابة الميدانية",
       },
       {
         en: "EPM planning and consolidation with Oracle and Jedox",
         ar: "التخطيط والتجميع المالي EPM باستخدام Oracle وJedox",
       },
       {
-        en: "Cloud and infrastructure across AWS, Google, and DigitalOcean",
-        ar: "السحابة والبنية التحتية عبر AWS وGoogle وDigitalOcean",
+        en: "Data migration, UAT and cutover under SAP Activate",
+        ar: "نقل البيانات واختبارات القبول والانتقال للتشغيل وفق SAP Activate",
       },
     ],
   },
@@ -244,8 +215,8 @@ export const copy = {
   contact: {
     eyebrow: { en: "Contact", ar: "تواصل" },
     title: {
-      en: "Available for ERP, SAP, Smart City, and digital transformation leadership conversations.",
-      ar: "متاح لمناقشة قيادة برامج ERP وSAP والمدن الذكية والتحول الرقمي.",
+      en: "Available for Head of Solutions, digital transformation, Smart City and SAP delivery leadership roles.",
+      ar: "متاح لأدوار قيادة الحلول والتحول الرقمي والمدن الذكية وتسليم SAP.",
     },
     intro: {
       en: "Arabic native speaker with professional English, based in Saudi Arabia and experienced across KSA, UAE, and Egypt.",
