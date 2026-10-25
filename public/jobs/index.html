@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#102a43">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Jobs">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Haitham Jobs</title>
+<style>
+/* Haitham Jobs: the job search in your pocket. Data lives in your private GitHub sync file; this page holds no data of its own. */
+:root {
+  --navy: #102a43; --accent: #1f4e79; --gold: #d4b26a; --bg: #f4f6f8; --panel: #fff; --ink: #1c2430; --muted: #5f6b7a; --line: #e2e6eb;
+  --ok: #1e7a4f; --ok-soft: #e6f4ec; --warn: #9a6400; --warn-soft: #fbf2df; --bad: #b03a3a; --bad-soft: #f9e8e8; --info: #2c5d8f; --info-soft: #e8f0f8;
+  --font: "Segoe UI", "IBM Plex Sans Arabic", Tahoma, system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root { --bg: #0f151c; --panel: #18202a; --ink: #e4e8ed; --muted: #9aa5b2; --line: #2a333e; --accent: #7fa8d1;
+  --ok-soft: #173126; --warn-soft: #33290f; --bad-soft: #3a1f20; --info-soft: #1c2938; --ok: #6cc497; --warn: #e2b25c; --bad: #e88c8c; --info: #8fb3dc; color-scheme: dark; } }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+[hidden] { display: none !important; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 var(--font); }
+header { position: sticky; top: 0; z-index: 3; background: var(--navy); color: #fff; padding: calc(10px + env(safe-area-inset-top)) 16px 10px; display: flex; align-items: center; gap: 10px; }
+header b { flex: 1; font-size: 1.05rem; }
+header small { color: #9fb3c8; font-size: .75rem; }
+.hbtn { background: rgba(255,255,255,.12); color: #fff; border: 0; border-radius: 8px; padding: 6px 10px; font: inherit; font-size: .8rem; }
+main { padding: 12px 16px calc(84px + env(safe-area-inset-bottom)); display: grid; gap: 12px; max-width: 720px; margin: 0 auto; }
+main > section { min-width: 0; display: grid; gap: 12px; align-content: start; }
+nav.bottom { position: fixed; inset-inline: 0; bottom: 0; z-index: 3; background: var(--panel); border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(5, 1fr); padding-bottom: env(safe-area-inset-bottom); }
+nav.bottom button { background: none; border: 0; font: inherit; font-size: .72rem; color: var(--muted); padding: 8px 2px 9px; display: grid; justify-items: center; gap: 2px; position: relative; }
+nav.bottom button .ic { font-size: 1.2rem; line-height: 1; }
+nav.bottom button[aria-selected="true"] { color: var(--accent); font-weight: 600; }
+nav.bottom .dot { position: absolute; top: 4px; inset-inline-start: calc(50% + 6px); background: var(--bad); color: #fff; border-radius: 999px; font-size: .62rem; padding: 0 5px; min-width: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: grid; gap: 8px; }
+.counters { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.counter { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px; text-align: center; }
+.counter b { display: block; font-size: 1.5rem; }
+.counter span { font-size: .75rem; color: var(--muted); }
+h2 { margin: 0; font-size: 1rem; }
+.muted { color: var(--muted); } .small { font-size: .8rem; }
+.job { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; grid-template-columns: 3rem 1fr; gap: 10px; align-items: center; text-align: start; width: 100%; font: inherit; color: inherit; }
+.fit { font-weight: 700; font-size: 1.05rem; text-align: center; }
+.fit i { display: block; height: 3px; background: var(--line); border-radius: 2px; margin-top: 3px; overflow: hidden; }
+.fit i b { display: block; height: 100%; background: var(--accent); }
+.jt { font-weight: 600; direction: ltr; text-align: right; overflow-wrap: anywhere; }
+html[dir="ltr"] .jt { text-align: left; }
+.jm { font-size: .78rem; color: var(--muted); }
+.pill { display: inline-block; font-size: .7rem; padding: 1px 8px; border-radius: 999px; }
+.s-review { background: var(--info-soft); color: var(--info); } .s-approved { background: #e9f0f7; color: var(--accent); } .s-applied { background: var(--warn-soft); color: var(--warn); }
+.s-interview { background: var(--ok-soft); color: var(--ok); } .s-offer { background: var(--ok); color: #fff; } .s-rejected { background: var(--bad-soft); color: var(--bad); } .s-ignored { background: var(--line); color: var(--muted); }
+.chips { display: flex; min-width: 0; max-width: 100%; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+.chip { border: 1px solid var(--line); background: var(--panel); color: var(--muted); border-radius: 999px; padding: 4px 12px; font: inherit; font-size: .8rem; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+input, textarea, select { font: inherit; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; width: 100%; }
+textarea { min-height: 180px; direction: ltr; text-align: left; }
+.btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 10px 12px; font: inherit; font-size: .9rem; text-align: center; text-decoration: none; display: inline-block; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.good { background: var(--ok-soft); border-color: transparent; color: var(--ok); }
+.btn.danger { background: var(--bad-soft); border-color: transparent; color: var(--bad); }
+.btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.btns.one { grid-template-columns: 1fr; }
+.sheet { position: fixed; inset: 0; z-index: 5; background: var(--bg); overflow-y: auto; padding: calc(12px + env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom)); display: grid; gap: 12px; align-content: start; }
+.sheet .top { display: flex; align-items: center; gap: 10px; }
+.kv { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-size: .85rem; }
+.kv span { display: block; font-size: .72rem; color: var(--muted); }
+.empty { text-align: center; color: var(--muted); padding: 28px 12px; border: 1px dashed var(--line); border-radius: 12px; }
+.toast { position: fixed; inset-inline: 0; bottom: calc(90px + env(safe-area-inset-bottom)); margin: 0 auto; width: fit-content; max-width: calc(100% - 32px); background: var(--ink); color: var(--bg); padding: 8px 16px; border-radius: 999px; font-size: .85rem; opacity: 0; transition: opacity .2s; z-index: 9; pointer-events: none; }
+.toast.show { opacity: 1; }
+.err { color: var(--bad); }
+</style>
+</head>
+<body>
+<header><b data-t="app">وظائف هيثم</b><small id="synced"></small><button class="hbtn" id="refresh" type="button" aria-label="refresh">↻</button><button class="hbtn" id="lang" type="button">EN</button></header>
+
+<main id="setup" hidden>
+  <div class="card">
+    <h2 data-t="setupTitle">ربط التطبيق ببياناتك</h2>
+    <div class="small muted" data-t="setupHint">أسهل طريقة: في المنصة على الكمبيوتر افتح الإعدادات ← "تطبيق الجوال"، وامسح الرمز (QR) بكاميرا الجوال. أو أدخل البيانات يدوياً:</div>
+    <label class="small muted" for="cRepo" data-t="repo">المستودع</label><input id="cRepo" dir="ltr" placeholder="haithampm/job-portal">
+    <label class="small muted" for="cBranch" data-t="branch">الفرع</label><input id="cBranch" dir="ltr" placeholder="sync-data">
+    <label class="small muted" for="cPath" data-t="file">الملف</label><input id="cPath" dir="ltr" placeholder="sync.json">
+    <label class="small muted" for="cToken" data-t="token">مفتاح GitHub (نفس مفتاح المزامنة)</label><input id="cToken" dir="ltr" type="password" autocomplete="off">
+    <button class="btn primary" id="cSave" type="button" data-t="connect">اتصال</button>
+    <div class="small muted" data-t="privacy">المفتاح يُحفظ على هذا الجوال فقط، ولا يُرسل إلا إلى GitHub.</div>
+    <div id="cErr" class="small err"></div>
+  </div>
+</main>
+
+<main id="app" hidden>
+  <section data-tab="home">
+    <div class="counters" id="counters"></div>
+    <div class="card"><h2 data-t="ready">جاهزة للتقديم</h2><div id="homeReady" style="display:grid;gap:8px"></div></div>
+    <div class="card"><h2 data-t="best">أفضل الوظائف الجديدة</h2><div id="homeBest" style="display:grid;gap:8px"></div></div>
+  </section>
+  <section data-tab="review" hidden>
+    <input id="q" type="search" data-tp="search" placeholder="ابحث بالمسمى أو الشركة">
+    <div class="chips" id="prio"></div>
+    <div id="reviewList" style="display:grid;gap:8px"></div>
+  </section>
+  <section data-tab="apply" hidden>
+    <div class="card small muted" data-t="applyHint">افتح الوظيفة ← "فتح الإعلان" وقدّم من الجوال بالخطاب والسيرة الجاهزين، أو اتركها للتعبئة التلقائية من الكمبيوتر.</div>
+    <div id="applyList" style="display:grid;gap:8px"></div>
+  </section>
+  <section data-tab="track" hidden>
+    <div class="chips" id="trackChips"></div>
+    <div id="trackList" style="display:grid;gap:8px"></div>
+  </section>
+  <section data-tab="more" hidden>
+    <div class="card"><h2 data-t="questions">أسئلة من النماذج</h2><div class="small muted" data-t="questionsHint">خانات إلزامية لم تُعرف إجابتها. أجب مرة واحدة وتُستخدم في كل الطلبات.</div><div id="questions" style="display:grid;gap:10px"></div></div>
+    <div class="card"><h2 data-t="cv">سيرتي</h2><a class="btn" id="cvLink" target="_blank" rel="noopener" data-t="cvOpen">فتح السيرة (PDF)</a></div>
+    <div class="card"><h2 data-t="settings">الإعدادات</h2><div class="small muted" id="cfgInfo" dir="ltr"></div><button class="btn danger" id="logout" type="button" data-t="logout">فصل هذا الجوال</button></div>
+  </section>
+</main>
+
+<nav class="bottom" id="nav" hidden>
+  <button data-go="home" aria-selected="true"><span class="ic">⌂</span><span data-t="home">الرئيسية</span></button>
+  <button data-go="review"><span class="ic">☰</span><span data-t="review">للمراجعة</span><span class="dot" id="dReview" hidden></span></button>
+  <button data-go="apply"><span class="ic">✈</span><span data-t="apply">للتقديم</span><span class="dot" id="dApply" hidden></span></button>
+  <button data-go="track"><span class="ic">◷</span><span data-t="track">المتابعة</span></button>
+  <button data-go="more"><span class="ic">⋯</span><span data-t="more">المزيد</span><span class="dot" id="dQ" hidden></span></button>
+</nav>
+
+<div class="sheet" id="sheet" hidden></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(() => {
+  const T = {
+    ar: { app: 'وظائف هيثم', setupTitle: 'ربط التطبيق ببياناتك', setupHint: 'أسهل طريقة: في المنصة على الكمبيوتر افتح الإعدادات ← "تطبيق الجوال"، وامسح الرمز (QR) بكاميرا الجوال. أو أدخل البيانات يدوياً:', repo: 'المستودع', branch: 'الفرع', file: 'الملف', token: 'مفتاح GitHub (نفس مفتاح المزامنة)', connect: 'اتصال', privacy: 'المفتاح يُحفظ على هذا الجوال فقط، ولا يُرسل إلا إلى GitHub.',
+      ready: 'جاهزة للتقديم', best: 'أفضل الوظائف الجديدة', search: 'ابحث بالمسمى أو الشركة', applyHint: 'افتح الوظيفة ← "فتح الإعلان" وقدّم من الجوال بالخطاب والسيرة الجاهزين، أو اتركها للتعبئة التلقائية من الكمبيوتر.',
+      questions: 'أسئلة من النماذج', questionsHint: 'خانات إلزامية لم تُعرف إجابتها. أجب مرة واحدة وتُستخدم في كل الطلبات.', cv: 'سيرتي', cvOpen: 'فتح السيرة (PDF)', settings: 'الإعدادات', logout: 'فصل هذا الجوال',
+      home: 'الرئيسية', review: 'للمراجعة', apply: 'للتقديم', track: 'المتابعة', more: 'المزيد', all: 'الكل', High: 'عالية', Medium: 'متوسطة', Low: 'منخفضة',
+      s_review: 'بانتظار المراجعة', s_approved: 'موافق عليها', s_applied: 'تم التقديم', s_interview: 'مقابلة', s_offer: 'عرض', s_rejected: 'مرفوض', s_ignored: 'مستبعدة',
+      approve: 'موافقة على التقديم', notFit: 'غير مناسبة', applied: 'تم التقديم', interview: 'مقابلة', offer: 'عرض', rejected: 'مرفوض', backReview: 'إعادة للمراجعة', unapprove: 'إلغاء الموافقة',
+      openAd: 'فتح الإعلان ↗', copyLetter: 'نسخ الخطاب', saveLetter: 'حفظ الخطاب والملاحظات', letter: 'خطاب التغطية', notes: 'ملاحظاتك', back: '→ رجوع', why: 'لماذا تناسبك', priority: 'الأولوية', source: 'المصدر', posted: 'النشر', appliedOn: 'التقديم',
+      fromPhone: 'التقديم من الجوال', fromPhoneHint: '1) افتح الإعلان 2) انسخ الخطاب والصقه 3) ارفع السيرة 4) اضغط "تم التقديم".',
+      whyReject: 'لماذا؟ لن تظهر مثلها مرة أخرى:', r_title: 'المسمى غير مناسب', r_level: 'المستوى أقل من خبرتي', r_company: 'لا أريد هذه الشركة', r_location: 'الموقع غير مناسب', r_other: 'لا تتطابق (هذه فقط)',
+      saved: 'حُفظ', copied: 'نُسخ الخطاب', noJobs: 'لا توجد وظائف هنا.', noQ: 'لا توجد أسئلة جديدة.', save: 'حفظ', synced: 'آخر تحديث', loading: 'جارٍ التحميل…', offline: 'غير متصل: يعرض آخر نسخة محفوظة',
+      total: 'كل الوظائف', toReview: 'للمراجعة', inProgress: 'قيد المتابعة', conflict: 'تحديث من جهاز آخر، أعدت المحاولة', badCfg: 'تعذّر الاتصال. تحقق من المستودع والفرع والمفتاح.', confirmLogout: 'فصل هذا الجوال وحذف المفتاح منه؟' },
+    en: { app: 'Haitham Jobs', setupTitle: 'Connect the app to your data', setupHint: 'Easiest: on your computer open the portal Settings → "Mobile app" and scan the QR code with your phone camera. Or enter the details:', repo: 'Repository', branch: 'Branch', file: 'File', token: 'GitHub key (the sync key)', connect: 'Connect', privacy: 'The key is stored on this phone only and sent only to GitHub.',
+      ready: 'Ready to apply', best: 'Best new jobs', search: 'Search title or company', applyHint: 'Open a job → "Open posting" and apply from your phone with the ready letter and CV, or leave it for automatic filling on your computer.',
+      questions: 'Questions from forms', questionsHint: 'Required fields with no answer yet. Answer once and it is used in every application.', cv: 'My CV', cvOpen: 'Open CV (PDF)', settings: 'Settings', logout: 'Disconnect this phone',
+      home: 'Home', review: 'Review', apply: 'Apply', track: 'Track', more: 'More', all: 'All', High: 'High', Medium: 'Medium', Low: 'Low',
+      s_review: 'Awaiting review', s_approved: 'Approved', s_applied: 'Applied', s_interview: 'Interview', s_offer: 'Offer', s_rejected: 'Rejected', s_ignored: 'Excluded',
+      approve: 'Approve to apply', notFit: 'Not a fit', applied: 'Applied', interview: 'Interview', offer: 'Offer', rejected: 'Rejected', backReview: 'Back to review', unapprove: 'Withdraw approval',
+      openAd: 'Open posting ↗', copyLetter: 'Copy letter', saveLetter: 'Save letter and notes', letter: 'Cover letter', notes: 'Your notes', back: '← Back', why: 'Why it fits', priority: 'Priority', source: 'Source', posted: 'Posted', appliedOn: 'Applied',
+      fromPhone: 'Apply from your phone', fromPhoneHint: '1) Open the posting 2) Copy and paste the letter 3) Upload the CV 4) Tap "Applied".',
+      whyReject: "Why? Similar ones won't show again:", r_title: "Title doesn't fit", r_level: 'Level below my experience', r_company: 'Not this company', r_location: "Location doesn't suit", r_other: "Doesn't match (this one only)",
+      saved: 'Saved', copied: 'Letter copied', noJobs: 'No jobs here.', noQ: 'No new questions.', save: 'Save', synced: 'Updated', loading: 'Loading…', offline: 'Offline: showing the last saved copy',
+      total: 'All jobs', toReview: 'To review', inProgress: 'In progress', conflict: 'Updated from another device; retried', badCfg: "Couldn't connect. Check the repository, branch and key.", confirmLogout: 'Disconnect this phone and remove the key?' }
+  };
+  let L = (() => { try { return localStorage.getItem('hj_lang') || 'ar'; } catch (e) { return 'ar'; } })();
+  const t = (k) => (T[L] && T[L][k]) || T.ar[k] || k;
+  const $ = (s) => document.querySelector(s);
+  const el = (tag, a = {}, ...kids) => { const n = document.createElement(tag); for (const [k, v] of Object.entries(a)) { if (k === 'class') n.className = v; else if (k === 'text') n.textContent = v; else if (k.startsWith('on')) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v); } kids.flat().forEach(c => c != null && c !== '' && n.append(c)); return n; };
+  const toast = (m) => { const x = $('#toast'); x.textContent = m; x.classList.add('show'); clearTimeout(x._h); x._h = setTimeout(() => x.classList.remove('show'), 2200); };
+  const safeUrl = (u) => (typeof u === 'string' && /^https?:\/\//.test(u)) ? u : null;
+  const today = () => new Date().toISOString().slice(0, 10);
+
+  // ---- configuration (from the QR link #cfg=..., or typed)
+  const getCfg = () => { try { return JSON.parse(localStorage.getItem('hj_cfg') || 'null'); } catch (e) { return null; } };
+  const setCfg = (c) => { try { localStorage.setItem('hj_cfg', JSON.stringify(c)); } catch (e) {} };
+  if (location.hash.startsWith('#cfg=')) {
+    try { const c = JSON.parse(decodeURIComponent(escape(atob(location.hash.slice(5).replace(/-/g, '+').replace(/_/g, '/'))))); if (c.repo && c.token) setCfg(c); } catch (e) {}
+    history.replaceState(null, '', location.pathname); // the key never stays in the address bar
+  }
+  let CFG = getCfg();
+
+  // ---- GitHub file (the same one the portal on your computer syncs with)
+  const b64dec = (s) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, '')), c => c.charCodeAt(0)));
+  const b64enc = (s) => { const b = new TextEncoder().encode(s); let x = ''; for (let i = 0; i < b.length; i += 0x8000) x += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000)); return btoa(x); };
+  const api = (method, body) => fetch(`https://api.github.com/repos/${CFG.repo}/contents/${encodeURIComponent(CFG.path || 'sync.json')}` + (method === 'GET' ? `?ref=${encodeURIComponent(CFG.branch || 'main')}&t=${Date.now()}` : ''), {
+    method, cache: 'no-store', headers: { authorization: 'Bearer ' + CFG.token, accept: 'application/vnd.github+json', 'content-type': 'application/json' }, body: body ? JSON.stringify(body) : undefined });
+  let DATA = null, SHA = null;
+  async function pull() {
+    const r = await api('GET');
+    if (!r.ok) { const e = new Error('GitHub ' + r.status); e.status = r.status; throw e; }
+    const f = await r.json(); SHA = f.sha; DATA = JSON.parse(b64dec(f.content));
+    try { localStorage.setItem('hj_cache', JSON.stringify(DATA)); localStorage.setItem('hj_at', new Date().toISOString()); } catch (e) {}
+    return DATA;
+  }
+  // Change → write, re-reading and re-applying on a conflict (the portal may have synced meanwhile).
+  async function change(fn, msg) {
+    for (let i = 0; i < 3; i++) {
+      await pull(); fn(DATA);
+      DATA.updated_at = new Date().toISOString(); DATA.updated_by = 'mobile-app';
+      const r = await api('PUT', { message: 'mobile app ' + DATA.updated_at, branch: CFG.branch || 'main', sha: SHA, content: b64enc(JSON.stringify(DATA, null, 1)) });
+      if (r.ok) { SHA = (await r.json()).content.sha; render(); toast(msg || t('saved')); return true; }
+      if (r.status !== 409 && r.status !== 422) { toast('GitHub ' + r.status); return false; }
+      toast(t('conflict'));
+    }
+    return false;
+  }
+  const stamp = (j) => { j.updated = today(); j.updated_at = new Date().toISOString(); return j; };
+  const setStatus = (id, status, extra = {}) => change(d => { const j = d.jobs[id]; if (!j) return; Object.assign(j, extra, { status }); if (status === 'applied' && !j.applied_on) j.applied_on = today(); stamp(j); }, t('s_' + status));
+
+  // ---- views
+  let TAB = 'home', PRIO = '', TRACK = 'applied', Q = '';
+  const jobsList = () => Object.entries((DATA && DATA.jobs) || {}).map(([id, j]) => ({ id, ...j }));
+  const card = (j) => el('button', { class: 'job', type: 'button', onclick: () => openJob(j.id) },
+    el('div', { class: 'fit' }, String(Number(j.fit) || 0), el('i', {}, el('b', { style: `width:${Math.max(0, Math.min(100, Number(j.fit) || 0))}%` }))),
+    el('div', { style: 'min-width:0;display:grid;gap:2px' }, el('div', { class: 'jt', text: j.title || '' }), el('div', { class: 'jm', text: [j.company, j.city].filter(Boolean).join(' · ') }), el('div', {}, el('span', { class: 'pill s-' + (j.status || 'review'), text: t('s_' + (j.status || 'review')) }))));
+  const fill = (box, list) => { box.textContent = ''; if (!list.length) box.append(el('div', { class: 'empty', text: t('noJobs') })); list.forEach(j => box.append(card(j))); };
+  const byFit = (a, b) => (Number(b.fit) || 0) - (Number(a.fit) || 0);
+
+  function render() {
+    if (!DATA) return;
+    const all = jobsList();
+    const n = (s) => all.filter(j => (j.status || 'review') === s).length;
+    $('#counters').textContent = '';
+    [[t('toReview'), n('review')], [t('s_approved'), n('approved')], [t('inProgress'), n('applied') + n('interview') + n('offer')]].forEach(([l, v]) => $('#counters').append(el('div', { class: 'counter' }, el('b', { text: String(v) }), el('span', { text: l }))));
+    fill($('#homeReady'), all.filter(j => j.status === 'approved').sort(byFit).slice(0, 5));
+    fill($('#homeBest'), all.filter(j => (j.status || 'review') === 'review').sort(byFit).slice(0, 5));
+    const pr = $('#prio'); pr.textContent = '';
+    [['', t('all')], ['High', t('High')], ['Medium', t('Medium')], ['Low', t('Low')]].forEach(([k, l]) => pr.append(el('button', { class: 'chip', type: 'button', 'aria-pressed': String(PRIO === k), onclick: () => { PRIO = k; render(); } }, l)));
+    const q = Q.toLowerCase();
+    fill($('#reviewList'), all.filter(j => (j.status || 'review') === 'review' && (!PRIO || j.priority === PRIO) && (!q || [j.title, j.company, j.city].join(' ').toLowerCase().includes(q))).sort(byFit));
+    fill($('#applyList'), all.filter(j => j.status === 'approved').sort(byFit));
+    const tc = $('#trackChips'); tc.textContent = '';
+    ['applied', 'interview', 'offer', 'rejected', 'ignored'].forEach(k => tc.append(el('button', { class: 'chip', type: 'button', 'aria-pressed': String(TRACK === k), onclick: () => { TRACK = k; render(); } }, `${t('s_' + k)} (${n(k)})`)));
+    fill($('#trackList'), all.filter(j => j.status === TRACK).sort((a, b) => String(b.applied_on || b.updated || '').localeCompare(String(a.applied_on || a.updated || ''))));
+    const dot = (id, v) => { const d = $(id); d.hidden = !v; d.textContent = String(v); };
+    dot('#dReview', n('review')); dot('#dApply', n('approved'));
+    const open = Object.entries(DATA.questions || {}).filter(([, x]) => x.status !== 'answered');
+    dot('#dQ', open.length);
+    const qb = $('#questions'); qb.textContent = '';
+    if (!open.length) qb.append(el('div', { class: 'small muted', text: t('noQ') }));
+    open.forEach(([id, x]) => { const inp = el('input', { dir: 'auto' }); qb.append(el('div', { style: 'display:grid;gap:6px' }, el('div', { class: 'small', text: x.question + (x.job ? ` (${x.job})` : '') }), inp,
+      el('button', { class: 'btn primary', type: 'button', onclick: () => { const a = inp.value.trim(); if (!a) return; change(d => { d.questions[id] = { ...d.questions[id], status: 'answered', answer: a }; d.answers = d.answers || { value: {} }; d.answers.value = { ...(d.answers.value || {}), [x.field || id]: a }; d.answers.updated_at = new Date().toISOString(); }); } }, t('save')))); });
+    $('#cfgInfo').textContent = `${CFG.repo} · ${CFG.branch || 'main'} · ${CFG.path || 'sync.json'}`;
+    let at = ''; try { at = localStorage.getItem('hj_at') || ''; } catch (e) {}
+    $('#synced').textContent = at ? `${t('synced')} ${new Date(at).toLocaleTimeString(L === 'ar' ? 'ar' : 'en-GB', { hour: '2-digit', minute: '2-digit' })}` : '';
+  }
+
+  function openJob(id) {
+    const j = { id, ...(DATA.jobs[id] || {}) }; const s = j.status || 'review';
+    const sh = $('#sheet'); sh.textContent = ''; sh.hidden = false; document.body.style.overflow = 'hidden';
+    const close = () => { sh.hidden = true; document.body.style.overflow = ''; };
+    const b = (label, cls, fn) => el('button', { class: 'btn ' + cls, type: 'button', onclick: async () => { if (await fn()) close(); } }, label);
+    const ta = el('textarea', { dir: 'ltr' }); ta.value = j.cover_letter || '';
+    const notes = el('input', { dir: 'auto', placeholder: t('notes') }); notes.value = j.notes || '';
+    const link = safeUrl(j.url);
+    const rejectBox = el('div', { class: 'card', hidden: '' }, el('div', { class: 'small', text: t('whyReject') }),
+      ...['title', 'level', 'company', 'location', 'other'].map(r => b(t('r_' + r), '', () => setStatus(id, 'ignored', { reject_reason: r }))));
+    const acts = { review: [b(t('approve'), 'primary', () => setStatus(id, 'approved')), el('button', { class: 'btn danger', type: 'button', onclick: () => { rejectBox.hidden = !rejectBox.hidden; } }, t('notFit'))],
+      approved: [b(t('applied'), 'good', () => setStatus(id, 'applied')), b(t('unapprove'), '', () => setStatus(id, 'review'))],
+      applied: [b(t('interview'), 'good', () => setStatus(id, 'interview')), b(t('rejected'), 'danger', () => setStatus(id, 'rejected'))],
+      interview: [b(t('offer'), 'good', () => setStatus(id, 'offer')), b(t('rejected'), 'danger', () => setStatus(id, 'rejected'))] }[s] || [b(t('backReview'), '', () => setStatus(id, 'review'))];
+    sh.append(
+      el('div', { class: 'top' }, el('button', { class: 'btn', type: 'button', onclick: close }, t('back')), el('span', { class: 'pill s-' + s, text: t('s_' + s) })),
+      el('div', { class: 'card' }, el('div', { class: 'jt', style: 'font-size:1.05rem', text: j.title || '' }), el('div', { class: 'jm', text: [j.company, j.city, j.country].filter(Boolean).join(' · ') + ' · ' + id }),
+        el('div', { class: 'kv' }, el('div', {}, el('span', { text: t('priority') }), t(j.priority) || '—'), el('div', {}, el('span', { text: 'Fit' }), String(j.fit || 0)), el('div', {}, el('span', { text: t('source') }), j.source || '—'), el('div', {}, el('span', { text: t('posted') }), j.posted || '—'), el('div', {}, el('span', { text: t('appliedOn') }), j.applied_on || '—')),
+        j.why ? el('div', { class: 'small', dir: 'ltr', style: 'text-align:start' }, el('b', { text: t('why') + ': ' }), j.why) : ''),
+      el('div', { class: 'btns' }, ...acts), rejectBox,
+      (s === 'approved' || s === 'review') ? el('div', { class: 'card' }, el('h2', { text: t('fromPhone') }), el('div', { class: 'small muted', text: t('fromPhoneHint') }),
+        el('div', { class: 'btns' }, link ? el('a', { class: 'btn primary', href: link, target: '_blank', rel: 'noopener' }, t('openAd')) : '', el('button', { class: 'btn', type: 'button', onclick: () => { navigator.clipboard.writeText(ta.value).then(() => toast(t('copied')), () => { ta.select(); }); } }, t('copyLetter')),
+          el('a', { class: 'btn', href: cvUrl, target: '_blank', rel: 'noopener' }, t('cvOpen')))) : (link ? el('a', { class: 'btn', href: link, target: '_blank', rel: 'noopener' }, t('openAd')) : ''),
+      el('div', { class: 'card' }, el('h2', { text: t('letter') }), ta, notes, b(t('saveLetter'), '', () => change(d => { const x = d.jobs[id]; if (!x) return; x.cover_letter = ta.value; x.notes = notes.value; stamp(x); }))));
+    sh.scrollTop = 0;
+  }
+
+  const cvUrl = new URL('../Haitham_Abd_El-Azeem_Khalifa_CV_2026.pdf', location.href).href;
+  $('#cvLink').href = cvUrl;
+  const go = (tab) => { TAB = tab; document.querySelectorAll('[data-tab]').forEach(s => s.hidden = s.dataset.tab !== tab); document.querySelectorAll('[data-go]').forEach(b => b.setAttribute('aria-selected', String(b.dataset.go === tab))); scrollTo(0, 0); };
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => go(b.dataset.go)));
+  $('#q').addEventListener('input', (e) => { Q = e.target.value; render(); });
+  const applyLang = () => {
+    document.documentElement.lang = L; document.documentElement.dir = L === 'ar' ? 'rtl' : 'ltr';
+    document.querySelectorAll('[data-t]').forEach(x => x.textContent = t(x.dataset.t));
+    document.querySelectorAll('[data-tp]').forEach(x => x.placeholder = t(x.dataset.tp));
+    $('#lang').textContent = L === 'ar' ? 'EN' : 'ع'; render();
+  };
+  $('#lang').addEventListener('click', () => { L = L === 'ar' ? 'en' : 'ar'; try { localStorage.setItem('hj_lang', L); } catch (e) {} applyLang(); });
+  $('#logout').addEventListener('click', () => { if (!confirm(t('confirmLogout'))) return; try { localStorage.removeItem('hj_cfg'); localStorage.removeItem('hj_cache'); } catch (e) {} location.reload(); });
+  $('#cSave').addEventListener('click', async () => {
+    CFG = { repo: $('#cRepo').value.trim() || 'haithampm/job-portal', branch: $('#cBranch').value.trim() || 'sync-data', path: $('#cPath').value.trim() || 'sync.json', token: $('#cToken').value.trim() };
+    try { await pull(); setCfg(CFG); start(); } catch (e) { $('#cErr').textContent = t('badCfg') + ' (' + e.message + ')'; }
+  });
+  const refresh = async () => { try { await pull(); render(); } catch (e) { if (e.status === 401 || e.status === 404) toast(t('badCfg')); else toast(t('offline')); } };
+  $('#refresh').addEventListener('click', refresh);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && CFG) refresh(); });
+
+  function start() {
+    $('#setup').hidden = true; $('#app').hidden = false; $('#nav').hidden = false;
+    try { const c = localStorage.getItem('hj_cache'); if (c) { DATA = JSON.parse(c); render(); } } catch (e) {}
+    refresh();
+  }
+  applyLang();
+  if (CFG && CFG.token) start(); else { $('#setup').hidden = false; }
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+})();
+</script>
+</body>
+</html>
