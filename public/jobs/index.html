@@ -110,6 +110,7 @@ textarea { min-height: 180px; direction: ltr; text-align: left; }
   </section>
   <section data-tab="more" hidden>
     <div class="card"><h2 data-t="questions">أسئلة من النماذج</h2><div class="small muted" data-t="questionsHint">خانات إلزامية لم تُعرف إجابتها. أجب مرة واحدة وتُستخدم في كل الطلبات.</div><div id="questions" style="display:grid;gap:10px"></div></div>
+    <div class="card"><h2 data-t="sites">المنصات</h2><div class="small muted" data-t="sitesHint">حالة حسابك وملفك على كل موقع توظيف.</div><div id="sitesList" style="display:grid;gap:8px"></div></div>
     <div class="card"><h2 data-t="cv">سيرتي</h2><a class="btn" id="cvLink" target="_blank" rel="noopener" data-t="cvOpen">فتح السيرة (PDF)</a></div>
     <div class="card"><h2 data-t="settings">الإعدادات</h2><div class="small muted" id="cfgInfo" dir="ltr"></div><button class="btn danger" id="logout" type="button" data-t="logout">فصل هذا الجوال</button></div>
   </section>
@@ -131,7 +132,7 @@ textarea { min-height: 180px; direction: ltr; text-align: left; }
   const T = {
     ar: { app: 'وظائف هيثم', setupTitle: 'ربط التطبيق ببياناتك', setupHint: 'أسهل طريقة: في المنصة على الكمبيوتر افتح الإعدادات ← "تطبيق الجوال"، وامسح الرمز (QR) بكاميرا الجوال. أو أدخل البيانات يدوياً:', repo: 'المستودع', branch: 'الفرع', file: 'الملف', token: 'مفتاح GitHub (نفس مفتاح المزامنة)', connect: 'اتصال', privacy: 'المفتاح يُحفظ على هذا الجوال فقط، ولا يُرسل إلا إلى GitHub.',
       ready: 'جاهزة للتقديم', best: 'أفضل الوظائف الجديدة', search: 'ابحث بالمسمى أو الشركة', applyHint: 'افتح الوظيفة ← "فتح الإعلان" وقدّم من الجوال بالخطاب والسيرة الجاهزين، أو اتركها للتعبئة التلقائية من الكمبيوتر.',
-      questions: 'أسئلة من النماذج', questionsHint: 'خانات إلزامية لم تُعرف إجابتها. أجب مرة واحدة وتُستخدم في كل الطلبات.', cv: 'سيرتي', cvOpen: 'فتح السيرة (PDF)', settings: 'الإعدادات', logout: 'فصل هذا الجوال',
+      sites: 'المنصات', sitesHint: 'حالة حسابك وملفك على كل موقع توظيف.', siteOk: 'محدّث', siteTodo: 'باقٍ عمل', siteLogin: 'الدخول مطلوب', siteNone: 'لا حساب', updated: 'آخر تحديث', remaining: 'باقٍ', openSite: 'فتح', questions: 'أسئلة من النماذج', questionsHint: 'خانات إلزامية لم تُعرف إجابتها. أجب مرة واحدة وتُستخدم في كل الطلبات.', cv: 'سيرتي', cvOpen: 'فتح السيرة (PDF)', settings: 'الإعدادات', logout: 'فصل هذا الجوال',
       home: 'الرئيسية', review: 'للمراجعة', apply: 'للتقديم', track: 'المتابعة', more: 'المزيد', all: 'الكل', High: 'عالية', Medium: 'متوسطة', Low: 'منخفضة',
       s_review: 'بانتظار المراجعة', s_approved: 'موافق عليها', s_applied: 'تم التقديم', s_interview: 'مقابلة', s_offer: 'عرض', s_rejected: 'مرفوض', s_ignored: 'مستبعدة',
       approve: 'موافقة على التقديم', notFit: 'غير مناسبة', applied: 'تم التقديم', interview: 'مقابلة', offer: 'عرض', rejected: 'مرفوض', backReview: 'إعادة للمراجعة', unapprove: 'إلغاء الموافقة',
@@ -142,7 +143,7 @@ textarea { min-height: 180px; direction: ltr; text-align: left; }
       total: 'كل الوظائف', toReview: 'للمراجعة', inProgress: 'قيد المتابعة', conflict: 'تحديث من جهاز آخر، أعدت المحاولة', badCfg: 'تعذّر الاتصال. تحقق من المستودع والفرع والمفتاح.', confirmLogout: 'فصل هذا الجوال وحذف المفتاح منه؟' },
     en: { app: 'Haitham Jobs', setupTitle: 'Connect the app to your data', setupHint: 'Easiest: on your computer open the portal Settings → "Mobile app" and scan the QR code with your phone camera. Or enter the details:', repo: 'Repository', branch: 'Branch', file: 'File', token: 'GitHub key (the sync key)', connect: 'Connect', privacy: 'The key is stored on this phone only and sent only to GitHub.',
       ready: 'Ready to apply', best: 'Best new jobs', search: 'Search title or company', applyHint: 'Open a job → "Open posting" and apply from your phone with the ready letter and CV, or leave it for automatic filling on your computer.',
-      questions: 'Questions from forms', questionsHint: 'Required fields with no answer yet. Answer once and it is used in every application.', cv: 'My CV', cvOpen: 'Open CV (PDF)', settings: 'Settings', logout: 'Disconnect this phone',
+      sites: 'Platforms', sitesHint: 'Your account and profile status on each job site.', siteOk: 'Up to date', siteTodo: 'Work left', siteLogin: 'Sign-in needed', siteNone: 'No account', updated: 'Last update', remaining: 'Remaining', openSite: 'Open', questions: 'Questions from forms', questionsHint: 'Required fields with no answer yet. Answer once and it is used in every application.', cv: 'My CV', cvOpen: 'Open CV (PDF)', settings: 'Settings', logout: 'Disconnect this phone',
       home: 'Home', review: 'Review', apply: 'Apply', track: 'Track', more: 'More', all: 'All', High: 'High', Medium: 'Medium', Low: 'Low',
       s_review: 'Awaiting review', s_approved: 'Approved', s_applied: 'Applied', s_interview: 'Interview', s_offer: 'Offer', s_rejected: 'Rejected', s_ignored: 'Excluded',
       approve: 'Approve to apply', notFit: 'Not a fit', applied: 'Applied', interview: 'Interview', offer: 'Offer', rejected: 'Rejected', backReview: 'Back to review', unapprove: 'Withdraw approval',
@@ -230,6 +231,18 @@ textarea { min-height: 180px; direction: ltr; text-align: left; }
     if (!open.length) qb.append(el('div', { class: 'small muted', text: t('noQ') }));
     open.forEach(([id, x]) => { const inp = el('input', { dir: 'auto' }); qb.append(el('div', { style: 'display:grid;gap:6px' }, el('div', { class: 'small', text: x.question + (x.job ? ` (${x.job})` : '') }), inp,
       el('button', { class: 'btn primary', type: 'button', onclick: () => { const a = inp.value.trim(); if (!a) return; change(d => { d.questions[id] = { ...d.questions[id], status: 'answered', answer: a }; d.answers = d.answers || { value: {} }; d.answers.value = { ...(d.answers.value || {}), [x.field || id]: a }; d.answers.updated_at = new Date().toISOString(); }); } }, t('save')))); });
+    const sl = $('#sitesList'); sl.textContent = '';
+    const sites = ((DATA.sites && DATA.sites.value) || []).filter(x => x && x.status && x.status !== 'none' || (x && x.profileUpdate));
+    if (!sites.length) sl.append(el('div', { class: 'small muted', text: t('noJobs') }));
+    sites.forEach(x => {
+      const u = x.profileUpdate || null; const pend = (u && u.pending) || [];
+      const st = x.verified === 'failed' && !u ? ['siteLogin', 's-rejected'] : u ? (pend.length ? ['siteTodo', 's-applied'] : ['siteOk', 's-interview']) : ['siteTodo', 's-review'];
+      const link = safeUrl(x.compareUrl || x.profileUrl || x.url);
+      sl.append(el('div', { style: 'display:grid;gap:4px;border-top:1px solid var(--line);padding-top:8px' },
+        el('div', { style: 'display:flex;align-items:center;gap:8px' }, el('b', { text: x.name, style: 'flex:1' }), el('span', { class: 'pill ' + st[1], text: t(st[0]) }), link ? el('a', { class: 'small', href: link, target: '_blank', rel: 'noopener' }, t('openSite')) : ''),
+        u ? el('div', { class: 'small muted', text: `${t('updated')}: ${String(u.at).slice(0, 10)}` + (u.done && u.done.length ? ' · ' + u.done.join('، ') : '') }) : '',
+        pend.length ? el('div', { class: 'small', style: 'color:var(--warn)', text: `${t('remaining')}: ${pend.join('، ')}` }) : ''));
+    });
     $('#cfgInfo').textContent = `${CFG.repo} · ${CFG.branch || 'main'} · ${CFG.path || 'sync.json'}`;
     let at = ''; try { at = localStorage.getItem('hj_at') || ''; } catch (e) {}
     $('#synced').textContent = at ? `${t('synced')} ${new Date(at).toLocaleTimeString(L === 'ar' ? 'ar' : 'en-GB', { hour: '2-digit', minute: '2-digit' })}` : '';
